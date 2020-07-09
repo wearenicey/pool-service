@@ -9,7 +9,7 @@ const dotenv = require('dotenv');
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 //moduo za postavke aplikacije
-var cors = require("cors");
+const cors = require("cors");
 
 dotenv.config({ path: './config/config.env' });
 
@@ -19,7 +19,12 @@ const app = express();
 
 app.use(cors());
 
+
 //govorimo serveru da prikazuje angular aplikaciju ng build
+app.set('views', __dirname + '/public');
+app.set('view engine', 'html');
+
+//staticki direktorijum bice ./public
 app.use(express.static(path.join(__dirname, 'public')));
 
 
@@ -34,11 +39,10 @@ app.post("/contact", (req, res) => {
   <ul>
       <li>Ime i prezime: ${req.body.name}</li>
       <li>Email: ${req.body.email}</li>
-      <li>Broj telefona: ${req.body.phone}</li>
       
   </ul>
   <h3> Naslov poruke: ${req.body.subject}</h3>
-  <p>${req.body.text}</p>
+  <p>${req.body.message}</p>
   `;
 
     let transporter = nodemailer.createTransport({

@@ -1,0 +1,69 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6 mx-auto mt-5 p-3  border border-info">
+            <form [formGroup]="infoForm" (ngSubmit)="sendMail()" #form="ngForm">
+                <label for="nameInp"></label>
+                <input type="text" id="nameInp" class="form-control border-info" placeholder="Vaše ime i prezime"
+                    formControlName="name">
+
+                <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger p-1">
+
+                    <p *ngIf="name.errors.required" class="mb-0">
+                        Unesite Vase Ime i Prezime.
+                    </p>
+                    <p *ngIf="name.errors.minlength" class="mb-0">
+                        Najmanje tri karaktera.
+                    </p>
+                </div>
+
+                <label for="mailInp"></label>
+                <input type="text" id="mailInp" class="form-control border-info" placeholder="Vaša imejl adresa"
+                    formControlName="email">
+
+                <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger p-1">
+
+                    <p *ngIf="email.errors.required" class="mb-0">
+                        Unesite Vasu imejl Adresu.
+                    </p>
+                    <p *ngIf="email.errors.email" class="mb-0">
+                        Pogresna imejl adresa.
+                    </p>
+                </div>
+
+                <label for="subjectInp"></label>
+                <input type="text" id="subjectInp" class="form-control border-info" placeholder="Naslov poruke"
+                    formControlName="subject">
+
+                <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger p-1">
+
+                    <p *ngIf="subject.errors.required" class="mb-0">
+                        Unesite Naslov Poruke.
+                    </p>
+                    <p *ngIf="subject.errors.minlength" class="mb-0">
+                        Naslov mora biti najmanje od 5 karaktera.
+                    </p>
+                </div>
+
+                <label for="messageInp"></label>
+                <textarea id="messageInp" class="form-control border-info" placeholder="Tekst vaše poruke"
+                    formControlName="message">message</textarea>
+
+                <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger p-1">
+
+                    <p *ngIf="message.errors.required" class="mb-0">
+                        Unesite Vasu poruku.
+                    </p>
+                    <p *ngIf="message.errors.minlength" class="mb-0">
+                        Porruka mora biti najmanje od 20 karaktera.
+                    </p>
+                </div>
+
+
+
+                <div class="text-right mt-3">
+                    <button class="btn btn-info" [disabled]="form.invalid">Pošaljite</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
