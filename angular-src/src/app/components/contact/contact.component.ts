@@ -1,20 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { FormGroup, FormControl, FormBuilder, Validators, FormArray } from '@angular/forms';
 import { MailserviceService } from '../../mailservice.service';
+import { fadeInAnimation } from '../../animations/index';
+import { ToastrService } from 'ngx-toastr';
+
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
+  animations: [fadeInAnimation],
+
+  // attach the fade in animation to the host (root) element of this component
+  host: { '[@fadeInAnimation]': '' }
 })
 export class ContactComponent {
   public subscription: Subscription;
 
 
-  constructor(private MailService: MailserviceService, private fb: FormBuilder) { }
 
+  constructor(private MailService: MailserviceService, private fb: FormBuilder, private toastr: ToastrService) { }
 
+  ngOnInit() { }
 
 
   infoForm = this.fb.group({
@@ -50,19 +58,31 @@ export class ContactComponent {
 
 
 
+
+
+
+
   sendMail() {
     console.log(this.infoForm.value);
     this.subscription = this.MailService.sendEmail(this.infoForm.value).
       subscribe(data => {
         let msg = data['message']
-        alert(msg);
+
         // console.log(data, "success");
+        this.toastr.success(msg, '', {
+          closeButton: false,
+          positionClass: 'toast-top-right'
+
+
+
+        });
+
       }, error => {
         console.error(error, "error");
       });
-  }
+    setTimeout(() => this.infoForm.reset(),
+      5000);
 
-  ngOnInit() {
   }
   ngOnDestroy() {
   }

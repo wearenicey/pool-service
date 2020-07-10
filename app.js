@@ -24,6 +24,9 @@ app.use(cors());
 app.set('views', __dirname + '/public');
 app.set('view engine', 'html');
 
+app.get("/contactt", function (request, response) {
+    response.sendFile(__dirname + "/public/index.html");
+});
 //staticki direktorijum bice ./public
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -69,9 +72,11 @@ app.post("/contact", (req, res) => {
         if (error) {
             console.log(error);
         } else {
-            console.log("Email sent: ");
-            res.json("Poruka je Poslata");
+            console.log('Email sent: ' + info.response);
+            res.status(200).json({
+                message: 'Poruka je poslata'
 
+            })
         }
     });
 });
