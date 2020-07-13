@@ -1,28 +1,22 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { FormGroup, FormControl, FormBuilder, Validators, FormArray } from '@angular/forms';
-import { MailserviceService } from '../../mailservice.service';
-import { fadeInAnimation } from '../../animations/index';
+import { MailService } from '../../mail.service';
 import { ToastrService } from 'ngx-toastr';
-
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss'],
-  animations: [fadeInAnimation],
-
-  // attach the fade in animation to the host (root) element of this component
-  host: { '[@fadeInAnimation]': '' }
+  styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+
   public subscription: Subscription;
 
 
 
-  constructor(private MailService: MailserviceService, private fb: FormBuilder, private toastr: ToastrService) { }
+  constructor(private MailService: MailService, private fb: FormBuilder, private toastr: ToastrService) { }
 
-  ngOnInit() { }
 
 
   infoForm = this.fb.group({
@@ -84,6 +78,12 @@ export class ContactComponent {
       5000);
 
   }
+  ngOnInit() {
+
+  }
+
+
+
   ngOnDestroy() {
   }
 }
