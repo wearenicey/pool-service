@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-6 mx-auto mt-5 p-3  border border-info">
             <form [formGroup]="infoForm" (ngSubmit)="sendMail()" #form="ngForm">
-                <div toastContainer></div>
+
 
                 <label for="nameInp"></label>
                 <input type="text" id="nameInp" class="form-control border-info" placeholder="Vaše ime i prezime"
@@ -61,10 +61,13 @@
                 </div>
 
 
+                <div toastContainer></div>
+
 
                 <div class="text-right mt-3">
                     <button class="btn btn-info" [disabled]="form.invalid">Pošaljite</button>
                 </div>
+
             </form>
         </div>
     </div>

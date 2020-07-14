@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { FormGroup, FormControl, FormBuilder, Validators, FormArray } from '@angular/forms';
 import { MailService } from '../../mail.service';
-import { ToastrService } from 'ngx-toastr';
+import { ToastContainerDirective, ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+  @ViewChild(ToastContainerDirective, { static: true })
+  toastContainer: ToastContainerDirective;
+
 
   public subscription: Subscription;
 
@@ -56,6 +59,7 @@ export class ContactComponent {
 
 
 
+
   sendMail() {
     console.log(this.infoForm.value);
     this.subscription = this.MailService.sendEmail(this.infoForm.value).
@@ -63,13 +67,7 @@ export class ContactComponent {
         let msg = data['message']
 
         // console.log(data, "success");
-        this.toastr.success(msg, '', {
-          closeButton: false,
-          positionClass: 'toast-top-right'
-
-
-
-        });
+        this.toastr.success(msg);
 
       }, error => {
         console.error(error, "error");
@@ -78,10 +76,10 @@ export class ContactComponent {
       5000);
 
   }
+
   ngOnInit() {
-
+    this.toastr.overlayContainer = this.toastContainer;
   }
-
 
 
   ngOnDestroy() {
