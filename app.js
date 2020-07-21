@@ -40,12 +40,9 @@ app.post("/contact", (req, res) => {
   <p> Imate novu poruku </p>
   <h3> Detalji poruke</h3>
   <ul>
-      <li>Ime i prezime: ${req.body.name}</li>
-      <li>Email: ${req.body.email}</li>
-      
-  </ul>
-  <h3> Naslov poruke: ${req.body.subject}</h3>
-  <p>${req.body.message}</p>
+      <li>Ime i prezime: ${req.body.firstName}</li>
+      <li>Email: ${req.body.lastName}</li>
+     
   `;
 
     let transporter = nodemailer.createTransport({

@@ -1,17 +1,59 @@
 :host {
-    background-color: rgb(188, 188, 201);
-    background-size: cover;
-    display: block;
-    height: 100%;
-    width: 100%;
+    background-color:#fff;
+    
   
+    overflow: scroll;
+    padding-top: 111px;
+
    
+  
+  .container-fluid {
+    padding-top: 132px;
+    position: absolute;
+ 
+  
+  .card {
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 24px 32px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
   }
 
-  .container {
-    padding-top: 200px;
+  .form {
+    margin-bottom: 10px;
   }
+  
+  
+    // text-align:right;
 
-  .test {
-    // padding-bottom: 30px;
+
+    // #usluga {
+    //   display: none;
+    // }
+    // // img {
+    // //   position: absolute;
+    // //   width: 88px;
+    // //   left: 2px;
+    // //   bottom: 2px;
+    // //   top: 2px;
+    // //   border-radius: 8px 0px 0px 8px;
+    // //   height: 43px;
+    // // }
+
+    // // border: 2px solid #EBF4FA;
+    // // box-sizing: border-box;
+    // // border-radius: 10px;
+
+    // input[type=checkbox]:checked+ {
+    //   color: #f00;
+
+      
+    // }
   }
+  
+  
+// .container {
+//   justify-content: center;
+//   align-items: center;
+// }
+}

@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { FormatTitlePipe } from './constants/format-title.pipe';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +13,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ToastrModule, ToastContainerModule } from 'ngx-toastr';
+import { CdkStepperModule } from '@angular/cdk/stepper';
 
 
 
@@ -19,7 +22,9 @@ import { ToastrModule, ToastContainerModule } from 'ngx-toastr';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    FormatTitlePipe,
+
 
   ],
   imports: [
@@ -31,6 +36,7 @@ import { ToastrModule, ToastContainerModule } from 'ngx-toastr';
     AppRoutingModule,
     ToastrModule.forRoot({ positionClass: 'inline' }),
     ToastContainerModule,
+    CdkStepperModule
   ],
   providers: [
     { provide: 'googleTagManagerId', useValue: 'GTM-KLH779D' }

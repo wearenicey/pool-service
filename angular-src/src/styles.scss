@@ -1,5 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+$primary-color: #175CFF;
+$secondary-color: #17154B;
+
+
+@font-face {
+    font-family: 'gilroy-regular';
+    src:  url('../src/assets/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff2') format('woff2'),
+          url('../src/assets/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'gilroy-bold';
+    src:  url('../src/assets/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff2') format('woff2'),
+          url('../src/assets/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff') format('woff');
+  }
+
+
+  $font-stack: 'gilroy-regular', sans-serif;
 body {
     margin: 0;
     background: #222;
+    font: 100% $font-stack;
+
+
 }
