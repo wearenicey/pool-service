@@ -20,6 +20,9 @@ export interface Iinfo {
 // //     }
 // // ];
 
+// Kad god uradis nesto, vsc odma prepoznaje sta si menjao i sa leve strane ti izbacuje izmenjene fajlove.. sad cu da sejvujem ovaj fajl i videces desno.
+// dedsno imas changes i iznad imas input "message", u message kucas poruku za commit. kad ukucas pr, ides ctrl + enter da commitujes
+
 // // const LISTA_USLUGA = [
 // //     {
 // //         usluga: "Izgradnja"
