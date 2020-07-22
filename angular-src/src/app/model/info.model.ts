@@ -5,6 +5,7 @@ export interface Iinfo {
     email: string;
     message: string;
     checkbox: any;
+    test: string;
 }
 
 

@@ -1,3 +1,9 @@
+
+$primary-color: #175CFF;
+$secondary-color: #17154B;
+
+
+
 .navbar {
     position: sticky;
     height: 128px;
@@ -10,5 +16,47 @@
     font-family:'gilroy-bold' ;
     font-size: 26px;
     line-height: 31px;
+    color: $secondary-color;
+    margin-left: 80px;
+    margin-right: 118px;
 }
+ul {
+    .nav-item  {
+
+        
+
+        margin-left: 57px;
+
+        .nav-link {
+
+            color:$secondary-color;
+            font-weight: 500;
+       font-size: 16px;
+       line-height: 19px;
+       letter-spacing: 1px;
+
+        }
+
+    }
+
+}
+
+
+
+
+}
+
+.leftNumb {
+    margin-left: auto;
+}
+
+.right {
+    margin:auto;
+   
+
+    .navBtn {
+        width: 211px;
+        height: 55px;
+    }
+
 }
