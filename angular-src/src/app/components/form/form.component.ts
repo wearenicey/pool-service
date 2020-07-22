@@ -1,85 +1,16 @@
-import { Component, OnInit, ViewChild, Input, EventEmitter, Output } from '@angular/core';
-import { Subscription } from 'rxjs';
-import { FormGroup, FormControl, FormBuilder, Validators, FormArray, ValidatorFn } from '@angular/forms';
-import { MailService } from '../../mail.service';
-import { ToastContainerDirective, ToastrService } from 'ngx-toastr';
-
-
+import {Component, OnInit, ViewChild, Input, EventEmitter, Output} from '@angular/core';
+import {Subscription} from 'rxjs';
+import {FormGroup, FormControl, FormBuilder, Validators, FormArray, ValidatorFn} from '@angular/forms';
+import {MailService} from '../../mail.service';
+import {ToastContainerDirective, ToastrService} from 'ngx-toastr';
 
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  selector: 'app-form',
+  templateUrl: './form.component.html',
+  styleUrls: ['./form.component.scss']
 })
-export class ContactComponent {
-
-  selection = {}
-
-
-  // form: FormGroup;
-
-
-  websiteList: any = [
-    {
-      usluga: "Izgradnja",
-      imageUrl: "https://www.southwestjournal.com/wp-content/uploads/2019/09/46-pool.jpg",
-      id: 'Izgradnja',
-      value: 'Izgradnja'
-    },
-    {
-      usluga: "Projektovanje",
-      imageUrl: "https://www.southwestjournal.com/wp-content/uploads/2019/09/46-pool.jpg",
-      id: "Projektovanje"
-
-    },
-    {
-      usluga: "Renoviranje",
-      imageUrl: "https://www.southwestjournal.com/wp-content/uploads/2019/09/46-pool.jpg",
-      id: "Renoviranje"
-
-    },
-    {
-      usluga: 'Odrzavanje',
-      imageUrl: "https://www.volimsvojdom.rs/wf-proizvodiPics/89179/bazen-za-decu-steel-pool-bestway-300x201x66cm-56404-1.jpg",
-      id: "Odrzavanje"
-
-    },
-    {
-      usluga: 'Dodatna Oprema',
-      imageUrl: "https://www.southwestjournal.com/wp-content/uploads/2019/09/46-pool.jpg",
-      id: 'Dodatna Oprema'
-
-    },
-
-  ];
-
-
-  variable: number = 0;
-
-
-
-
-  nextStep() {
-    if (this.variable < 3)
-      this.variable = this.variable + 1;
-    console.log(this.variable);
-  }
-
-
-
-
-
-  multi: boolean = false;
-
-
-
-  @ViewChild(ToastContainerDirective, { static: true })
-  toastContainer: ToastContainerDirective;
-
-  @Input() formContent: any
-
-  @Output() readonly formSubmit: EventEmitter<any> = new EventEmitter<any>();
+export class FormComponent {
 
   // activeStepIndex: number;
   // currentFormContent: Array<any>;
@@ -95,53 +26,88 @@ export class ContactComponent {
   constructor(private MailService: MailService, private formBuilder: FormBuilder, private toastr: ToastrService) {
 
 
-
-
-
-
-
-
-
-    const control = new FormControl('inital value', { validators: Validators.required })
-
-
-
-
-
-
+    const control = new FormControl('inital value', {validators: Validators.required});
 
 
   }
-  form = this.formBuilder.group(
-
-    {
-      website: this.formBuilder.array([], [Validators.required]),
-
-      gender: ['poslepodne', [Validators.required]]
-
-
-
-
-
-    }
-
-
-
-
-
-
-
-
-
-  );
-
-
 
 
   get f() {
 
     return this.form.get('gender');
 
+  }
+
+  selection = {};
+
+
+  // form: FormGroup;
+
+
+  websiteList: any = [
+    {
+      usluga: 'Izgradnja',
+      imageUrl: 'https://www.southwestjournal.com/wp-content/uploads/2019/09/46-pool.jpg',
+      id: 'Izgradnja',
+      value: 'Izgradnja'
+    },
+    {
+      usluga: 'Projektovanje',
+      imageUrl: 'https://www.southwestjournal.com/wp-content/uploads/2019/09/46-pool.jpg',
+      id: 'Projektovanje'
+
+    },
+    {
+      usluga: 'Renoviranje',
+      imageUrl: 'https://www.southwestjournal.com/wp-content/uploads/2019/09/46-pool.jpg',
+      id: 'Renoviranje'
+
+    },
+    {
+      usluga: 'Odrzavanje',
+      imageUrl: 'https://www.volimsvojdom.rs/wf-proizvodiPics/89179/bazen-za-decu-steel-pool-bestway-300x201x66cm-56404-1.jpg',
+      id: 'Odrzavanje'
+
+    },
+    {
+      usluga: 'Dodatna Oprema',
+      imageUrl: 'https://www.southwestjournal.com/wp-content/uploads/2019/09/46-pool.jpg',
+      id: 'Dodatna Oprema'
+
+    },
+
+  ];
+
+
+  variable = 0;
+
+
+  multi = false;
+
+
+  @ViewChild(ToastContainerDirective, {static: true})
+  toastContainer: ToastContainerDirective;
+
+  @Input() formContent: any;
+
+  @Output() readonly formSubmit: EventEmitter<any> = new EventEmitter<any>();
+
+  form = this.formBuilder.group(
+    {
+      website: this.formBuilder.array([], [Validators.required]),
+
+      gender: ['poslepodne', [Validators.required]]
+
+
+    }
+  );
+
+
+  nextStep() {
+    if (this.variable < 3) {
+      this.variable = this.variable + 1;
+    }
+    console.log(this.variable);
   }
 
 
@@ -155,7 +121,6 @@ export class ContactComponent {
   onCheckboxChange(e) {
 
     const website: FormArray = this.form.get('website') as FormArray;
-
 
 
     if (e.target.checked) {
@@ -173,16 +138,14 @@ export class ContactComponent {
   }
 
 
-
   submitForm() {
 
 
-    console.log("kita");
-    console.log("Inputi", this.form.value);
+    console.log('kita');
+    console.log('Inputi', this.form.value);
 
 
   }
-
 
 
   // TODO: add interfaces and enums wherever appropriate
@@ -315,7 +278,6 @@ export class ContactComponent {
   // get checkbox() { return this.infoForm.get('checkbox').value }
 
 
-
   // sendMail() {
   //   // this.formSubmit.emit(this.formData);
   //   // this.subscription = this.MailService.sendEmail(this.formData.value).
@@ -334,17 +296,6 @@ export class ContactComponent {
   //   this.formData.reset();
 
   // }
-
-
-
-
-
-
-
-
-
-
-
 
 
   ngOnDestroy() {

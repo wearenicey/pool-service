@@ -22,6 +22,7 @@
     "@angular/router": "~9.1.11",
     "@fortawesome/fontawesome-free": "^5.13.1",
     "angular-google-tag-manager": "^1.1.4",
+    "aos": "^2.3.4",
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
     "ngx-toastr": "^13.0.0",

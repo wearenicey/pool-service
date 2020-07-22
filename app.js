@@ -24,8 +24,8 @@ app.use(cors());
 app.set('views', __dirname + '/public');
 app.set('view engine', 'html');
 
-app.get("/contactt", function (request, response) {
-    response.sendFile(__dirname + "/public/index.html");
+app.get("/contact", function (request, response) {
+  response.sendFile(__dirname + "/public/index.html");
 });
 //staticki direktorijum bice ./public
 app.use(express.static(path.join(__dirname, 'public')));

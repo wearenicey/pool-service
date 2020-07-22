@@ -1,28 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
-
-
-$primary-color: #175CFF;
-$secondary-color: #17154B;
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'assets/scss/typography';
+@import 'assets/scss/colors';
 
 
 @font-face {
-    font-family: 'gilroy-regular';
-    src:  url('../src/assets/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff2') format('woff2'),
-          url('../src/assets/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff') format('woff');
-  }
+  font-family: 'Gilroy-Regular';
+  src: url('../src/assets/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff2') format('woff2'),
+  url('../src/assets/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff') format('woff');
+}
 
-  @font-face {
-    font-family: 'gilroy-bold';
-    src:  url('../src/assets/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff2') format('woff2'),
-          url('../src/assets/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff') format('woff');
-  }
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../src/assets/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff2') format('woff2'),
+  url('../src/assets/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff') format('woff');
+}
 
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('../src/assets/fonts/Gilroy/Gilroy-ExtraBold/Gilroy-ExtraBold.woff2') format('woff2'),
+  url('../src/assets/fonts/Gilroy/Gilroy-ExtraBold/Gilroy-ExtraBold.woff') format('woff');
+}
 
-  $font-stack: 'gilroy-regular', sans-serif;
 body {
-    margin: 0;
-    background: #222;
-    font: 100% $font-stack;
-
-
+  font-family: 'Gilroy-Regular', sans-serif;
+  background-color: #ffffff;
 }
