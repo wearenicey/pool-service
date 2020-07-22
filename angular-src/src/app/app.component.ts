@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { fadeAnimation } from './animations/fade.animation';
 import { NavigationEnd, Router } from '@angular/router';
 import { GoogleTagManagerService } from 'angular-google-tag-manager';
-import { LISTA_KORAKA } from './model/objekti.model';
 import { MailService } from './mail.service'
 
 
@@ -30,7 +29,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
 
-    this.formContent = LISTA_KORAKA;
     this.formData = {};
     // push GTM data layer for every visited page
     this.router.events.forEach(item => {
