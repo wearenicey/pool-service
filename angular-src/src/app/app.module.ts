@@ -17,6 +17,7 @@ import {FormComponent} from './components/form/form.component';
 
 import {HomepageComponent} from './pages/homepage/homepage.component';
 import {ContactComponent} from './pages/contact/contact.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import {ContactComponent} from './pages/contact/contact.component';
     ContactComponent,
     FormatTitlePipe,
     FormComponent,
-    HomepageComponent
+    HomepageComponent,
+    BlogComponent
 
   ],
   imports: [
