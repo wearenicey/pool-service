@@ -1,15 +1,16 @@
 
 $primary-color: #175CFF;
 $secondary-color: #17154B;
+// PADING PAGE
 
-.padding-top_maps, .padding-top_contact, .padding-top_pictures, .footer_content {
+.padding-top_maps, .padding-top_contact, .padding-top_pictures, .page__footer {
   margin-top: 128px;
 }
 
 // card {
 // }
 
-
+// WORK TIME AND STREET
 .first-section {
   margin-bottom: 122px;
 }
@@ -87,16 +88,21 @@ $secondary-color: #17154B;
 
 
 
+// FOOTER
 
-
-.footer_content {
+.page__footer {
   background-color: $secondary-color;
-  height: 533px;
+  height: auto;
   color: #fff;
 
   .links {
     ul {
       list-style: none;
+      a {
+        font-size: 16px;
+
+      }
+
 
     }
   }
@@ -104,6 +110,10 @@ $secondary-color: #17154B;
    {
     ul {
       list-style: none;
+      a {
+        font-size: 16px;
+
+      }
 
     }
   }
@@ -127,6 +137,7 @@ $secondary-color: #17154B;
       display: inline;
       letter-spacing: 5px; 
       
+      
     }
   }
 }
@@ -139,7 +150,6 @@ $secondary-color: #17154B;
   border-top-right-radius:100% ;
   border-bottom-right-radius: 0;
   border-bottom-left-radius:0 ;
- 
 }
 
   
