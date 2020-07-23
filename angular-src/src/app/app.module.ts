@@ -14,6 +14,7 @@ import {CdkStepperModule} from '@angular/cdk/stepper';
 
 import {NavbarComponent} from './components/navbar/navbar.component';
 import {FormComponent} from './components/form/form.component';
+import {FooterComponent} from './components/footer/footer.component'
 
 import {HomepageComponent} from './pages/homepage/homepage.component';
 import {ContactComponent} from './pages/contact/contact.component';
@@ -26,7 +27,8 @@ import {ContactComponent} from './pages/contact/contact.component';
     ContactComponent,
     FormatTitlePipe,
     FormComponent,
-    HomepageComponent
+    HomepageComponent,
+    FooterComponent
 
   ],
   imports: [
@@ -36,13 +38,14 @@ import {ContactComponent} from './pages/contact/contact.component';
     FormsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ToastrModule.forRoot({ positionClass: 'inline' }),
+    ToastrModule.forRoot({positionClass: 'inline'}),
     ToastContainerModule,
     CdkStepperModule
   ],
   providers: [
-    { provide: 'googleTagManagerId', useValue: 'GTM-KLH779D' }
+    {provide: 'googleTagManagerId', useValue: 'GTM-KLH779D'}
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
