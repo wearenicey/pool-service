@@ -1,6 +1,147 @@
-.padding-top_maps, .padding-top_contact {
+
+$primary-color: #175CFF;
+$secondary-color: #17154B;
+
+.padding-top_maps, .padding-top_contact, .padding-top_pictures, .footer_content {
   margin-top: 128px;
 }
 
-card {
+// card {
+// }
+
+
+.first-section {
+  margin-bottom: 122px;
+}
+.first-section > div:first-child > div {
+  margin-right: 120px;
+}
+.first-section > .col-sm-6:nth-child(2) div {
+  margin-left: 95px;
+  height: 100%;
+ 
+}
+.first-section h1 {
+  font-size: 40px;
+  font-family: 'Gilroy-Bold', sans-serif;
+}
+.first-section h6 {
+  margin-top: 12px;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+
+.working-time.row,
+.contact-info.row {
+    margin-left: 0 !important;
+}
+.working-time {
+    margin-bottom: 76px;
+}
+.working-time .col-sm-2 {
+    padding-left: 0px;
+}
+.working-time .col-sm-2 > div {
+    height: 100%;
+  
+}
+.working-time .col-sm-10 > div:first-child {
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+
+.labels span {
+  display: block;
+  font-size: 18px;
+}
+
+
+.contact-info .col-sm-2 {
+  padding-left: 0;
+}
+// .contact-info .col-lg-2 > div {
+//   background-color: rgba(23, 92, 255, .05);
+//   border-radius: 5px;
+//   height: 100%;
+// }
+.contact-info .labels div {
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+
+
+.padding-top_maps {
+  iframe {
+  height: 430px;
+    width: 100%;
+    -webkit-box-shadow: 40px 40px 0px 0px rgba(23,21,75,1);
+    -moz-box-shadow: 40px 40px 0px 0px rgba(23,21,75,1);
+    box-shadow: 40px 40px 0px 0px rgba(23,21,75,1);
+    margin-bottom: 161px;
+  }
+
+
+}
+
+
+
+
+
+.footer_content {
+  background-color: $secondary-color;
+  height: 533px;
+  color: #fff;
+
+  .links {
+    ul {
+      list-style: none;
+
+    }
+  }
+   .location 
+   {
+    ul {
+      list-style: none;
+
+    }
+  }
+.about {
+  ul {
+    list-style: none;
+
+  }
+}
+
+.copyright {
+
+  border-top:  1px solid #313D55;;
+  p {
+    margin-top: 10px;
+    color:#8C97AC;
+   
+  }
+  .in {
+    li {
+      display: inline;
+      letter-spacing: 5px; 
+      
+    }
+  }
+}
+
+#circle_yellow{
+  width: 128px;
+  height: 127px;
+  background-color: #FFD166;;
+  border-top-left-radius:0 ;
+  border-top-right-radius:100% ;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius:0 ;
+ 
+}
+
+  
+
 }
