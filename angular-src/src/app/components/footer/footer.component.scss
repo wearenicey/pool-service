@@ -40,18 +40,17 @@
       color: #8C97AC;
     }
 
-    .in {
+    ul {
+      list-style: none;
+
       li {
         display: inline;
         letter-spacing: 5px;
+
+        i {
+          color: #ffffff;
+        }
       }
     }
-  }
-
-  #circle_yellow {
-    width: 128px;
-    height: 127px;
-    background-color: #FFD166;;
-    border-radius: 0 100% 0 0;
   }
 }

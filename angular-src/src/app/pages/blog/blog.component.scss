@@ -1,57 +1,60 @@
 @import "../../../assets/scss/colors";
 
-
-.padding-top_menu, .padding-top_blog_card {
-    padding-top: 95px;
+.blog-cover {
+  background-image: url("../../../assets/img/blog/blog_slika.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
 }
 
-.padding-top_menu{
-    .menu_list {
-        a{
-        color: #455154;
-        font-weight: bold; 
-        
-           }
-        
 
+.padding-top__menu {
+  padding-top: 128px;
+}
+
+.padding-y__blog {
+  padding-top: 64px;
+  padding-bottom: 128px;
+}
+
+.padding-top_menu {
+  .menu_list {
+    a {
+      color: #455154;
+      font-weight: bold;
     }
-
+  }
 }
 
-.padding-top_blog_card {
-    padding-bottom: 287px;
-
-    .smallText-blog_card{
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    color: #57586E;
-
-    opacity: 0.3;
+.smallText-blog_card {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #57586E;
+  opacity: 0.3;
 }
 
-    .mainText-blog_card{
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 34px;
-
-
-    }
-    .link-blog_card{
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 2px;
-}
-    
-
-
+.mainText-blog_card {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 34px;
 }
 
-.consultation_container {
-    
-    background:  #5454D4;
+.link-blog_card {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
 
-    
-    height: 281px;
+
+.consultation {
+  background: #5454D4;
+}
+
+.btn-secondary {
+  background-color: #FF8125;
+  font-weight: 600;
+  letter-spacing: 0.32px;
 }
