@@ -1,0 +1,57 @@
+@import "../../../assets/scss/colors";
+
+
+.padding-top_menu, .padding-top_blog_card {
+    padding-top: 95px;
+}
+
+.padding-top_menu{
+    .menu_list {
+        a{
+        color: #455154;
+        font-weight: bold; 
+        
+           }
+        
+
+    }
+
+}
+
+.padding-top_blog_card {
+    padding-bottom: 287px;
+
+    .smallText-blog_card{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #57586E;
+
+    opacity: 0.3;
+}
+
+    .mainText-blog_card{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 34px;
+
+
+    }
+    .link-blog_card{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+    
+
+
+}
+
+.consultation_container {
+    
+    background:  #5454D4;
+
+    
+    height: 281px;
+}

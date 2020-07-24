@@ -19,6 +19,8 @@ import { FooterComponent } from './components/footer/footer.component'
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { PageBlogComponent } from './pages/page-blog/page-blog.component';
+import { PostComponent } from './pages/post/post.component';
 
 
 @NgModule({
@@ -29,7 +31,11 @@ import { BlogComponent } from './pages/blog/blog.component';
     FormatTitlePipe,
     FormComponent,
     HomepageComponent,
-    FooterComponent
+    FooterComponent,
+    BlogComponent,
+    PageBlogComponent,
+    PostComponent
+
 
   ],
   imports: [
