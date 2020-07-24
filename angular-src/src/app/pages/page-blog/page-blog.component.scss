@@ -1,0 +1,75 @@
+@import "../../../assets/scss/colors";
+
+.padding-top_container_text {
+    padding-top: 68px;
+}
+
+.padding-top_container_text {
+    h1 {
+        text-align: center; 
+        font-size: 60px;
+        line-height: 70px;
+        span {
+            display: block;
+        }
+    }
+
+    .post-by{
+        align-items: center;
+
+        
+
+    p {
+        
+        
+        text-align: center;
+        display: inline-block;
+        font-weight: 450;
+        font-size: 21px;
+        line-height: 39px;
+
+    }
+}
+}
+
+.blog-content {
+    padding-bottom: 206px;
+
+
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px
+    }
+
+    .card_category {
+
+        // .input-group {
+        //     input[type="text"] {
+        //         font-family:'fontawesome-free-5' ; // for the open access version
+        //         font-size: 1.3333333333333333em;
+        //         font-weight: 900;
+        //     }
+        // }
+
+        p {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 38px;
+            span {
+
+                color:$primary;
+            }
+
+        }
+
+    }
+}
+.consultation_container {
+    
+    background:  #5454D4;
+
+    
+    height: 281px;
+}
+
