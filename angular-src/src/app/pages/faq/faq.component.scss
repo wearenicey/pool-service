@@ -1,0 +1,129 @@
+
+@import "../../../assets/scss/colors";
+
+
+:host-context(body) {
+    background-color:#E9F7FE;
+    display: block;
+    height: 100%;
+    width: 100%;
+    
+}
+    
+
+// HEADER
+.header-padding-top__container{
+    padding-top: 111px;
+}
+
+
+
+// ACCORDION
+.padding-top-faq__container {
+
+
+
+    padding-top: 292px;
+
+
+    .container-first_backgroun_color {
+        background-color: $secondary;
+    }
+
+    .container-header-text_center {
+        h1 {
+        text-align: center;
+        color: #fff;
+    }
+    }
+
+    a:hover {
+        background-color:#E9F7FE;
+    }
+
+    .btn-fix {
+        padding: 0;
+        border: none;
+       
+        white-space: normal;
+      }
+
+        .inside-background_container {
+            padding-bottom: 100px;
+
+            .accordion {
+                .card {
+                background: rgba(255, 255, 255, 0.06);
+                box-shadow: 0px 20px 40px rgba(3, 0, 77, 0.04);
+                border-radius: 8px;
+                color: #FFFFFF;
+
+
+                .card-header {
+                    .btn {
+                        color: #FFFFFF;
+
+
+
+                    }
+                }
+            }
+            }
+        }
+
+
+    
+}
+
+.cards-zIndex_container {
+    position: absolute;
+      left: 225px;
+      top: -176px;
+    //   right: 90px;
+      z-index: 1;
+
+      .card {
+          height: 198px;
+          background: #FFFFFF;
+
+
+        border: 1px solid #EBF4FA;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 4px rgba(14, 86, 124, 0.165308);
+      }
+    }
+
+
+
+
+// CARDS
+
+.padding-top__cards {
+    padding-top: 172px;
+    padding-bottom: 143px;
+    
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .card {
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.06);
+        border-radius: 8px
+    }
+}
+
+
+
+.consultation {
+    background: #5454D4;
+  }
+  
+  .btn-secondary {
+    background-color: #FF8125;
+    font-weight: 600;
+    letter-spacing: 0.32px;
+  }
