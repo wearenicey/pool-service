@@ -13,8 +13,8 @@ import { ToastrModule, ToastContainerModule } from 'ngx-toastr';
 import { CdkStepperModule } from '@angular/cdk/stepper';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { FormComponent } from './components/form/form.component';
-import { FooterComponent } from './components/footer/footer.component'
+import {FormComponent} from './components/form/form.component';
+import {FooterComponent} from './components/footer/footer.component';
 
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { ContactComponent } from './pages/contact/contact.component';
