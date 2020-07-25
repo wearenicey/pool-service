@@ -42,15 +42,13 @@
         line-height: 30px
     }
 
-    .card_category {
+    .card {
 
-        // .input-group {
-        //     input[type="text"] {
-        //         font-family:'fontawesome-free-5' ; // for the open access version
-        //         font-size: 1.3333333333333333em;
-        //         font-weight: 900;
-        //     }
-        // }
+        border: 1px solid #EAE9F2;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+       
 
         p {
             font-weight: bold;

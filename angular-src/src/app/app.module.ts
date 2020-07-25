@@ -20,7 +20,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { PageBlogComponent } from './pages/page-blog/page-blog.component';
-import { PostComponent } from './pages/post/post.component';
+import { FaqComponent } from './pages/faq/faq.component';
 
 
 @NgModule({
@@ -34,7 +34,7 @@ import { PostComponent } from './pages/post/post.component';
     FooterComponent,
     BlogComponent,
     PageBlogComponent,
-    PostComponent
+    FaqComponent
 
 
   ],

@@ -4,7 +4,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { PageBlogComponent } from './pages/page-blog/page-blog.component';
-import { PostComponent } from './pages/post/post.component';
+import { FaqComponent } from './pages/faq/faq.component';
 
 
 const routes: Routes = [
@@ -15,9 +15,10 @@ const routes: Routes = [
     children: [
       { path: '', component: BlogComponent },
       { path: 'post-1', component: PageBlogComponent },
-      { path: 'post-2', component: PostComponent }
+
     ]
   },
+  { path: 'faq', component: FaqComponent }
 ];
 
 @NgModule({
