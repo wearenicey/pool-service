@@ -70,6 +70,13 @@
 .cards-zIndex_container {
   margin-top: -128px;
 
+  .active {
+
+    .card {
+      background-color: #E9F7FE;
+    }
+  }
+
   .card {
     height: 192px;
     background: #FFFFFF;
