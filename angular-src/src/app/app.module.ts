@@ -13,8 +13,8 @@ import { ToastrModule, ToastContainerModule } from 'ngx-toastr';
 import { CdkStepperModule } from '@angular/cdk/stepper';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
-import {FormComponent} from './components/form/form.component';
-import {FooterComponent} from './components/footer/footer.component';
+import { FormComponent } from './components/form/form.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -22,6 +22,9 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { PageBlogComponent } from './pages/page-blog/page-blog.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { IzgradnjaBazenaComponent } from './pages/izgradnja-bazena/izgradnja-bazena.component';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 
 @NgModule({
@@ -36,7 +39,9 @@ import { IzgradnjaBazenaComponent } from './pages/izgradnja-bazena/izgradnja-baz
     BlogComponent,
     PageBlogComponent,
     FaqComponent,
-    IzgradnjaBazenaComponent
+    IzgradnjaBazenaComponent,
+    NotfoundComponent
+
 
 
   ],
@@ -52,7 +57,7 @@ import { IzgradnjaBazenaComponent } from './pages/izgradnja-bazena/izgradnja-baz
     CdkStepperModule
   ],
   providers: [
-    { provide: 'googleTagManagerId', useValue: 'GTM-KLH779D' }
+    { provide: ['googleTagManagerId', LocationStrategy], useValue: 'GTM-KLH779D', useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })
