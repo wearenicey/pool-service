@@ -5,6 +5,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { PageBlogComponent } from './pages/page-blog/page-blog.component';
 import { FaqComponent } from './pages/faq/faq.component';
+import { IzgradnjaBazenaComponent } from './pages/izgradnja-bazena/izgradnja-bazena.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
 
     ]
   },
-  { path: 'faq', component: FaqComponent }
+  { path: 'faq', component: FaqComponent },
+  { path: 'izgradnja-bazena', component: IzgradnjaBazenaComponent }
 ];
 
 @NgModule({

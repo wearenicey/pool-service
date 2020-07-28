@@ -21,6 +21,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { PageBlogComponent } from './pages/page-blog/page-blog.component';
 import { FaqComponent } from './pages/faq/faq.component';
+import { IzgradnjaBazenaComponent } from './pages/izgradnja-bazena/izgradnja-bazena.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { FaqComponent } from './pages/faq/faq.component';
     FooterComponent,
     BlogComponent,
     PageBlogComponent,
-    FaqComponent
+    FaqComponent,
+    IzgradnjaBazenaComponent
 
 
   ],

@@ -1,0 +1,260 @@
+@import "../../../assets/scss/colors";
+
+
+
+.padding-top_header {
+
+    padding-top: 128px;
+
+    .btn {
+        border: 2px solid #E5E5E5;
+        box-sizing: border-box;
+        border-radius: 30px;
+        color: $primary;
+    }
+}
+
+
+.padding-top_picture {
+    padding-top: 72px;
+    padding-bottom: 102px;
+
+}
+
+
+.who-we-are__container {
+    .header_text {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+
+/* identical to box height */
+        letter-spacing: 2px;
+
+        color: #175CFF;
+
+    }
+
+
+    .text-decoration {
+        p {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 32px;
+        }
+    }
+    
+    .list-item { 
+        p {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px
+        }
+        i {
+            color: #36B37E;
+        }
+
+    }
+
+}
+
+.padding-top-card_one {
+    padding-top: 136px;
+    padding-bottom: 172px;
+    .background_card{   
+        background-color:  #E9F7FE; 
+        height: 576px;
+
+
+    }
+
+    .tex-right {
+        h3 {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 60px;
+
+/* or 125% */
+        }
+
+        p {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 32px;
+        }
+    }
+    
+    .z-index_postion {
+        margin-top: 104px;
+
+    }
+}
+
+
+.padding-top-card_two {
+    padding-bottom: 172px;
+
+
+     
+    .background_card{   
+        background-color:  #E9F7FE; 
+        height: 576px;
+
+
+    }
+
+
+    
+
+    .tex-right {
+        h3 {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 60px;
+
+/* or 125% */
+        }
+
+        p {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 32px;
+        }
+    }
+    
+    .z-index_postion {
+        margin-top: 104px;
+
+    }
+
+        .list-item {
+
+            font-size: 16px;
+            line-height: 19px;
+
+            i {
+                color: #36B37E;
+            }
+        }
+
+    }
+
+
+
+
+.padding-to__how {
+    
+
+
+
+    h3 {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 60px;
+        /* or 125% */
+        
+        
+        color: #FFFFFF;
+    }
+
+
+
+    p {
+        font-size: 18px;
+        line-height: 29px;
+
+        letter-spacing: 0.1px;
+
+        color: #FFFFFF;
+
+        opacity: 0.8;
+    }
+
+    .background_color {
+        background: #2E79CA;
+        background-image: url('../../../assets/img/izgradnja-bazena/slika-6.svg') no-repeat ;
+        .btn {
+            position: absolute;
+            background: #FF8125;
+            border-radius: 36px;
+            color: #fff;
+           
+
+            margin-left: 480px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+
+
+    .padding-top-card_two { 
+
+
+
+
+        div#jedan {order: 1;}
+        div#dva  {order: 2;}  
+        
+        
+        .background_card{   
+            height: auto;
+    
+        }
+    
+    
+        .z-index_postion {
+            margin-top: auto;
+    
+        }
+    
+
+}
+
+.padding-top-card_one {
+
+      
+    .background_card{   
+        height: auto;
+
+    }
+
+
+    .z-index_postion {
+        margin-top: auto;
+
+    }
+
+
+
+
+
+}
+}
+
+
+.container-text {
+    padding-top:120px;
+
+
+    h3 {
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: bold;
+    }
+
+    .btn {
+        border-radius: 30px;
+    }
+}
