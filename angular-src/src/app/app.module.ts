@@ -57,7 +57,9 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     CdkStepperModule
   ],
   providers: [
-    { provide: ['googleTagManagerId', LocationStrategy], useValue: 'GTM-KLH779D', useClass: HashLocationStrategy }
+    { provide: 'googleTagManagerId', useValue: 'GTM-KLH779D', useClass: HashLocationStrategy },
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+
   ],
   bootstrap: [AppComponent]
 })
