@@ -19,11 +19,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BlogComponent } from './pages/blog/blog.component';
-import { PageBlogComponent } from './pages/page-blog/page-blog.component';
+import { PageBlogComponent } from './posts/page-blog/page-blog.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { IzgradnjaBazenaComponent } from './pages/izgradnja-bazena/izgradnja-bazena.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+// import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 
@@ -57,8 +57,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     CdkStepperModule
   ],
   providers: [
-    { provide: 'googleTagManagerId', useValue: 'GTM-KLH779D', useClass: HashLocationStrategy },
-    { provide: LocationStrategy, useClass: HashLocationStrategy }
+    { provide: 'googleTagManagerId', useValue: 'GTM-KLH779D' },
+    // { provide: LocationStrategy, useClass: HashLocationStrategy }
 
   ],
   bootstrap: [AppComponent]

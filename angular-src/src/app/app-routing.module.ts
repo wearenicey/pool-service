@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { BlogComponent } from './pages/blog/blog.component';
-import { PageBlogComponent } from './pages/page-blog/page-blog.component';
+import { PageBlogComponent } from './posts/page-blog/page-blog.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { IzgradnjaBazenaComponent } from './pages/izgradnja-bazena/izgradnja-bazena.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
