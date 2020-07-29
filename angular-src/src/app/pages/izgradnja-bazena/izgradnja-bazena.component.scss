@@ -18,6 +18,9 @@
 .padding-top_picture {
     padding-top: 72px;
     padding-bottom: 102px;
+    img {
+        width: 100%;
+    }
 
 }
 
@@ -69,6 +72,11 @@
     }
 
     .tex-right {
+
+        .test {
+            margin-right: 16.666666%;
+        }
+
         h3 {
             font-weight: 600;
             font-size: 48px;
@@ -122,10 +130,10 @@
         }
     }
     
-    .z-index_postion {
-        margin-top: 104px;
+    // .z-index_postion {
+    //     margin-top: 104px;
 
-    }
+    // }
 
         .list-item {
 
@@ -147,11 +155,8 @@
 
 
 
-    h3 {
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 60px;
-        /* or 125% */
+    h4 {
+       
         
         
         color: #FFFFFF;
@@ -172,15 +177,14 @@
 
     .background_color {
         background: #2E79CA;
-        background-image: url('../../../assets/img/izgradnja-bazena/slika-6.svg') no-repeat ;
+
+ 
         .btn {
-            position: absolute;
             background: #FF8125;
             border-radius: 36px;
             color: #fff;
            
 
-            margin-left: 480px;
         }
     }
 }
@@ -247,7 +251,16 @@ $breakpoint-tablet: 768px;
 .container-text {
     padding-top:120px;
     padding-bottom: 152px;
+    p {
+        font-size: 18px;
+        line-height: 32px;
 
+        text-align: center;
+
+        color: #57586E;
+
+    }
+       
 
     h3 {
         font-size: 48px;
