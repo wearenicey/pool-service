@@ -23,7 +23,7 @@ import { PageBlogComponent } from './posts/page-blog/page-blog.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { IzgradnjaBazenaComponent } from './pages/izgradnja-bazena/izgradnja-bazena.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
-// import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 
 
@@ -58,7 +58,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
   ],
   providers: [
     { provide: 'googleTagManagerId', useValue: 'GTM-KLH779D' },
-    // { provide: LocationStrategy, useClass: HashLocationStrategy }
+    { provide: LocationStrategy, useClass: PathLocationStrategy }
 
   ],
   bootstrap: [AppComponent]
