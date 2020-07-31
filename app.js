@@ -44,7 +44,7 @@ app.post("/contact", (req, res) => {
       <li>Email: ${req.body.email}</li>
       <li>Broj telefona: ${req.body.telefon}</li>
       <li>Usluga: ${req.body.website}</li>
-      <li>Vreme: ${req.body.gendre}</li>
+      <li>Vreme: ${req.body.gender}</li>
       <li>Drzava: ${req.body.select}</li>
       <li>Grad: ${req.body.city}</li>
       </ul>
