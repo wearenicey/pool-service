@@ -25,7 +25,7 @@ app.set('views', __dirname + '/public');
 app.set('view engine', 'html');
 
 app.get("/contact", function (request, response) {
-  response.sendFile(__dirname + "/public/index.html");
+    response.sendFile(__dirname + "/public/index.html");
 });
 //staticki direktorijum bice ./public
 app.use(express.static(path.join(__dirname, 'public')));
@@ -40,8 +40,22 @@ app.post("/contact", (req, res) => {
   <p> Imate novu poruku </p>
   <h3> Detalji poruke</h3>
   <ul>
-      <li>Ime i prezime: ${req.body.firstName}</li>
-      <li>Email: ${req.body.lastName}</li>
+      <li>Ime i prezime: ${req.body.name}</li>
+      <li>Email: ${req.body.email}</li>
+      <li>Broj telefona: ${req.body.telefon}</li>
+      <li>Usluga: ${req.body.website}</li>
+      <li>Vreme: ${req.body.gendre}</li>
+      <li>Drzava: ${req.body.select}</li>
+      <li>Grad: ${req.body.city}</li>
+      </ul>
+      <h3>Poruka</h3>
+
+      <p>${req.body.text}</p>
+
+
+
+
+      
      
   `;
 

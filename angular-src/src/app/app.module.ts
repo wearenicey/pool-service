@@ -52,7 +52,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
     FormsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ToastrModule.forRoot({ positionClass: 'inline' }),
+    ToastrModule.forRoot(),
     ToastContainerModule,
     CdkStepperModule
   ],

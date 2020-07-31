@@ -1,8 +1,11 @@
-import {Component, OnInit, ViewChild, Input, EventEmitter, Output} from '@angular/core';
-import {Subscription} from 'rxjs';
-import {FormGroup, FormControl, FormBuilder, Validators, FormArray, ValidatorFn} from '@angular/forms';
-import {MailService} from '../../mail.service';
-import {ToastContainerDirective, ToastrService} from 'ngx-toastr';
+import { Component, OnInit, ViewChild, Input, EventEmitter, Output, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { FormGroup, FormControl, FormBuilder, Validators, FormArray, ValidatorFn } from '@angular/forms';
+import { MailService } from '../../mail.service';
+import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
+
+
 
 
 @Component({
@@ -14,23 +17,21 @@ export class FormComponent {
 
   // activeStepIndex: number;
   // currentFormContent: Array<any>;
-  // formData: any;
+  formData: any;
   // formFields: Array<Array<string>>;
   // masterFormFields: Array<string>;
   // stepItems: Array<any>;
   // masterForm: Array<FormGroup>;
 
-  // public subscription: Subscription;
+  public subscription: Subscription;
 
 
-  constructor(private MailService: MailService, private formBuilder: FormBuilder, private toastr: ToastrService) {
+  constructor(private MailService: MailService, private formBuilder: FormBuilder, private toastr: ToastrService, private router: Router) {
 
 
-    const control = new FormControl('inital value', {validators: Validators.required});
 
 
   }
-
 
   get f() {
 
@@ -85,21 +86,36 @@ export class FormComponent {
   multi = false;
 
 
-  @ViewChild(ToastContainerDirective, {static: true})
-  toastContainer: ToastContainerDirective;
+  // @ViewChild(ToastContainerDirective, { static: true })
+  // toastContainer: ToastContainerDirective;
 
-  @Input() formContent: any;
 
-  @Output() readonly formSubmit: EventEmitter<any> = new EventEmitter<any>();
 
   form = this.formBuilder.group(
     {
       website: this.formBuilder.array([], [Validators.required]),
 
-      gender: ['poslepodne', [Validators.required]]
+      gender: ['', [Validators.required]],
+      name: ['', [
+        Validators.minLength(3)
+      ]
+      ],
+      email: ['', [
+        Validators.email,
+      ]],
 
+      select: ['', [Validators.required]],
+
+      telefon: ['', [Validators.minLength(9), Validators.required]],
+
+      city: ['', [Validators.minLength(2), Validators.required]],
+
+      text: ['', [Validators.required]]
 
     }
+
+
+
   );
 
 
@@ -108,7 +124,21 @@ export class FormComponent {
       this.variable = this.variable + 1;
     }
     console.log(this.variable);
+
+
+
   }
+
+
+
+
+
+
+
+
+
+
+
 
 
   changeGender(e) {
@@ -136,16 +166,40 @@ export class FormComponent {
     }
 
   }
+  //  @ViewChild('select') select : HTMLSelectElement
+  //   onChange() {
+  //     console.log(this.select.nativeElement.value)
+  //   }
 
-
-  submitForm() {
-
-
-    console.log('kita');
-    console.log('Inputi', this.form.value);
-
+  //event handler for the select element's change event
+  selectChangeHandler(event: any) {
+    //update the ui
+    console.log(event.target.value);
 
   }
+
+
+
+  get name() { return this.form.get('name'); }
+  get email() { return this.form.get('email'); }
+  get telefon() { return this.form.get('telefon'); }
+  get city() { return this.form.get('city'); }
+  get text() { return this.form.get('text'); }
+
+
+  // submitForm() {
+  //   this.formSubmit.emit(this.form);
+  //   console.log(JSON.stringify(this.form));
+  //   // this.MailService.sendEmail(this.formData);
+  //   this.formData.reset();
+
+
+
+
+  //   console.log('Inputi', this.form.value);
+
+
+  // }
 
 
   // TODO: add interfaces and enums wherever appropriate
@@ -278,26 +332,32 @@ export class FormComponent {
   // get checkbox() { return this.infoForm.get('checkbox').value }
 
 
-  // sendMail() {
-  //   // this.formSubmit.emit(this.formData);
-  //   // this.subscription = this.MailService.sendEmail(this.formData.value).
-  //   //   subscribe(data => {
-  //   //     let msg = data['message']
-
-  //   //     // console.log(data, "success");
-  //   //     this.toastr.success(msg);
-
-  //   //   }, error => {
-  //   //     console.error(error, "error");
-  //   //   });
-  //   // setTimeout(() => this.formData.reset(),
-  //   //   5000);
-  //   this.MailService.sendEmail(JSON.stringify(this.formData.value));
-  //   this.formData.reset();
-
-  // }
+  sendMail() {
+    console.log(this.form.value);
+    this.subscription = this.MailService.sendEmail(this.form.value).
+      subscribe(data => {
+        let msg = data['message']
+        this.toastr.success(msg);
+        // console.log(data, "success");
+        setTimeout(() => this.router.navigate(['']),
+          2000);
+      }, error => {
+        console.error(error, "error");
+      });
 
 
-  ngOnDestroy() {
+    this.MailService.sendEmail(JSON.stringify(this.form.value));
+    // this.router.navigate(['/contact'])
   }
+
+
+
+
+
+
+
+  ngOnInit() {
+  }
+
+
 }
