@@ -7,6 +7,7 @@ import { PageBlogComponent } from './posts/page-blog/page-blog.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { IzgradnjaBazenaComponent } from './pages/izgradnja-bazena/izgradnja-bazena.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { AboutComponent } from './pages/about/about.component';
 
 
 const routes: Routes = [
@@ -22,9 +23,11 @@ const routes: Routes = [
   },
   { path: 'faq', component: FaqComponent },
   { path: 'izgradnja-bazena', component: IzgradnjaBazenaComponent },
+  { path: 'o-nama', component: AboutComponent },
+
 
   { path: '404', component: NotfoundComponent },
-  { path: '**', redirectTo: '/404' }
+  { path: '**', redirectTo: '/404' },
 ];
 
 @NgModule({

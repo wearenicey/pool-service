@@ -3,8 +3,50 @@
   box-sizing: border-box;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.04), 0 16px 24px rgba(0, 0, 0, 0.04), 0 24px 32px rgba(0, 0, 0, 0.04);
   border-radius: 10px;
+
+  .card-header {
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0;
+  }
+
+  .form-heading {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    color: #175CFF;
+  }
+
+  .text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  label:focus {
+
+    border-color: #28a745;
+        box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    } 
+
 }
 
 .form {
   margin-bottom: 10px;
-}
+
+  
+  .mycheckbox{
+    margin-top:5px;
+    margin-left:5px;
+  }
+  .mycheckboxdiv{
+     text-align:right;
+  }
+
+ 
+  }
+
+
+

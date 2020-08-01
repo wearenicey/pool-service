@@ -24,6 +24,7 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { IzgradnjaBazenaComponent } from './pages/izgradnja-bazena/izgradnja-bazena.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { AboutComponent } from './pages/about/about.component';
 
 
 
@@ -40,7 +41,8 @@ import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@a
     PageBlogComponent,
     FaqComponent,
     IzgradnjaBazenaComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    AboutComponent
 
 
 
