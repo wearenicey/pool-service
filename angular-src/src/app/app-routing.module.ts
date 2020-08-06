@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
@@ -8,6 +8,7 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { IzgradnjaBazenaComponent } from './pages/izgradnja-bazena/izgradnja-bazena.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { AboutComponent } from './pages/about/about.component';
+import { PolumontazniBazeniComponent } from './pages/polumontazni-bazeni/polumontazni-bazeni.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
   },
   { path: 'faq', component: FaqComponent },
   { path: 'izgradnja-bazena', component: IzgradnjaBazenaComponent },
+  { path: 'polumontazni-bazeni', component: PolumontazniBazeniComponent },
   { path: 'o-nama', component: AboutComponent },
 
 

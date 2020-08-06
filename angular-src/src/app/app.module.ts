@@ -25,6 +25,8 @@ import { IzgradnjaBazenaComponent } from './pages/izgradnja-bazena/izgradnja-baz
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { AboutComponent } from './pages/about/about.component';
+import { PolumontazniBazeniComponent } from './pages/polumontazni-bazeni/polumontazni-bazeni.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 
@@ -42,7 +44,8 @@ import { AboutComponent } from './pages/about/about.component';
     FaqComponent,
     IzgradnjaBazenaComponent,
     NotfoundComponent,
-    AboutComponent
+    AboutComponent,
+    PolumontazniBazeniComponent,
 
 
 
@@ -56,7 +59,9 @@ import { AboutComponent } from './pages/about/about.component';
     AppRoutingModule,
     ToastrModule.forRoot(),
     ToastContainerModule,
-    CdkStepperModule
+    CdkStepperModule,
+    CarouselModule
+
   ],
   providers: [
     { provide: 'googleTagManagerId', useValue: 'GTM-KLH779D' },
