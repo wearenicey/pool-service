@@ -283,9 +283,12 @@ top: 64px;
   
   }
 
+  .padding-bottom__galerija{
+    padding-bottom: 128px;
+  }
+
   
   .consultation {
-    padding-top: 128px;
     position: relative;
     text-align: left;
     color: white;
@@ -300,7 +303,7 @@ top: 64px;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-160%, -50%);
+        transform: translate(-720px, -50%);
         h4 {
             color: #fff;
             font-weight: bold;
