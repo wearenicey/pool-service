@@ -27,6 +27,10 @@ app.set('view engine', 'html');
 app.get("/contact", function (request, response) {
     response.sendFile(__dirname + "/public/index.html");
 });
+
+app.get("/polumontazni-bazeni", function (request, response) {
+    response.sendFile(__dirname + "/public/index.html");
+});
 //staticki direktorijum bice ./public
 app.use(express.static(path.join(__dirname, 'public')));
 
