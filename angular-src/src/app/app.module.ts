@@ -27,6 +27,8 @@ import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@a
 import { AboutComponent } from './pages/about/about.component';
 import { PolumontazniBazeniComponent } from './pages/polumontazni-bazeni/polumontazni-bazeni.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { NgImageSliderModule } from 'ng-image-slider';
+
 
 
 
@@ -60,7 +62,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     ToastrModule.forRoot(),
     ToastContainerModule,
     CdkStepperModule,
-    CarouselModule
+    CarouselModule,
+    NgImageSliderModule
 
   ],
   providers: [

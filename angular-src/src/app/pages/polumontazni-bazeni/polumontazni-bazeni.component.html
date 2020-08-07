@@ -23,21 +23,24 @@
 				<div class="col-4 text-center">
 					<img src="../../../assets/img/polumontazni-bazeni/slika2.svg" alt="slika2" class="mb-4">
 					<h3>Sole Daily Problems</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis quas possimus quaerat nostrum
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis quas possimus quaerat
+						nostrum
 						mollitia
 						autem.</p>
 				</div>
 				<div class="col-4 text-center">
 					<img src="../../../assets/img/polumontazni-bazeni/slika-3.png" alt="knjiga" class="mb-4">
 					<h3>Key Notes Of Each Charpet</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis quas possimus quaerat nostrum
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis quas possimus quaerat
+						nostrum
 						mollitia
 						autem.</p>
 				</div>
 				<div class="col-4 text-center">
 					<img src="../../../assets/img/polumontazni-bazeni/slika-4.png" alt="slika2" class="mb-4">
 					<h3>Audio Book Available</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis quas possimus quaerat nostrum
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis quas possimus quaerat
+						nostrum
 						mollitia
 						autem.</p>
 				</div>
@@ -125,9 +128,11 @@
 		<div class="col-6 pt-5">
 			<p>We bring the results while helping you achieve cost and time savings without taking on risk or management
 				overhead. Our team provides high-level creative education</p>
-			<p class="pt-5"> If you’re going to go with a minimalist style in just one area of the home, then choose your home
+			<p class="pt-5"> If you’re going to go with a minimalist style in just one area of the home, then choose
+				your home
 				office. A
-				clean and clearly organised workspace is conductive to great concentration and an uninterrupted workflow.</p>
+				clean and clearly organised workspace is conductive to great concentration and an uninterrupted
+				workflow.</p>
 		</div>
 	</div>
 </div>
@@ -275,43 +280,20 @@
 	</div>
 </owl-carousel-o> -->
 <!-- GALERIJA -->
-<div class="container-fluid padding-bottom__galerija">
+<div class="container padding-bottom__galerija">
 	<div class="row">
-		<div class="col-12">
-			<h3 class="text-center">Galerija</h3>
-			<div class="row">
-				<div class="col-lg-1 col-sm-1  d-flex align-items-center">
-					<p class="ml-lg-5 ml-sm-0">
+		<div class="col-12 ">
+			<h3 class="text-center pb-5">Galerija</h3>
 
-						<a class=" btn btn-default btn-circle btn-lg " (click)="owlCar.prev()">
-							<i class="fas fa-chevron-left"></i> </a>
-					</p>
-
-				</div>
-				<div class="col-10">
-
-					<owl-carousel-o [options]="customOptions" #owlCar>
+			<ng-image-slider #nav [images]="imageObject" [infinite]="false" [autoSlide]="1"
+				[imageSize]="{height: 200, space:8}" slideImage="1"></ng-image-slider>
 
 
-						<ng-template carouselSlide *ngFor="let slide of slidesStore" [id]="slide.id">
-							<img [src]="slide.src" [alt]="slide.alt" [title]="slide.title" class="p-5">
-
-						</ng-template>
-
-
-					</owl-carousel-o>
-				</div>
-				<div class="col-1 d-flex align-items-center">
-					<p class="mr-5">
-
-						<a class="btn btn-default btn-circle btn-lg " (click)="owlCar.next()"><i
-								class="fas fa-chevron-right"></i></a>
-					</p>
-				</div>
-			</div>
 		</div>
+
 	</div>
 </div>
+
 <!-- END GALERIJA -->
 
 <!-- CONSULTATION-BOTTOM -->
