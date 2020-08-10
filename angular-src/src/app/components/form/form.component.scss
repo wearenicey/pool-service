@@ -4,6 +4,10 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.04), 0 16px 24px rgba(0, 0, 0, 0.04), 0 24px 32px rgba(0, 0, 0, 0.04);
   border-radius: 10px;
 
+  
+  
+ 
+
   .card-header {
     border-radius: 10px 10px 0px 0px;
     margin-bottom: 0;
@@ -31,9 +35,46 @@
         box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
     } 
 
+
+    .radio-button {
+      .radio {
+       input[type=radio] {
+          -webkit-appearance: none;
+       }
+
+       label {
+         height: 136px;
+         width: 144px;
+         border: 1.41405px solid #EBF4FA;
+          box-sizing: border-box;
+        border-radius: 8px;
+        .prepodne {
+          position: absolute;
+          top: 50%;
+          bottom: 50%;
+        }
+       }
+
+       input[type=radio]:checked + label{
+       
+        border-color: red;
+     }
+  
+      }
+
+       input[type=radio]:checked + .icon {
+       
+       fill: red;
+     }
+  
+      }
+
+ 
+      }
+    
     
 
-}
+
 
 .form {
   margin-bottom: 10px;
@@ -48,7 +89,10 @@
   }
 
  
+ 
+
   }
 
 
 
+ 

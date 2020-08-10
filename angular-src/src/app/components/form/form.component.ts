@@ -130,6 +130,13 @@ export class FormComponent {
   }
 
 
+  backStep() {
+    if (this.variable > 0)
+      this.variable = this.variable - 1;
+    console.log(this.variable);
+  }
+
+
 
 
 
@@ -166,10 +173,6 @@ export class FormComponent {
     }
 
   }
-  //  @ViewChild('select') select : HTMLSelectElement
-  //   onChange() {
-  //     console.log(this.select.nativeElement.value)
-  //   }
 
   //event handler for the select element's change event
   selectChangeHandler(event: any) {
