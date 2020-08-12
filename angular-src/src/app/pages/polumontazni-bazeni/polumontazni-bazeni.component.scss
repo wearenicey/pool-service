@@ -288,48 +288,5 @@ top: 64px;
   }
 
   
-  .consultation {
-    position: relative;
-    text-align: left;
-    color: white;
-
-    img {
-        width: 100%;
-    }
   
- 
-
-    .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-720px, -50%);
-        h4 {
-            color: #fff;
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 58px;
-        }
-      }
-  
-      .centered-right {
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(720px, -50%);
-
-
-
-      }
-}
-
- 
-
-
-.btn-secondary {
-  background-color: #FF8125;
-  font-weight: 600;
-  letter-spacing: 0.32px;
-  border-radius: 36px;
-}
  

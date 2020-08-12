@@ -1,0 +1,30 @@
+.naslov__pading-top {
+    padding-top: 64px;
+    padding-bottom: 176px;
+    .plava {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+
+        letter-spacing: 2px;
+
+        color: #175CFF;
+        
+    }
+}
+
+.cards__padding-bottom {
+    padding-bottom: 176px;
+    .naslov {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+}

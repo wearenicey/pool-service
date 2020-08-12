@@ -9,6 +9,8 @@ import { IzgradnjaBazenaComponent } from './pages/izgradnja-bazena/izgradnja-baz
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PolumontazniBazeniComponent } from './pages/polumontazni-bazeni/polumontazni-bazeni.component';
+import { DodatnaOpremaComponent } from './pages/dodatna-oprema/dodatna-oprema.component';
+import { FiltriranjeVodeComponent } from './pages/filtriranje-vode/filtriranje-vode.component';
 
 
 const routes: Routes = [
@@ -26,6 +28,16 @@ const routes: Routes = [
   { path: 'izgradnja-bazena', component: IzgradnjaBazenaComponent },
   { path: 'polumontazni-bazeni', component: PolumontazniBazeniComponent },
   { path: 'o-nama', component: AboutComponent },
+
+  {
+    path: 'dodatna-oprema',
+    children: [
+      { path: '', component: DodatnaOpremaComponent },
+      { path: 'filtrianje-vode', component: FiltriranjeVodeComponent }
+
+
+    ]
+  },
 
 
   { path: '404', component: NotfoundComponent },

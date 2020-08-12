@@ -28,6 +28,9 @@ import { AboutComponent } from './pages/about/about.component';
 import { PolumontazniBazeniComponent } from './pages/polumontazni-bazeni/polumontazni-bazeni.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { DodatnaOpremaComponent } from './pages/dodatna-oprema/dodatna-oprema.component';
+import { FiltriranjeVodeComponent } from './pages/filtriranje-vode/filtriranje-vode.component';
+import { KonsultacijeComponent } from './components/konsultacije/konsultacije.component';
 
 
 
@@ -48,6 +51,9 @@ import { NgImageSliderModule } from 'ng-image-slider';
     NotfoundComponent,
     AboutComponent,
     PolumontazniBazeniComponent,
+    DodatnaOpremaComponent,
+    FiltriranjeVodeComponent,
+    KonsultacijeComponent,
 
 
 
