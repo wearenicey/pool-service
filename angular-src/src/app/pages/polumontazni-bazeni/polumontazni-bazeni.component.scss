@@ -73,19 +73,18 @@
 .backgorund_working {
     background-color: #E9F7FE ;
     h3 {
-        font-size: 58px;
-        line-height: 64px;
+        font-size: 48px;
+        line-height: 48px;
 
         text-align: center;
         letter-spacing: -1px;
     }
 }
  p {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
     /* identical to box height, or 100% */
-    
     letter-spacing: -0.2px;
  }
 
@@ -94,13 +93,14 @@
     background: #2E79CA;
     box-shadow: 0px 32px 54px rgba(37, 138, 255, 0.224553);
     border-radius: 10px;
-    width: 184px;
-    height: 184px;
+    width: 128px;
+    height: 128px;
     img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 64px;
+        margin-top: 32px;
+       
 
     }
     
@@ -118,7 +118,7 @@
         content: url(../../../assets/img/polumontazni-bazeni/slika-7.png);
         display: block;
         position: absolute;
-        left: 300px;
+        left: 16vw;
         top: 128px;
         
     }
@@ -134,7 +134,7 @@
 content: url(../../../assets/img/polumontazni-bazeni/slika-8.png);
 display: block;
 position: absolute;
-left: 300px;
+left: 16vw;
 top: 64px;
 
 
@@ -146,7 +146,7 @@ top: 64px;
 
 
 .dole-2 {
-    padding-top: 280px ;
+    padding-top: 320px ;
 }
 
 
@@ -285,6 +285,10 @@ top: 64px;
 
   .padding-bottom__galerija{
     padding-bottom: 128px;
+    .postion__center {
+      margin-top: 64px;
+
+    }
   }
 
   
