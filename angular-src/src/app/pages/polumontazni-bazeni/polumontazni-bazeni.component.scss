@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     height: 640px;
 
-    
+
 
     h1 {
         font-weight: bold;
@@ -51,19 +51,19 @@
     .btn.btn-primary:hover{
             color: #ffffff;
             background-color: $primary;
-        
-        
+
+
         }
 
      img {
          height: 480px;
-     }   
+     }
   }
 
- 
 
 
- 
+
+
   .padding-bottom_work {
       padding-bottom: 160px;
 
@@ -100,19 +100,19 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 32px;
-       
+
 
     }
-    
-    
+
+
   }
- 
+
 
 
 
 
   #steps {
-    
+
 
     &:nth-last-child(-n+3):after {
         content: url(../../../assets/img/polumontazni-bazeni/slika-7.png);
@@ -120,14 +120,14 @@
         position: absolute;
         left: 16vw;
         top: 128px;
-        
+
     }
 
 }
 
 
 #steps2 {
-  
+
 
 
 &:nth-last-child(-n+3):after {
@@ -176,31 +176,31 @@ top: 64px;
 .padding-top-card_one {
     padding-bottom: 172px;
 
-  
+
     .background_card {
       background-color: #E9F7FE;
       height: 576px;
     }
-  
+
     .tex-right {
-  
+
       .test {
         margin-right: 16.666666%;
       }
-  
+
       h3 {
         font-weight: 600;
         font-size: 48px;
         line-height: 60px;
       }
-  
+
       p {
         font-weight: normal;
         font-size: 18px;
         line-height: 32px;
       }
     }
-  
+
     .z-index_postion {
       margin-top: 104px;
     }
@@ -224,39 +224,39 @@ top: 64px;
     .btn {
         border-radius: 36px;
     }
-  
+
   }
 
 
   .padding-top-card_two {
     padding-bottom: 172px;
 
-  
+
     .background_card {
       background-color: #E9F7FE;
       height: 576px;
     }
-  
+
     .tex-left{
       .test {
         margin-left: 16.666666%;
       }
-  
-     
-  
+
+
+
       h3 {
         font-weight: 600;
         font-size: 48px;
         line-height: 60px;
       }
-  
+
       p {
         font-weight: normal;
         font-size: 18px;
         line-height: 32px;
       }
     }
-  
+
     .z-index_postion {
       margin-top: 104px;
     }
@@ -280,17 +280,24 @@ top: 64px;
     .btn {
         border-radius: 36px;
     }
-  
+
   }
 
-  .padding-bottom__galerija{
-    padding-bottom: 128px;
-    .postion__center {
-      margin-top: 64px;
+.padding-bottom__gallery {
+  padding-bottom: 128px;
 
-    }
+  .position__center {
+    margin-top: 64px;
+
   }
 
-  
-  
- 
+
+}
+
+:host ::ng-deep > .prev {
+
+  line-height: 36px;
+}
+
+
+
