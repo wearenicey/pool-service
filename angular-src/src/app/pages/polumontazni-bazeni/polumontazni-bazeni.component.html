@@ -277,21 +277,23 @@
 	</div>
 </owl-carousel-o> -->
 <!-- GALERIJA -->
-<div class="container padding-bottom__galerija">
+<div class="container padding-bottom__gallery">
 	<div class="row">
-		<div class="col-1 align-self-center float-right pt-5  postion__center">
+		<div class="col-1 align-self-center float-right pt-5  position__center">
 			<a class="float-right" (click)="prevImageClick()"><i class="fas fa-chevron-left"></i></a>
 		</div>
 		<div class="col-10 ">
 			<h3 class="text-center pb-5">Galerija</h3>
 
-			<ng-image-slider #nav [images]="imageObject" [infinite]="false" [autoSlide]="1" [showArrow]="false"
-				[lightboxArrowClick]="false" [imageSize]="{height: 200, width:276, space:50}" slideImage="1">
+
+
+			<ng-image-slider [images]="imageObject" [infinite]="false" [autoSlide]="1" [showArrow]="false"
+				[imageSize]="{height: 200, width:276, space:50}" slideImage="1" #nav>
 			</ng-image-slider>
 
 
 		</div>
-		<div class="col-1 align-self-center pt-5 postion__center">
+		<div class="col-1 align-self-center pt-5 position__center">
 			<a class="float-right" (click)="nextImageClick()"><i class="fas fa-chevron-right"></i></a>
 
 		</div>
