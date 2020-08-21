@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild, Input } from '@angular/core';
-import { NgImageSliderComponent } from 'ng-image-slider';
+import {Component, OnInit, ViewChild, Input} from '@angular/core';
+import {NgImageSliderComponent} from 'ng-image-slider';
 
 @Component({
   selector: 'app-polumontazni-bazeni',
@@ -73,14 +73,8 @@ export class PolumontazniBazeniComponent implements OnInit {
   }
 
 
-
-
-
-
-
-
-
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

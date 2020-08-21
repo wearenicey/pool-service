@@ -2,7 +2,6 @@
 
 
 :host-context(body) {
-  background-color: #E9F7FE;
   display: block;
   height: 100%;
   width: 100%;
@@ -20,7 +19,7 @@
 .padding-top_faq {
   padding-top: 256px;
 
-  .container-first_background_color {
+  .container-first_bg {
     background-color: $secondary;
   }
 
@@ -52,19 +51,14 @@
         border-radius: 8px;
         color: #FFFFFF;
 
-
         .card-header {
           .btn {
             color: #FFFFFF;
-
-
           }
         }
       }
     }
   }
-
-
 }
 
 .cards-zIndex_container {
@@ -80,11 +74,7 @@
   .card {
     height: 192px;
     background: #FFFFFF;
-
-
-    border: 1px solid #EBF4FA;
     box-sizing: border-box;
-    box-shadow: 0px 2px 4px rgba(14, 86, 124, 0.165308);
   }
 }
 
@@ -104,9 +94,10 @@
   }
 
   .card {
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.06);
-    border-radius: 8px
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 0.25rem
   }
+
   .card:hover {
     transform: scale(1.1);
   }
