@@ -25,7 +25,7 @@ const routes: Routes = [
     ]
   },
   { path: 'faq', component: FaqComponent },
-  { path: 'izgradnja-bazena', component: IzgradnjaBazenaComponent },
+  { path: 'odrzavanje', component: IzgradnjaBazenaComponent },
   { path: 'polumontazni-bazeni', component: PolumontazniBazeniComponent },
   { path: 'o-nama', component: AboutComponent },
 

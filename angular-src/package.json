@@ -24,6 +24,7 @@
     "angular-google-tag-manager": "^1.1.4",
     "aos": "^2.3.4",
     "bootstrap": "^4.5.0",
+    "file-saver": "^2.0.2",
     "jquery": "^3.5.1",
     "ng-image-slider": "^2.6.4",
     "ngx-owl-carousel-o": "^4.0.0",
