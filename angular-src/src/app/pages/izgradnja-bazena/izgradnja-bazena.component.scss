@@ -38,6 +38,8 @@
     letter-spacing: 2px;
     color: #175CFF;
 
+
+
   }
 
 
@@ -60,6 +62,10 @@
       color: #36B37E;
       margin-right: 10px;
     }
+  }
+
+  .text-left {
+    margin-left: 29px;
   }
 }
 
@@ -86,8 +92,10 @@
 
     p {
       font-weight: normal;
-      font-size: 20px;
-      line-height: 32px;
+      font-size: 1.125rem
+      ;
+      line-height: 2rem
+      ;
     }
     .btn-secondary {
       background-color: #FF8125;
@@ -121,8 +129,10 @@
 
     p {
       font-weight: normal;
-      font-size: 20px;
-      line-height: 32px;
+      font-size: 1.125rem
+      ;
+      line-height: 2rem
+      ;
     }
 
     .btn-secondary {
@@ -142,6 +152,11 @@
       padding-right: 20px;
     }
   }
+  .test {
+    margin-right: 16.666666%;
+
+
+  }
 }
 
 
@@ -152,8 +167,8 @@
 
 
   p {
-    font-size: 18px;
-    line-height: 29px;
+    font-size: 1.125rem;
+    line-height: 1.8125rem;
     letter-spacing: 0.1px;
     color: #FFFFFF;
     opacity: 0.8;
@@ -205,12 +220,16 @@
   .card {
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     border-radius: 8px;
+    width: 16.56rem;
+    height: 15rem;
   }
   .card:hover {
     transform: scale(1.1);
   }
   p {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.875rem;
+    
+    line-height: 1.5rem;
+    
   }
 }
