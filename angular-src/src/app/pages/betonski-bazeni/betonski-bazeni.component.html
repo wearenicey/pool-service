@@ -1,0 +1,141 @@
+<!-- Pool Cover -->
+
+<div class="container-fluid px-5">
+	<div class="  text-white pool-cover">
+		<div class="row h-100 align-items-center ml-5 ">
+			<div class="col-6">
+				<h1 class="display-4">Betonski bazeni</h1>
+				<p>Kvalitet i istrajnost.</p>
+				<button class="btn btn-secondary mt-4">Zatražite ponudu </button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- end Pool Cover -->
+<!-- Cards -->
+<div class="container-fluid px-5  ">
+	<div class="row mx-auto ">
+		<div class="col-12 cards__background p-5">
+			<div class="row mx-5 my-5">
+				<div class="col-4 text-center">
+					<img src="assets/img/betonski-bazeni/slika-2.png" alt="resenje" class="mb-4">
+					<h3 class="pb-3">Unikatno rešenje</h3>
+					<p>Oblik i dubina bazena po Vašoj želji</p>
+				</div>
+				<div class="col-4 text-center">
+					<img src="assets/img/betonski-bazeni/slika-3.png" alt="dizajn" class="mb-4">
+					<h3 class="pb-3">Raznovrsnost dizajna</h3>
+					<p>Veliki izbor ukrasne podloge</p>
+				</div>
+				<div class="col-4 text-center">
+					<img src="assets/img/betonski-bazeni/slika-4.png" alt="dugotrajnsot" class="mb-4">
+					<h3 class="pb-3">Dugotrajnoste</h3>
+					<p>Besprekoran kvalitet i sigurna dugovečnost</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Cards -->
+<div class="container pt-5 magic__container">
+	<div class="row">
+		<div class="col-12 ">
+			<div class="row">
+				<div class="col-5 mt-5">
+					<h3>Najkvalitetniji tip bazena</h3>
+					<p>Armirano betonski bazeni mogu biti različitog oblika i dimenzija. Za njih važi da su najbolji,
+						najistrajniji <br> i najzahtevniji za izgradnju. Obično su obloženi <br> keramičkim pločicama a u novije
+						vreme
+						staklenim <br> mozaik pločicama raznih dezena, bordura i slika.
+					</p>
+					<button class="btn btn-primary mr-2">Kontaktirajte nas</button>
+				</div>
+				<div class="col-6 offset-1">
+					<img src="assets/img/betonski-bazeni/slika-5.png" alt="kvadrati">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid px-5  steps padding-bottom_work">
+	<div class="row">
+		<div class="col-12 background_working  ">
+			<h3 class="text-center p-5">Do betonskog <br> bazena u 3 koraka</h3>
+			<div class="row ">
+				<div class="col-3 offset-2 align-self-star" id="steps">
+					<div class="border">
+						<img src="assets/img/betonski-bazeni/slika-6.png" alt="ugovaranje">
+						<p class=" text-center pt-5">Izrada projekata</p>
+					</div>
+				</div>
+				<div class="col-3  align-self-center dole" id="steps2">
+					<div class="border">
+						<img src="assets/img/betonski-bazeni/slika-7.png" alt="Izgradnja">
+						<p class=" text-center pt-5">Radovi</p>
+
+					</div>
+				</div>
+
+				<div class="col-3 align-self-end dole-2 mb-5 test ">
+					<div class="border">
+						<img src="assets/img/betonski-bazeni/slika-8.png" alt="Uzivanje">
+						<p class=" text-center pt-5">Uživanje</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- who we are -->
+<div class="container padding-bottom-who">
+	<div class="row">
+		<div class="col-6 up-text">
+			<p>Betonski bazeni</p>
+			<h3>Dimenzije i izgled po <br> željama klijenta</h3>
+		</div>
+		<div class="col-6 pt-5">
+			<p>Potrebno je uraditi projekat sa preciznim statičkim proračunima i gradjevinske radove. Konstrukcija bazena mora
+				biti visoko armirana, betoniranje zidova i dna se radi bez prekida, beton obavezno mora da se vibrira i moraju
+				se dodati aditivi za vodonepropusnost.
+				U zidove bazena treba ugraditi potrebne elemente pre betoniranja, to jest prelive – skimer, prodore za betonski
+				zid za mlaznice, slivnik i podvodni reflektor.
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- end who we are -->
+
+<div class="container padding-bottom__gallery">
+	<div class="row">
+		<div class="col-1 align-self-center float-right  position__center">
+			<a class="float-right" (click)="prevImageClick()"><i class="fas fa-chevron-left"></i></a>
+		</div>
+		<div class="col-10 ">
+			<h3 class="text-center pb-5">Galerija naših uspešno završenih betonskih bazena</h3>
+
+			<ng-image-slider #nav [images]="imageObject" [infinite]="false" [autoSlide]="1" [showArrow]="false"
+				[imageSize]="{height: 200, width:276, space:50}" slideImage="1">
+			</ng-image-slider>
+
+
+		</div>
+		<div class="col-1 align-self-center  position__center">
+			<a class="float-right" (click)="nextImageClick()"><i class="fas fa-chevron-right"></i></a>
+
+		</div>
+
+	</div>
+</div>
+
+<!-- END GALERIJA -->
+
+<!-- CONSULTATION-BOTTOM -->
+<app-konsultacije></app-konsultacije>
+
+
+<!-- END CONSULTATION-BOTTOM  -->
