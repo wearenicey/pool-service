@@ -31,6 +31,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { DodatnaOpremaComponent } from './pages/dodatna-oprema/dodatna-oprema.component';
 import { FiltriranjeVodeComponent } from './pages/filtriranje-vode/filtriranje-vode.component';
 import { KonsultacijeComponent } from './components/konsultacije/konsultacije.component';
+import { BetonskiBazeniComponent } from './pages/betonski-bazeni/betonski-bazeni.component';
 
 
 
@@ -54,6 +55,7 @@ import { KonsultacijeComponent } from './components/konsultacije/konsultacije.co
     DodatnaOpremaComponent,
     FiltriranjeVodeComponent,
     KonsultacijeComponent,
+    BetonskiBazeniComponent,
 
 
 
