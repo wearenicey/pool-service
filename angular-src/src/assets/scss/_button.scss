@@ -2,3 +2,36 @@
   border-radius: 36px;
   padding: .75rem 2rem;
 }
+
+.btn-secondary {
+  background-color: #FF8125 !important;
+  color: white !important;
+  border-color: #f27a24;
+
+  &:hover {
+    background-color: #f27a24;
+    border-color: #FF8125;
+  }
+}
+
+.btn-primary-light {
+  background-color: #175CFF !important;
+  color: #fff !important;
+  border-color: #1658f2;
+
+  &:hover {
+    background-color: #2465ff;
+    border-color: #175CFF;
+  }
+}
+
+.btn-primary-light {
+  background-color: #EBF4FA !important;
+  color: #2E79CA !important;
+  border-color: #E1EEF5;
+
+  &:hover {
+    background-color: #d9edfa;
+    border-color: #2E79CA;
+  }
+}

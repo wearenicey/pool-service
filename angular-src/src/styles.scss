@@ -22,7 +22,10 @@
   url('../src/assets/fonts/Gilroy/Gilroy-ExtraBold/Gilroy-ExtraBold.woff') format('woff');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
-  font-family: 'Gilroy-Regular', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
+  font-size: 18px;
 }
