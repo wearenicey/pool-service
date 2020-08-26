@@ -32,6 +32,7 @@ import { DodatnaOpremaComponent } from './pages/dodatna-oprema/dodatna-oprema.co
 import { FiltriranjeVodeComponent } from './pages/filtriranje-vode/filtriranje-vode.component';
 import { KonsultacijeComponent } from './components/konsultacije/konsultacije.component';
 import { BetonskiBazeniComponent } from './pages/betonski-bazeni/betonski-bazeni.component';
+import { BazeniFolijaComponent } from './pages/bazeni-folija/bazeni-folija.component';
 
 
 
@@ -56,6 +57,7 @@ import { BetonskiBazeniComponent } from './pages/betonski-bazeni/betonski-bazeni
     FiltriranjeVodeComponent,
     KonsultacijeComponent,
     BetonskiBazeniComponent,
+    BazeniFolijaComponent,
 
 
 

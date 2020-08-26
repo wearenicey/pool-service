@@ -12,6 +12,7 @@ import { PolumontazniBazeniComponent } from './pages/polumontazni-bazeni/polumon
 import { DodatnaOpremaComponent } from './pages/dodatna-oprema/dodatna-oprema.component';
 import { FiltriranjeVodeComponent } from './pages/filtriranje-vode/filtriranje-vode.component';
 import { BetonskiBazeniComponent } from './pages/betonski-bazeni/betonski-bazeni.component';
+import { BazeniFolijaComponent } from './pages/bazeni-folija/bazeni-folija.component';
 
 
 const routes: Routes = [
@@ -40,6 +41,7 @@ const routes: Routes = [
     ]
   },
   { path: 'betonski-bazeni', component: BetonskiBazeniComponent },
+  { path: 'bazeni-sa-folijom', component: BazeniFolijaComponent },
 
 
   { path: '404', component: NotfoundComponent },
