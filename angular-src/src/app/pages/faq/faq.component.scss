@@ -56,20 +56,22 @@
             color: #FFFFFF;
           }
         }
-        .card-header {
-        
-        h5 {
-          font-size: 20px;
-          line-height: 24px;
 
-          letter-spacing: 0.2px;
-        }
-        img {
-          width: 32px;
-          height: 32px;
+        .card-header {
+
+          h5 {
+            font-size: 20px;
+            line-height: 24px;
+
+            letter-spacing: 0.2px;
+          }
+
+          img {
+            width: 32px;
+            height: 32px;
+          }
         }
       }
-    }
     }
   }
 }
@@ -95,9 +97,8 @@
 // CARDS
 
 .padding-top__cards {
-
-
-  padding-bottom: 400px;
+  padding-top: 128px;
+  padding-bottom: 128px;
 
   .card {
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
@@ -105,16 +106,12 @@
     width: 16.56rem;
     height: 15rem;
   }
+
   .card:hover {
     transform: scale(1.1);
   }
-  p {
-    font-size: 0.875rem;
-    
-    line-height: 1.5rem;
-    
-  }
 }
+
 .header__padding-top {
   padding-top: 128px;
 }
