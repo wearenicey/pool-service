@@ -4,13 +4,15 @@
   padding-top: 0;
   padding-bottom: 0;
   height: 128px;
-  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 
   .nav-link {
-    color: #1D293F;
+    color: #ffffff;
 
     &:hover {
-      color: #175CFF;
+      color: #FF8125;
     }
   }
 

@@ -1,5 +1,5 @@
 h1, h2, {
-  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-family: 'Gilroy-Bold', sans-serif;
 }
 
 h3, h4, h5 {
@@ -7,7 +7,7 @@ h3, h4, h5 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.75rem;
 }
 
 h2 {
@@ -23,5 +23,7 @@ h4 {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #57586E;
+  text-rendering: optimizeLegibility;
 }

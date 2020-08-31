@@ -1,3 +1,288 @@
+@import "../../../assets/scss/colors";
+
 .padding-top_container {
   padding-top: 128px;
 }
+
+// Carousel
+#hero {
+  z-index: -1;
+}
+
+.carousel-text {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 240px;
+
+  h1 {
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+  }
+}
+
+
+// Vrednosti
+#values {
+  margin-top: -73px;
+
+  .col {
+    background-color: #fff;
+    margin: 0;
+
+    &.active {
+      background-color: #CCEAFF;
+
+      img {
+        opacity: 1;
+      }
+
+      h5 {
+        opacity: 1;
+      }
+    }
+
+    .values-tab {
+      padding: 1.5rem .5rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      cursor: pointer;
+
+      &:hover {
+        img {
+          opacity: 1 !important;
+        }
+
+        h5 {
+          opacity: 1 !important;
+        }
+      }
+    }
+
+    img {
+      margin-right: 1rem;
+      opacity: .5;
+    }
+
+    h5 {
+      margin: 0;
+      text-align: center;
+      font-family: 'Gilroy-regular', sans-serif;
+      color: $secondary;
+      opacity: .5;
+    }
+  }
+
+  .switch-container {
+    background-color: #fff;
+    width: 100%;
+  }
+}
+
+
+// Bazeni cards
+#bazeni {
+  margin-top: 128px;
+  margin-bottom: 128px;
+}
+
+.future-card {
+  display: block;
+
+  .future-card-image {
+    height: 624px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 15px;
+    padding: 1rem;
+
+    &:after {
+      content: '\A';
+      position: absolute;
+      width: 100%;
+      height: 60%;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+      opacity: 1;
+      transition: all 1s;
+      -webkit-transition: all 1s;
+      border-radius: 0 0 15px 15px;
+    }
+  }
+}
+
+.bazeni-card {
+  display: block;
+
+  &:nth-child(1) {
+    margin-bottom: 2rem;
+  }
+
+  .bazeni-card-image {
+    height: 296px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 15px;
+    padding: 1rem;
+
+    &:after {
+      content: '\A';
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+      opacity: 1;
+      transition: all 1s;
+      -webkit-transition: all 1s;
+      border-radius: 0 0 15px 15px;
+    }
+  }
+}
+
+.article-meta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 2rem 1.5rem;
+  vertical-align: bottom;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+
+  h4 {
+    color: #fff;
+  }
+
+  p {
+    color: #d0d0d0;
+  }
+}
+
+.background_working {
+  background-color: #E9F7FE;
+  padding: 6rem 0 10rem 0;
+}
+
+// Koraci
+#steps {
+
+
+  h3 {
+    font-size: 48px;
+    line-height: 48px;
+
+    text-align: center;
+    letter-spacing: -1px;
+  }
+}
+
+
+.border {
+  background: #2E79CA;
+  box-shadow: 0px 32px 54px rgba(37, 138, 255, 0.224553);
+  border-radius: 10px;
+  width: 128px;
+  height: 128px;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+}
+
+#korakJedan {
+  &:nth-last-child(-n+3):after {
+    content: url(../../../assets/img/polumontazni-bazeni/strelica-gore.png);
+    display: block;
+    position: absolute;
+    left: 14vw;
+    top: 6vh;
+  }
+}
+
+#korakDva {
+  margin-bottom: 5rem;
+
+  &:nth-last-child(-n+3):after {
+    content: url(../../../assets/img/polumontazni-bazeni/slika-8.png);
+    display: block;
+    position: absolute;
+    left: 14vw;
+    top: 4vh;
+  }
+}
+
+.dole-2 {
+  margin-top: 12rem;
+}
+
+.background_section {
+  background-color: #E9F7FE;
+}
+
+.padding-top-card_one {
+  padding-top: 128px;
+  padding-bottom: 24px;
+
+  .tex-right {
+
+    .test {
+      margin-right: 16.666666%;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 60px;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 1.125rem;
+      line-height: 2rem;
+    }
+
+    .btn-secondary {
+      background-color: #FF8125;
+      font-weight: 600;
+      letter-spacing: 0.32px;
+    }
+  }
+
+  .z-index_postion {
+    margin-top: 104px;
+  }
+}
+
+#slika-up {
+  margin-top: -6rem;
+}
+
+
+.padding-top__cards {
+  padding-top: 128px;
+  padding-bottom: 128px;
+
+  .card {
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+  }
+}
+
+
+
+
+
+

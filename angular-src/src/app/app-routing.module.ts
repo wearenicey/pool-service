@@ -1,49 +1,68 @@
-import { NgModule, Component } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { ContactComponent } from './pages/contact/contact.component';
-import { HomepageComponent } from './pages/homepage/homepage.component';
-import { BlogComponent } from './pages/blog/blog.component';
-import { PageBlogComponent } from './posts/page-blog/page-blog.component';
-import { FaqComponent } from './pages/faq/faq.component';
-import { IzgradnjaBazenaComponent } from './pages/izgradnja-bazena/izgradnja-bazena.component';
-import { NotfoundComponent } from './pages/notfound/notfound.component';
-import { AboutComponent } from './pages/about/about.component';
-import { PolumontazniBazeniComponent } from './pages/polumontazni-bazeni/polumontazni-bazeni.component';
-import { DodatnaOpremaComponent } from './pages/dodatna-oprema/dodatna-oprema.component';
-import { FiltriranjeVodeComponent } from './pages/filtriranje-vode/filtriranje-vode.component';
-import { BetonskiBazeniComponent } from './pages/betonski-bazeni/betonski-bazeni.component';
+import {NgModule, Component} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+
+import {HomeLayoutComponent} from './_layout/home-layout/home-layout.component';
+import {MainLayoutComponent} from './_layout/main-layout/main-layout.component';
+
+
+import {ContactComponent} from './pages/contact/contact.component';
+import {HomepageComponent} from './pages/homepage/homepage.component';
+import {BlogComponent} from './pages/blog/blog.component';
+import {PageBlogComponent} from './posts/page-blog/page-blog.component';
+import {FaqComponent} from './pages/faq/faq.component';
+import {IzgradnjaBazenaComponent} from './pages/izgradnja-bazena/izgradnja-bazena.component';
+import {NotfoundComponent} from './pages/notfound/notfound.component';
+import {AboutComponent} from './pages/about/about.component';
+import {PolumontazniBazeniComponent} from './pages/polumontazni-bazeni/polumontazni-bazeni.component';
+import {DodatnaOpremaComponent} from './pages/dodatna-oprema/dodatna-oprema.component';
+import {FiltriranjeVodeComponent} from './pages/filtriranje-vode/filtriranje-vode.component';
+import {BetonskiBazeniComponent} from './pages/betonski-bazeni/betonski-bazeni.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomepageComponent, data: {} },
-  { path: 'contact', component: ContactComponent },
+
+  {
+    path: '',
+    component: HomeLayoutComponent,
+    children: [
+      {path: '', component: HomepageComponent, pathMatch: 'full'},
+    ]
+  },
+  {
+    path: '',
+    component: MainLayoutComponent,
+    children: [
+      {path: 'kontakt', component: ContactComponent},
+      {path: 'o-nama', component: AboutComponent},
+      {path: 'faq', component: FaqComponent},
+      {path: 'odrzavanje', component: IzgradnjaBazenaComponent},
+      {path: 'polumontazni-bazeni', component: PolumontazniBazeniComponent},
+      {path: 'betonski-bazeni', component: BetonskiBazeniComponent}
+    ]
+  },
   {
     path: 'blog',
+    component: MainLayoutComponent,
     children: [
-      { path: '', component: BlogComponent },
-      { path: 'post-1', component: PageBlogComponent },
+      {path: '', component: BlogComponent},
+      {path: 'post-1', component: PageBlogComponent},
 
     ]
   },
-  { path: 'faq', component: FaqComponent },
-  { path: 'odrzavanje', component: IzgradnjaBazenaComponent },
-  { path: 'polumontazni-bazeni', component: PolumontazniBazeniComponent },
-  { path: 'o-nama', component: AboutComponent },
-
   {
     path: 'dodatna-oprema',
+    component: MainLayoutComponent,
     children: [
-      { path: '', component: DodatnaOpremaComponent },
-      { path: 'filtrianje-vode', component: FiltriranjeVodeComponent }
+      {path: '', component: DodatnaOpremaComponent},
+      {path: 'filtrianje-vode', component: FiltriranjeVodeComponent}
 
 
     ]
   },
-  { path: 'betonski-bazeni', component: BetonskiBazeniComponent },
 
 
-  { path: '404', component: NotfoundComponent },
-  { path: '**', redirectTo: '/404' },
+  {path: '404', component: NotfoundComponent},
+  {path: '**', redirectTo: '/404'},
 ];
 
 @NgModule({
@@ -54,4 +73,5 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
