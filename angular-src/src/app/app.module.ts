@@ -33,6 +33,14 @@ import {DodatnaOpremaComponent} from './pages/dodatna-oprema/dodatna-oprema.comp
 import {FiltriranjeVodeComponent} from './pages/filtriranje-vode/filtriranje-vode.component';
 import {KonsultacijeComponent} from './components/konsultacije/konsultacije.component';
 import {BetonskiBazeniComponent} from './pages/betonski-bazeni/betonski-bazeni.component';
+import {BazeniFolijaComponent} from './pages/bazeni-folija/bazeni-folija.component';
+import {CirkulacijaVodeComponent} from './pages/cirkulacija-vode/cirkulacija-vode.component';
+import {OsvetljenjeComponent} from './pages/osvetljenje/osvetljenje.component';
+import {StepeniceComponent} from './pages/stepenice/stepenice.component';
+import {MozaikComponent} from './pages/mozaik/mozaik.component';
+import {SredstvaComponent} from './pages/sredstva/sredstva.component';
+import {UsisivaciComponent} from './pages/usisivaci/usisivaci.component';
+import {BodyJetComponent} from './pages/body-jet/body-jet.component';
 import {NavbarDarkComponent} from './components/navbar-dark/navbar-dark.component';
 import {HomeLayoutComponent} from './_layout/home-layout/home-layout.component';
 import {MainLayoutComponent} from './_layout/main-layout/main-layout.component';
@@ -62,6 +70,14 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     FiltriranjeVodeComponent,
     KonsultacijeComponent,
     BetonskiBazeniComponent,
+    BazeniFolijaComponent,
+    CirkulacijaVodeComponent,
+    OsvetljenjeComponent,
+    StepeniceComponent,
+    MozaikComponent,
+    SredstvaComponent,
+    UsisivaciComponent,
+    BodyJetComponent,
     NavbarDarkComponent,
     HomeLayoutComponent,
     MainLayoutComponent,

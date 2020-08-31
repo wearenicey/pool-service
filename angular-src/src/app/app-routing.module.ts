@@ -17,6 +17,14 @@ import {PolumontazniBazeniComponent} from './pages/polumontazni-bazeni/polumonta
 import {DodatnaOpremaComponent} from './pages/dodatna-oprema/dodatna-oprema.component';
 import {FiltriranjeVodeComponent} from './pages/filtriranje-vode/filtriranje-vode.component';
 import {BetonskiBazeniComponent} from './pages/betonski-bazeni/betonski-bazeni.component';
+import {BazeniFolijaComponent} from './pages/bazeni-folija/bazeni-folija.component';
+import {CirkulacijaVodeComponent} from './pages/cirkulacija-vode/cirkulacija-vode.component';
+import {OsvetljenjeComponent} from './pages/osvetljenje/osvetljenje.component';
+import {StepeniceComponent} from './pages/stepenice/stepenice.component';
+import {MozaikComponent} from './pages/mozaik/mozaik.component';
+import {SredstvaComponent} from './pages/sredstva/sredstva.component';
+import {UsisivaciComponent} from './pages/usisivaci/usisivaci.component';
+import {BodyJetComponent} from './pages/body-jet/body-jet.component';
 
 
 const routes: Routes = [
@@ -47,7 +55,6 @@ const routes: Routes = [
     children: [
       {path: '', component: BlogComponent},
       {path: 'post-1', component: PageBlogComponent},
-
     ]
   },
   {
@@ -63,8 +70,6 @@ const routes: Routes = [
       {path: 'sredstva-za-odrzavanje-bazena', component: SredstvaComponent},
       {path: 'usisivaci', component: UsisivaciComponent},
       {path: 'body-jet', component: BodyJetComponent}
-
-
     ]
   },
 
