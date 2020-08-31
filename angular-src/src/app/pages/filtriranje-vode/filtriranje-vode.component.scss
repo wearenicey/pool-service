@@ -11,6 +11,11 @@
         color: #175CFF;
         
     }
+    p {
+        text-align: justify;
+
+
+    }
 }
 
 .cards__padding-bottom {
@@ -25,6 +30,33 @@
         font-weight: normal;
         font-size: 17px;
         line-height: 25px;
+    }
+    .btn {
+        background-color: #ff8125;
+    }
+
+}
+
+.cards__padding-bottom_two {
+    padding-bottom: 176px;
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .naslov {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .btn {
+        background-color: #ff8125;
     }
 
 }

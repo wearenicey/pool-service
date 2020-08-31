@@ -13,6 +13,13 @@ import { DodatnaOpremaComponent } from './pages/dodatna-oprema/dodatna-oprema.co
 import { FiltriranjeVodeComponent } from './pages/filtriranje-vode/filtriranje-vode.component';
 import { BetonskiBazeniComponent } from './pages/betonski-bazeni/betonski-bazeni.component';
 import { BazeniFolijaComponent } from './pages/bazeni-folija/bazeni-folija.component';
+import { CirkulacijaVodeComponent } from './pages/cirkulacija-vode/cirkulacija-vode.component';
+import { OsvetljenjeComponent } from './pages/osvetljenje/osvetljenje.component';
+import { StepeniceComponent } from './pages/stepenice/stepenice.component';
+import { MozaikComponent } from './pages/mozaik/mozaik.component';
+import { SredstvaComponent } from './pages/sredstva/sredstva.component';
+import { UsisivaciComponent } from './pages/usisivaci/usisivaci.component';
+import { BodyJetComponent } from './pages/body-jet/body-jet.component';
 
 
 const routes: Routes = [
@@ -35,7 +42,21 @@ const routes: Routes = [
     path: 'dodatna-oprema',
     children: [
       { path: '', component: DodatnaOpremaComponent },
-      { path: 'filtrianje-vode', component: FiltriranjeVodeComponent }
+      { path: 'filtrianje-vode', component: FiltriranjeVodeComponent },
+      { path: 'cirkulacija-vode', component: CirkulacijaVodeComponent },
+      { path: 'osvetljenje', component: OsvetljenjeComponent },
+      { path: 'stepenice', component: StepeniceComponent },
+      { path: 'mozaik-folije', component: MozaikComponent },
+      { path: 'sredstva-za-odrzavanje-bazena', component: SredstvaComponent },
+      { path: 'usisivaci', component: UsisivaciComponent },
+      { path: 'body-jet', component: BodyJetComponent }
+
+
+
+
+
+
+
 
 
     ]
