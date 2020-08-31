@@ -6,7 +6,9 @@
 
 // Carousel
 #hero {
-  z-index: -1;
+  img {
+    width: 100%;
+  }
 }
 
 .carousel-text {

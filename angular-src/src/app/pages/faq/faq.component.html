@@ -8,72 +8,47 @@
           <div class="col-sm-3" [class.active]="viewMode=='get'">
             <a (click)="viewMode='get'">
               <div class="card" style="width: 255px;">
-                <div class="card-body">
-                  <div class="mt-5 mb-3">
-                    <img src="assets/img/FAQ/slika_1.png" alt="kapljica-vode">
+                <div class="card-body text-center">
+                  <div class="mt-2 mb-3 text-center">
+                    <img src="assets/img/FAQ/bazeni.svg" alt="kapljica-vode">
                   </div>
-                  <h5 class="card-title">Getting Started General</h5>
-
-
+                  <h5 class="card-title">Bazeni</h5>
                 </div>
               </div>
             </a>
-
           </div>
 
-          <div class="col-sm-3" [class.active]="viewMode=='izgradnja'">
-            <a (click)="viewMode = 'izgradnja'">
+
+          <div class="col-sm-3" [class.active]="viewMode=='dodatna'">
+            <a (click)="viewMode = 'dodatna'">
               <div class="card" style="width: 255px;">
-                <div class="card-body">
-                  <div class="mt-5 mb-3">
-                    <img src="assets/img/FAQ/slika_1.png" alt="kapljica-vode">
+                <div class="card-body text-center">
+                  <div class="mt-2 mb-3 text-center">
+                    <img src="assets/img/FAQ/dodatna-oprema.svg" alt="dodatna oprema">
                   </div>
-                  <h5 class="card-title">Izgradnja bazena</h5>
-
-
+                  <h5 class="card-title">Dodatna oprema</h5>
                 </div>
               </div>
             </a>
-
           </div>
 
           <div class="col-sm-3" [class.active]="viewMode=='odrzavanje'">
             <a (click)="viewMode = 'odrzavanje'">
               <div class="card" style="width: 255px;">
-                <div class="card-body">
-                  <div class="mt-5 mb-3">
-                    <img src="assets/img/FAQ/slika_1.png" alt="kapljica-vode">
+                <div class="card-body text-center">
+                  <div class="mt-2 mb-3">
+                    <img src="assets/img/FAQ/odrzavanje.svg" alt="odrzavanje">
                   </div>
-                  <h5 class="card-title">Odrzavanje</h5>
-
-
+                  <h5 class="card-title">Održavanje</h5>
                 </div>
               </div>
             </a>
-
-          </div>
-
-          <div class="col-sm-3" [class.active]="viewMode=='oprema'">
-            <a (click)="viewMode = 'oprema'">
-              <div class="card" style="width: 255px;">
-                <div class="card-body">
-                  <div class="mt-5 mb-3">
-                    <img src="assets/img/FAQ/slika_1.png" alt="kapljica-vode">
-                  </div>
-                  <h5 class="card-title">Dodatna oprema</h5>
-
-
-                </div>
-              </div>
-            </a>
-
           </div>
         </div>
       </div>
       <div class="container-header-text_center  py-5">
-        <h1 class="mt-5">The most asked questions</h1>
+        <h1 class="mt-5">Najčešća postavljana pitanja</h1>
       </div>
-
       <div [ngSwitch]="viewMode">
 
 
@@ -86,15 +61,16 @@
               <div class="card-header" id="headingOne" type="button" data-toggle="collapse" data-target="#collapseOne"
                    aria-expanded="true" aria-controls="collapseOne">
                 <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible
+                  Šta su bazeni sa lajnerom?
                 </h5>
               </div>
-
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
-
+                  To su bazeni koji su obloženi PVC lajnerom koji drži vodonepropusnost. Dele se na
+                  Future pool
+                  polumontažne bazene koji su određenih dimenzija za brzu gradnju i bazene gde se
+                  lajner vari po želji u
+                  različitim oblicima i dimenzijama.
                 </div>
               </div>
             </div>
@@ -102,16 +78,12 @@
               <div class="card-header" id="headingTwo" type="button" data-toggle="collapse" data-target="#collapseTwo"
                    aria-expanded="false" aria-controls="collapseTwo">
                 <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible
-
+                  Koje dubine mogu biti Future Pool bazeni?
                 </h5>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
-                  3
-
+                  Future Pool bazeni mogu biti dubine 1,5m i 1,2m.
                 </div>
               </div>
             </div>
@@ -119,33 +91,29 @@
               <div class="card-header" id="headingThree" type="button" data-toggle="collapse"
                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible
+                  Čime sve mogu betonski bazeni da se oblože?
                 </h5>
               </div>
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
-
+                  Betonski bazeni su uglavnom obloženi keramičkim pločicama. U novije vreme je sve
+                  više zastupljeno
+                  oblaganje staklenim mozaik pločicama raznih dezena, bordura i slika.
                 </div>
               </div>
-
-
             </div>
-
-
             <div class="card">
-              <div class="card-header" id="headingThree" type="button" data-toggle="collapse"
-                   data-target="#collapseThree" aria-expanded="false" aria-controls="collapseFour">
+              <div class="card-header" id="headingFour" type="button" data-toggle="collapse" data-target="#collapseFour"
+                   aria-expanded="false" aria-controls="collapseFour">
                 <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible Group Item #4
+                  Koji su uslovi najpogodniji za izradu bazena?
                 </h5>
               </div>
               <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
-
+                  Vremenska temperatura u rasponu od 20 do 25 stepeni. Takođe, bitno je da vreme nije
+                  kišovito, da nema
+                  mraza, snega i jakih vetrova.
                 </div>
               </div>
 
@@ -161,20 +129,19 @@
         <!-- izgradnja -->
 
 
-        <div class="container inside-background_container" *ngSwitchCase="'izgradnja'">
+        <div class="container inside-background_container" *ngSwitchCase="'dodatna'">
           <div class="accordion" id="accordionExample">
             <div class="card my-3">
               <div class="card-header" id="headingOne" type="button" data-toggle="collapse" data-target="#collapseOne"
                    aria-expanded="true" aria-controls="collapseOne">
                 <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible Group Item
-                </h5>
+                  Koliko treba da mi je jaka pumpa? </h5>
               </div>
 
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
+                  Jačina pumpe se određuje spram kubikaže vode i namene bazena (privatna ili javna
+                  upotreba).
 
                 </div>
               </div>
@@ -183,14 +150,12 @@
               <div class="card-header" id="headingTwo" type="button" data-toggle="collapse" data-target="#collapseTwo"
                    aria-expanded="false" aria-controls="collapseTwo">
                 <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible Group Item
-                </h5>
+                  Koliko dugo treba da radi pumpa? </h5>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
-                  3
+                  Preporučuje se minmalno vreme rada od 8 do 12 sati dnevno, a tokom letnjeg perioda i
+                  do 24 sata
 
                 </div>
               </div>
@@ -199,37 +164,20 @@
               <div class="card-header" id="headingThree" type="button" data-toggle="collapse"
                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible Group Item
+                  Šta mi je sve potrebno od hemije za bazen?
                 </h5>
               </div>
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
-
+                  Najčešće korišćen tretman je dezinfecija hlorom. I to sa hlornim spororastopljivim
+                  tabletama i hlornim
+                  granulatom.Pored toga pH vrednost vode treba da bude između 7.2 i 7.4 što uz pomoć
+                  testera merimo i
+                  regulišemo sredstvima za smanjenje ili povećanje iste. Algicid je sredstvo protiv
+                  algi koje se dozira
+                  periodično. Sva sredstva se doziraju prema kubikaži vode ubazena.
                 </div>
               </div>
-
-
-            </div>
-
-
-            <div class="card">
-              <div class="card-header" id="headingThree" type="button" data-toggle="collapse"
-                   data-target="#collapseThree" aria-expanded="false" aria-controls="collapseFour">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible Group Item
-                </h5>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
-
-                </div>
-              </div>
-
-
             </div>
           </div>
         </div>
@@ -245,14 +193,13 @@
               <div class="card-header" id="headingOne" type="button" data-toggle="collapse" data-target="#collapseOne"
                    aria-expanded="true" aria-controls="collapseOne">
                 <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible Group
-                </h5>
+                  Zašto je pH vrednost važna? </h5>
               </div>
 
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
+                  Da bi hlor odradio svoju puno dezinfeciju, neophodna je pH vrednost između 7.2 i
+                  7.4.
 
                 </div>
               </div>
@@ -261,14 +208,14 @@
               <div class="card-header" id="headingTwo" type="button" data-toggle="collapse" data-target="#collapseTwo"
                    aria-expanded="false" aria-controls="collapseTwo">
                 <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible Group
+                  Da li mogu hlornu tabletu da bacim u bazen?
                 </h5>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
-                  3
+                  Hlor je agresivan za bazena obložene lajnerom i moze lajner da izbeli ili nagrize.
+                  Hlor u tabletama se
+                  drži u plutajućim dozerima.
 
                 </div>
               </div>
@@ -277,127 +224,107 @@
               <div class="card-header" id="headingThree" type="button" data-toggle="collapse"
                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible Group
+                  Šta je "Šok hlor"?
                 </h5>
               </div>
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
-
+                  To je hlor koji ima trenutačno dejstvo i služi za lečenje vode.
+                  Hlorni granulat se pre doziranja rastvori u kanti sa vodom i najbolje ga je dozirati
+                  uveče kada nema
+                  sunca i kupača.
                 </div>
               </div>
-
-
             </div>
 
-
-            <div class="card">
-              <div class="card-header" id="headingThree" type="button" data-toggle="collapse"
-                   data-target="#collapseThree" aria-expanded="false" aria-controls="collapseFour">
-                <h5 class="mb-0 pb-3 pt-3">
-                  Collapsible Group
-                </h5>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
-
+            <div class="card my-3">
+              <div class="card">
+                <div class="card-header" id="headingThree" type="button" data-toggle="collapse"
+                     data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <h5 class="mb-0 pb-3 pt-3">
+                    Koje vrste dezinfekcije vode postoje?
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Postoje razne vrste: klasičnim Hlorom, tečnim Hlorom, Elektrolizom i
+                    Vodonikperoksidom. Uz te metode
+                    dezinfekcije potpomaže i UV lampa.
+                  </div>
                 </div>
               </div>
-
-
+            </div>
+            <div class="card my-3">
+              <div class="card">
+                <div class="card-header" id="headingFour" type="button" data-toggle="collapse"
+                     data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <h5 class="mb-0 pb-3 pt-3">
+                    Da li izosolarni pokrivač štiti bazen od prljavštine?
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Ne štite, njihova primarna funkcija je da zadrži toplotu, spreči isparavanje
+                    vode i pomaže u
+                    zagrevanju vode.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card my-3">
+              <div class="card">
+                <div class="card-header" id="headingFive" type="button" data-toggle="collapse"
+                     data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  <h5 class="mb-0 pb-3 pt-3">
+                    Da li postoji usluga održavanja bazena na nedeljnom nivou?
+                  </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Da. Pool Service jedini nudi uslugu održavanja bazena na nedeljnom nivou.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card my-3">
+              <div class="card">
+                <div class="card-header" id="headingSix" type="button" data-toggle="collapse"
+                     data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  <h5 class="mb-0 pb-3 pt-3">
+                    Šta sve održavanje bazena obuhvata?
+                  </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Da. Pool Service jedini nudi uslugu održavanja bazena na nedeljnom nivou.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card my-3">
+              <div class="card">
+                <div class="card-header" id="headingSeven" type="button" data-toggle="collapse"
+                     data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  <h5 class="mb-0 pb-3 pt-3">
+                    Šta održavanje bazena ne uključuje?
+                  </h5>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Čišćenje plaže, odnosno okoline bazena.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-
         <!-- end odrzavanje -->
-
-        <!-- oprema -->
-
-
-        <div class="container inside-background_container" *ngSwitchCase="'oprema'">
-          <div class="accordion" id="accordionExample">
-            <div class="card my-3">
-              <div class="card-header" id="headingOne" type="button" data-toggle="collapse" data-target="#collapseOne"
-                   aria-expanded="true" aria-controls="collapseOne">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible
-                </h5>
-              </div>
-
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
-
-                </div>
-              </div>
-            </div>
-            <div class="card my-3">
-              <div class="card-header" id="headingTwo" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                   aria-expanded="false" aria-controls="collapseTwo">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible
-                </h5>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
-                  3
-
-                </div>
-              </div>
-            </div>
-            <div class="card my-3">
-              <div class="card-header" id="headingThree" type="button" data-toggle="collapse"
-                   data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible
-                </h5>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
-
-                </div>
-              </div>
-
-
-            </div>
-
-
-            <div class="card">
-              <div class="card-header" id="headingThree" type="button" data-toggle="collapse"
-                   data-target="#collapseThree" aria-expanded="false" aria-controls="collapseFour">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Collapsible Group Item #4
-                </h5>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                  squid.
-
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-
-
-        <!-- end oprema -->
-
       </div>
     </div>
   </div>
 </div>
+
+
 <!-- END SECTION ACCORDION -->
 
 <!-- SECTION CARDS -->
