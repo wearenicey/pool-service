@@ -37,7 +37,8 @@ const routes: Routes = [
       {path: 'faq', component: FaqComponent},
       {path: 'odrzavanje', component: IzgradnjaBazenaComponent},
       {path: 'polumontazni-bazeni', component: PolumontazniBazeniComponent},
-      {path: 'betonski-bazeni', component: BetonskiBazeniComponent}
+      {path: 'betonski-bazeni', component: BetonskiBazeniComponent},
+      {path: 'bazeni-sa-folijom', component: BazeniFolijaComponent}
     ]
   },
   {
@@ -54,12 +55,18 @@ const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       {path: '', component: DodatnaOpremaComponent},
-      {path: 'filtrianje-vode', component: FiltriranjeVodeComponent}
+      {path: 'filtrianje-vode', component: FiltriranjeVodeComponent},
+      {path: 'cirkulacija-vode', component: CirkulacijaVodeComponent},
+      {path: 'osvetljenje', component: OsvetljenjeComponent},
+      {path: 'stepenice', component: StepeniceComponent},
+      {path: 'mozaik-folije', component: MozaikComponent},
+      {path: 'sredstva-za-odrzavanje-bazena', component: SredstvaComponent},
+      {path: 'usisivaci', component: UsisivaciComponent},
+      {path: 'body-jet', component: BodyJetComponent}
 
 
     ]
   },
-
 
   {path: '404', component: NotfoundComponent},
   {path: '**', redirectTo: '/404'},
