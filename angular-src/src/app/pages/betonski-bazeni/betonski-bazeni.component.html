@@ -6,7 +6,7 @@
 			<div class="col-6">
 				<h1 class="display-4">Betonski bazeni</h1>
 				<p>Kvalitet i istrajnost.</p>
-				<button class="btn btn-secondary mt-4">Zatražite ponudu </button>
+				<button class="btn btn-secondary rounded mt-4">Zatražite ponudu </button>
 			</div>
 		</div>
 	</div>
@@ -43,10 +43,11 @@
 	<div class="row">
 		<div class="col-12 ">
 			<div class="row">
-				<div class="col-5 mt-5">
+				<div class="col-5 mt-5 text-center">
 					<h3>Najkvalitetniji tip bazena</h3>
 					<p>Armirano betonski bazeni mogu biti različitog oblika i dimenzija. Za njih važi da su najbolji,
-						najistrajniji <br> i najzahtevniji za izgradnju. Obično su obloženi <br> keramičkim pločicama a u novije
+						najistrajniji <br> i najzahtevniji za izgradnju. Obično su obloženi <br> keramičkim pločicama a
+						u novije
 						vreme
 						staklenim <br> mozaik pločicama raznih dezena, bordura i slika.
 					</p>
@@ -98,10 +99,13 @@
 			<h3>Dimenzije i izgled po <br> željama klijenta</h3>
 		</div>
 		<div class="col-6 pt-5">
-			<p>Potrebno je uraditi projekat sa preciznim statičkim proračunima i gradjevinske radove. Konstrukcija bazena mora
-				biti visoko armirana, betoniranje zidova i dna se radi bez prekida, beton obavezno mora da se vibrira i moraju
+			<p>Potrebno je uraditi projekat sa preciznim statičkim proračunima i gradjevinske radove. Konstrukcija
+				bazena mora
+				biti visoko armirana, betoniranje zidova i dna se radi bez prekida, beton obavezno mora da se vibrira i
+				moraju
 				se dodati aditivi za vodonepropusnost.
-				U zidove bazena treba ugraditi potrebne elemente pre betoniranja, to jest prelive – skimer, prodore za betonski
+				U zidove bazena treba ugraditi potrebne elemente pre betoniranja, to jest prelive – skimer, prodore za
+				betonski
 				zid za mlaznice, slivnik i podvodni reflektor.
 			</p>
 		</div>
@@ -109,6 +113,13 @@
 </div>
 
 <!-- end who we are -->
+<div class="container">
+	<div class="row">
+		<div class="col-12 text-center pb-5">
+			<h3>Galerija naših uspešno završenih betonskih bazena</h3>
+		</div>
+	</div>
+</div>
 
 <div class="container padding-bottom__gallery">
 	<div class="row">
@@ -116,10 +127,9 @@
 			<a class="float-right" (click)="prevImageClick()"><i class="fas fa-chevron-left"></i></a>
 		</div>
 		<div class="col-10 ">
-			<h3 class="text-center pb-5">Galerija naših uspešno završenih betonskih bazena</h3>
 
-			<ng-image-slider #nav [images]="imageObject" [infinite]="false" [autoSlide]="1" [showArrow]="false"
-				[imageSize]="{height: 200, width:276, space:50}" slideImage="1">
+			<ng-image-slider #nav [images]="imageObject" [infinite]="false" [showArrow]="false"
+				[imageSize]="{height: 200, width:276, space:50}">
 			</ng-image-slider>
 
 

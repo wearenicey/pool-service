@@ -1,6 +1,6 @@
 .naslov__pading-top {
     padding-top: 64px;
-    padding-bottom: 176px;
+    padding-bottom: 104px;
     .plava {
         font-weight: bold;
         font-size: 14px;
@@ -11,10 +11,15 @@
         color: #175CFF;
         
     }
+    p {
+        text-align: justify;
+
+
+    }
 }
 
 .cards__padding-bottom {
-    padding-bottom: 176px;
+    padding-bottom: 104px;
     .naslov {
         font-weight: bold;
         font-size: 20px;
@@ -25,6 +30,33 @@
         font-weight: normal;
         font-size: 17px;
         line-height: 25px;
+    }
+    .btn {
+        background-color: #ff8125;
+    }
+
+}
+
+.cards__padding-bottom_two {
+    padding-bottom: 104px;
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .naslov {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .btn {
+        background-color: #ff8125;
     }
 
 }
