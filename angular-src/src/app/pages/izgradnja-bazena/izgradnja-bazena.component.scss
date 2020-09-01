@@ -100,6 +100,16 @@
   .z-index_postion {
     margin-top: 104px;
   }
+
+  @media only screen and (max-width: 768px) {
+    .first {
+        order: 1;
+    }
+    #second {
+        order: 2;
+    }
+    
+}
 }
 
 
@@ -173,7 +183,24 @@
       color: #fff;
       margin-right: 250px;
       margin-top: 16px;
+      @media (max-width: 480px) {
+        margin-right: 20vw;
+        margin-left: auto;
+        
+        text-align: center;
+
+
+
+      }
+
     }
+  }
+
+  @media (max-width: 480px) {
+    img {
+      display: none;
+    }
+    
   }
 }
 
