@@ -1,13 +1,25 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 @import "../../../assets/scss/colors";
+
+h1, h2, h3 {
+  margin-bottom: 2.5rem;
+}
 
 .line-element {
   position: absolute;
-  right: 0;
+  right: 8%;
   z-index: 0;
 }
 
+
 .padding-top_header {
   padding-top: 128px;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 64px;
+  }
 
   .btn {
     border: 2px solid #E5E5E5;
@@ -17,13 +29,14 @@
   }
 }
 
-#slika-up {
-  margin-top: -6rem;
-}
-
-.padding-top_picture {
+.hero-img_padding {
   padding-top: 72px;
-  padding-bottom: 102px;
+  padding-bottom: 96px;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
 }
 
 
@@ -35,6 +48,7 @@
     /* identical to box height */
     letter-spacing: 2px;
     color: #175CFF;
+    margin-bottom: 1.25rem;
   }
 
 
@@ -50,7 +64,7 @@
     p {
       font-weight: normal;
       font-size: 16px;
-      line-height: 18px
+      line-height: 20px;
     }
 
     i {
@@ -64,58 +78,9 @@
   }
 }
 
-.background_section {
-  background-color: #E9F7FE;
-}
-
-.padding-top-card_one {
-  padding-top: 128px;
-  padding-bottom: 24px;
-
-  .tex-right {
-
-    .test {
-      margin-right: 16.666666%;
-    }
-
-    h3 {
-      font-weight: 600;
-      font-size: 48px;
-      line-height: 60px;
-    }
-
-    p {
-      font-weight: normal;
-      font-size: 1.125rem;
-      line-height: 2rem;
-    }
-
-    .btn-secondary {
-      background-color: #FF8125;
-      font-weight: 600;
-      letter-spacing: 0.32px;
-    }
-  }
-
-  .z-index_postion {
-    margin-top: 104px;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .first {
-        order: 1;
-    }
-    #second {
-        order: 2;
-    }
-    
-}
-}
-
 
 .padding-top-card_two {
   padding-bottom: 172px;
-
 
   .background_card {
     background-color: #E9F7FE;
@@ -160,7 +125,7 @@
 }
 
 
-.padding-top__how {
+.uputstvo_padding {
   h4 {
     color: #FFFFFF;
   }
@@ -173,66 +138,22 @@
     opacity: 0.8;
   }
 
-  .background_color {
-    background: #2E79CA;
-    height: 580px;
-
-    .btn {
-      background: #FF8125;
-      border-radius: 36px;
-      color: #fff;
-      margin-right: 250px;
-      margin-top: 16px;
-      @media (max-width: 480px) {
-        margin-right: 20vw;
-        margin-left: auto;
-        
-        text-align: center;
-
-
-
-      }
-
-    }
-  }
-
-  @media (max-width: 480px) {
-    img {
-      display: none;
-    }
-    
-  }
-}
-
-
-.container-text {
-  padding-top: 120px;
-  padding-bottom: 152px;
-
-  p {
-    font-size: 18px;
-    line-height: 32px;
-    text-align: center;
-    color: #57586E;
-  }
-
-
-  h3 {
-    font-size: 48px;
-    line-height: 58px;
-    font-weight: bold;
-  }
-
   .btn {
-    border-radius: 30px;
+    background: #FF8125;
+    border-radius: 36px;
+    color: #fff;
+    margin-right: 250px;
+    margin-top: 16px;
+    @include media-breakpoint-down(sm) {
+      margin-right: 20vw;
+      margin-left: auto;
+      text-align: center;
+    }
   }
 }
 
-.padding-top__cards {
-  padding-bottom: 400px;
 
-  .card {
-    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
-    border-radius: 8px;
-  }
+.card {
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
 }

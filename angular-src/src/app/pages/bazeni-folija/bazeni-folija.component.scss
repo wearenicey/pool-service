@@ -1,115 +1,127 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 @import "../../../assets/scss/colors";
 
-.pool-cover {
-    background-image: url("../../../assets/img/bazeni-sa-folijom/naslovna.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 640px;
-
-    p {
-      font-size: 24px;
-      color: #fff;
-
-    }
-
-    h1 {
-        font-weight: bold;
-        font-size: 70px;
-        line-height: 70px;
-
-        letter-spacing: -1px;
-    }
-
-    .btn {
-        background-color: #FF8125;
-    }
+#hero .container-fluid .row {
+  height: 55vw;
+  @include media-breakpoint-only(lg) {
+    height: 67vw;
   }
-
-  .cards__background {
-      background-color: #E9F7FE;
-
-      img {
-        width: 64px;
-        height: 64px;
-      }
-
-      h3 {
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 30px;
-        letter-spacing: -0.750316px;
-      }
+  @include media-breakpoint-down(md) {
+    height: 80vw;
   }
-
-  .magic__container {
-      padding-bottom: 96px;
-
-    .btn-primary {
-        border-radius: 30px;
-        border: 2px solid #E5E5E5;
-        box-sizing: border-box;
-        color: #175CFF;
-        background-color: #ffff;
-
-
-    }
-
-
-    .btn.btn-primary:active:hover,
-    .btn.btn-primary:hover{
-            color: #ffffff;
-            background-color: $primary;
-
-
-        }
-
-     img {
-         height: 480px;
-     }
-  }
-
-
-
-
-
-  .padding-bottom_work {
-      padding-bottom: 160px;
-
-  }
-
-.steps{
-.background_working {
-    background-color: #E9F7FE ;
-    height: 800px;
-    h3 {
-        font-size: 48px;
-        line-height: 48px;
-
-        text-align: center;
-        letter-spacing: -1px;
-    }
 }
- p {
+
+.folija-cover-background {
+  height: 50vw;
+  max-height: 100%;
+  min-width: 300px;
+  background-image: url("/assets/img/bazeni-sa-folijom/naslovna.jpg");
+  background-position: center;
+  background-size: cover;
+
+  @include media-breakpoint-down(sm) {
+    height: 90vh !important;
+    background-position: 70% top;
+  }
+
+  @include media-breakpoint-down(md) {
+    height: 80vh;
+  }
+
+  @include media-breakpoint-only(lg) {
+    height: 67vh;
+  }
+
+  .display-4 {
+    @include media-breakpoint-down(md) {
+      font-size: 3rem;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 2rem;
+      line-height: 1.3;
+    }
+  }
+
+  h1 {
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+  }
+}
+
+#folija-content {
+
+  h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.750316px;
+  }
+}
+
+
+.folija-cover {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+
+.cards__background {
+  background-color: #E9F7FE;
+
+  img {
+    width: 64px;
+    height: 64px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.750316px;
+  }
+}
+
+
+.steps {
+  .background_working {
+    background-color: #E9F7FE;
+    height: 800px;
+
+    h3 {
+      font-size: 48px;
+      line-height: 48px;
+
+      text-align: center;
+      letter-spacing: -1px;
+    }
+  }
+
+  p {
     font-weight: bold;
     font-size: 16px;
     line-height: 16px;
     /* identical to box height, or 100% */
     letter-spacing: -0.2px;
- }
+  }
 
 
-.border {
+  .border {
     background: #2E79CA;
     box-shadow: 0px 32px 54px rgba(37, 138, 255, 0.224553);
     border-radius: 10px;
     width: 128px;
     height: 128px;
+
     img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 32px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 32px;
 
 
     }
@@ -118,69 +130,44 @@
   }
 
 
-
   #steps {
 
 
+    &:nth-last-child(-n+3):after {
+      content: url(../../../assets/img/polumontazni-bazeni/strelica-gore.png);
+      display: block;
+      position: absolute;
+      left: 12vw;
+      top: 6vh;
+
+    }
+
+  }
+
+
+  #steps2 {
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+
 
     &:nth-last-child(-n+3):after {
-        content: url(../../../assets/img/polumontazni-bazeni/strelica-gore.png);
-        display: block;
-        position: absolute;
-        left: 12vw;
-        top: 6vh;
+      content: url(../../../assets/img/polumontazni-bazeni/slika-8.png);
+      display: block;
+      position: absolute;
+      left: 12vw;
+      top: 4vh;
+
 
     }
 
+  }
+
+  .dole-2 {
+    margin-top: 12rem;
+    margin-left: 2rem;
+  }
 }
 
-
-#steps2 {
-  margin-bottom: 5rem;
-  margin-left: 2rem;
-
-
-
-
-&:nth-last-child(-n+3):after {
-content: url(../../../assets/img/polumontazni-bazeni/slika-8.png);
-display: block;
-position: absolute;
-left: 12vw;
-top: 4vh;
-
-
-}
-
-}
-
-
-
-
-.dole-2 {
-     margin-top: 12rem ;
-     margin-left: 2rem;
-    
-}
-
-}
-
-
-.padding-bottom-who {
-    padding-bottom: 112px ;
-    .up-text {
-        p {
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 17px;
-
-            letter-spacing: 2px;
-            text-transform: uppercase;
-
-            color: #175CFF;
-        }
-    }
-}
 
 
 .padding-bottom__gallery {
@@ -188,120 +175,117 @@ top: 4vh;
 
   .position__center {
     margin-top: 88px;
-
   }
-  
 
 
 }
 
 .padding-top-card_one {
-    padding-bottom: 172px;
+  padding-bottom: 172px;
 
+  .background_card {
+    background-color: #E9F7FE;
+    height: 576px;
+  }
 
-    .background_card {
-      background-color: #E9F7FE;
-      height: 576px;
+  .tex-right {
+
+    .test {
+      margin-right: 16.666666%;
     }
 
-    .tex-right {
-
-      .test {
-        margin-right: 16.666666%;
-      }
-
-      h3 {
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 60px;
-      }
-
-      p {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 32px;
-      }
+    h3 {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 60px;
     }
 
-    .z-index_postion {
-      margin-top: 104px;
+    p {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
     }
+  }
 
-   
-
-    .border {
-        background: #EBF4FA;
-        border-color:#EBF4FA ;
-
-
-    }
-    .btn {
-        border-radius: 36px;
-    }
-
-    .bottom-right {
-       
-        position: absolute;
-        bottom: 96px;
-        right: 64px;
-      }
-   
-
+  .z-index_postion {
+    margin-top: 104px;
   }
 
 
-  .padding-top-card_two {
-    padding-bottom: 172px;
+  .border {
+    background: #EBF4FA;
+    border-color: #EBF4FA;
 
-
-    .background_card {
-      background-color: #E9F7FE;
-      height: 576px;
-    }
-
-    .tex-left{
-      .test {
-        margin-left: 16.666666%;
-      }
-
-
-
-      h3 {
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 60px;
-      }
-
-      p {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 32px;
-      }
-    }
-
-    .z-index_postion {
-      margin-top: 104px;
-    }
-
-    
-
-    .border {
-        background: #EBF4FA;
-        border-color:#EBF4FA ;
-
-
-    }
-    .btn {
-        border-radius: 36px;
-    }
-    .bottom-left {
-       
-        position: absolute;
-        bottom: 96px;
-        left: 64px;
-      }
 
   }
+
+  .btn {
+    border-radius: 36px;
+  }
+
+  .bottom-right {
+
+    position: absolute;
+    bottom: 96px;
+    right: 64px;
+  }
+
+
+}
+
+
+.padding-top-card_two {
+  padding-bottom: 172px;
+
+
+  .background_card {
+    background-color: #E9F7FE;
+    height: 576px;
+  }
+
+  .tex-left {
+    .test {
+      margin-left: 16.666666%;
+    }
+
+
+    h3 {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 60px;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+
+  .z-index_postion {
+    margin-top: 104px;
+  }
+
+
+  .border {
+    background: #EBF4FA;
+    border-color: #EBF4FA;
+
+
+  }
+
+  .btn {
+    border-radius: 36px;
+  }
+
+  .bottom-left {
+
+    position: absolute;
+    bottom: 96px;
+    left: 64px;
+  }
+
+}
 
 
 

@@ -8,22 +8,40 @@ h3, h4, h5 {
 
 h1 {
   font-size: 3.75rem;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 2.5rem;
+    line-height: calc(40 / 30);
+  }
 }
 
 h2 {
   font-size: 3rem;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 2rem;
+    line-height: calc(40 / 30);
+  }
 }
 
 h3 {
   font-size: 2.5rem;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 1.75rem;
+  }
 }
 
 h4 {
   font-size: 2rem;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 1.5rem;
+  }
 }
 
 p {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #57586E;
   text-rendering: optimizeLegibility;
+  line-height: calc(30 / 17);
 }

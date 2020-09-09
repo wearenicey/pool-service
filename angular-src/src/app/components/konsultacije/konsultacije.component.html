@@ -1,12 +1,15 @@
-<div class="container-fluid consultation p-0">
-    <img src="assets/img/konsultacije/pozadina.png" alt="slika-1">
-    <div class=" centered">
-        <h4 class="text-white">Besplatne konsultacije </h4>
+<div class="consultation py-64">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h4 class="text-white">Besplatne konsultacije</h4>
         <p class="text-white">Naš stručni tim je na raspolaganju za sva pitanja i nedoumice koje imate. </p>
+      </div>
+      <div class="col-12 col-md-6">
+        <button class="btn btn-secondary border-0 mt-4 float-md-right"
+                [routerLink]="['/contact']">Kontaktiraj nas
+        </button>
+      </div>
     </div>
-
-    <div class="centered-right float-right">
-      <button class="btn btn-secondary border-0 mt-4" [routerLink]="['/contact'] ">Kontaktiraj nas</button>
-    </div>
-
+  </div>
 </div>

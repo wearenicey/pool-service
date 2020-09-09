@@ -34,6 +34,9 @@ const routes: Routes = [
     component: HomeLayoutComponent,
     children: [
       {path: '', component: HomepageComponent, pathMatch: 'full'},
+      {path: 'polumontazni-bazeni', component: PolumontazniBazeniComponent},
+      {path: 'bazeni-sa-folijom', component: BazeniFolijaComponent},
+      {path: 'betonski-bazeni', component: BetonskiBazeniComponent}
     ]
   },
   {
@@ -44,9 +47,7 @@ const routes: Routes = [
       {path: 'o-nama', component: AboutComponent},
       {path: 'faq', component: FaqComponent},
       {path: 'odrzavanje', component: IzgradnjaBazenaComponent},
-      {path: 'polumontazni-bazeni', component: PolumontazniBazeniComponent},
       {path: 'betonski-bazeni', component: BetonskiBazeniComponent},
-      {path: 'bazeni-sa-folijom', component: BazeniFolijaComponent}
     ]
   },
   {

@@ -11,7 +11,11 @@ import {HttpClientModule} from '@angular/common/http';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import {ToastrModule, ToastContainerModule} from 'ngx-toastr';
 import {CdkStepperModule} from '@angular/cdk/stepper';
-import {SwiperModule, SWIPER_CONFIG, SwiperConfigInterface} from 'ngx-swiper-wrapper';
+import {SwiperModule} from 'ngx-swiper-wrapper';
+import {SWIPER_CONFIG} from 'ngx-swiper-wrapper';
+import {SwiperConfigInterface} from 'ngx-swiper-wrapper';
+import {CarouselModule} from 'ngx-owl-carousel-o';
+import {NgImageSliderModule} from 'ng-image-slider';
 
 import {NavbarComponent} from './components/navbar/navbar.component';
 import {FormComponent} from './components/form/form.component';
@@ -27,8 +31,6 @@ import {NotfoundComponent} from './pages/notfound/notfound.component';
 import {HashLocationStrategy, LocationStrategy, PathLocationStrategy} from '@angular/common';
 import {AboutComponent} from './pages/about/about.component';
 import {PolumontazniBazeniComponent} from './pages/polumontazni-bazeni/polumontazni-bazeni.component';
-import {CarouselModule} from 'ngx-owl-carousel-o';
-import {NgImageSliderModule} from 'ng-image-slider';
 import {DodatnaOpremaComponent} from './pages/dodatna-oprema/dodatna-oprema.component';
 import {FiltriranjeVodeComponent} from './pages/filtriranje-vode/filtriranje-vode.component';
 import {KonsultacijeComponent} from './components/konsultacije/konsultacije.component';
@@ -46,8 +48,11 @@ import {HomeLayoutComponent} from './_layout/home-layout/home-layout.component';
 import {MainLayoutComponent} from './_layout/main-layout/main-layout.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
+  observer: true,
   direction: 'horizontal',
-  slidesPerView: 'auto'
+  threshold: 50,
+  spaceBetween: 24,
+  slidesPerView: 1,
 };
 
 @NgModule({
