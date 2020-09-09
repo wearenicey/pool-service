@@ -40,44 +40,6 @@ h1, h2, h3 {
 }
 
 
-.who-we-are__container {
-  .header_text {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
-    letter-spacing: 2px;
-    color: #175CFF;
-    margin-bottom: 1.25rem;
-  }
-
-
-  .text-decoration {
-    p {
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 26px;
-    }
-  }
-
-  .list-item {
-    p {
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 20px;
-    }
-
-    i {
-      color: #36B37E;
-      margin-right: 10px;
-    }
-  }
-
-  .text-left {
-    margin-left: 29px;
-  }
-}
-
 
 .padding-top-card_two {
   padding-bottom: 172px;
@@ -153,7 +115,4 @@ h1, h2, h3 {
 }
 
 
-.card {
-  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
-  border-radius: 8px;
-}
+

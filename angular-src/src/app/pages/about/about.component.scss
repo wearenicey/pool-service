@@ -1,176 +1,125 @@
 @import "../../../assets/scss/colors";
 
 
-.header_padding-top {
+.padding-top-card_two {
+  padding-bottom: 172px;
 
-    padding-top: 112px;
-    padding-bottom: 112px;
+
+  .background_card {
+    background-color: #E9F7FE;
+    height: 35rem;
+  }
+
+
+  .tex-right {
+    h3 {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 60px;
+      padding-bottom: 80px;
+
+    }
 
     p {
       font-weight: normal;
-      font-size: 1.125rem
-      ;
-      line-height: 2rem
-      ;
-
+      font-size: 1.125rem;
+      line-height: 2rem;
     }
-
-    .btn-primary {
-        border-radius: 30px;
-        border: 2px solid #E5E5E5;
-        box-sizing: border-box;
-        color: #175CFF;
-        background-color: #ffff;
-
-
-    }
-
-    .btn.btn-primary:active:hover,
-.btn.btn-primary:hover{
-        color: #ffffff;
-        background-color: $primary;
-    
-    
-    }
+  }
 }
 
 
-.padding-top-card_two {
-    padding-bottom: 172px;
-  
-  
-    .background_card {
-      background-color: #E9F7FE;
-      height: 35rem;
-    }
-      
-  
-    .tex-right {
-      h3 {
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 60px;
-        padding-bottom: 80px;
+.padding-top-card_one {
+  padding-bottom: 208px;
 
-      }
-  
-      p {
-        font-weight: normal;
-        font-size: 1.125rem
-      ;
-      line-height: 2rem
-      ;
-      }
-    }
-  
-  
-    .list-item {
-      p {
-      font-size: 18px;
-      line-height: 19px;
-    }
-      i {
-        color: #36B37E;
-        margin-right: 10px;
-        
-      }
-    }
+
+  .background_card {
+    background-color: #E9F7FE;
+    height: 35rem;
   }
 
-  .padding-top-card_one {
-      padding-bottom: 208px;
-   
-  
-    .background_card {
-      background-color: #E9F7FE;
-      height: 35rem;
-    }
-  
-    .tex-right {
-  
-      .test {
-        margin-right: 16.666666%;
-      }
-  
-      h3 {
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 60px;
-        padding-bottom: 80px;
-      }
-  
-      p {
-        font-weight: normal;
-        font-size: 1.125rem
-        ;
-        line-height: 2rem
-        ;
-      }
-    }
-  
-    .z-index_postion {
-      margin-top: 104px;
-    }
-  }
+  .tex-right {
 
-  .padding-top__cards {
+    .test {
+      margin-right: 16.666666%;
+    }
 
-    padding-bottom: 400px;
-  
-    .card {
-      box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
-      border-radius: 8px;
-      width: 16.56rem;
-      height: 15rem;
+    h3 {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 60px;
+      padding-bottom: 80px;
     }
-    .card:hover {
-      transform: scale(1.1);
-    }
+
     p {
-      font-size: 0.875rem;
-      
-      line-height: 1.5rem;
-      
+      font-weight: normal;
+      font-size: 1.125rem;
+      line-height: 2rem;
     }
   }
 
-
-  .consultation {
-    position: relative;
-    text-align: left;
-    color: white;
-
-    img {
-        width: 100%;
-    }
-  
- 
-
-    .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-160%, -50%);
-        h4 {
-            color: #fff;
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 58px;
-        }
-      }
-  
-      .centered-right {
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(720px, -50%);
-
-
-
-      }
+  .z-index_postion {
+    margin-top: 104px;
+  }
 }
 
- 
+.padding-top__cards {
+
+  padding-bottom: 400px;
+
+  .card {
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    width: 16.56rem;
+    height: 15rem;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  p {
+    font-size: 0.875rem;
+
+    line-height: 1.5rem;
+
+  }
+}
+
+
+.consultation {
+  position: relative;
+  text-align: left;
+  color: white;
+
+  img {
+    width: 100%;
+  }
+
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-160%, -50%);
+
+    h4 {
+      color: #fff;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 58px;
+    }
+  }
+
+  .centered-right {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(720px, -50%);
+
+
+  }
+}
 
 
 .btn-secondary {
