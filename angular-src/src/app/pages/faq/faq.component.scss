@@ -1,5 +1,7 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 @import "../../../assets/scss/colors";
-
 
 :host-context(body) {
   display: block;
@@ -19,6 +21,10 @@
 .padding-top_faq {
   padding-top: 256px;
 
+  @include media-breakpoint-down(sm) {
+    padding-top: 128px;
+  }
+
   .container-first_bg {
     background-color: $secondary;
   }
@@ -27,6 +33,10 @@
     h1 {
       text-align: center;
       color: #fff;
+
+      @include media-breakpoint-down(md) {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -90,6 +100,10 @@
     height: 192px;
     background: #FFFFFF;
     box-sizing: border-box;
+
+    @include media-breakpoint-down(sm) {
+      height: auto;
+    }
   }
 }
 

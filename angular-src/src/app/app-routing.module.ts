@@ -47,7 +47,6 @@ const routes: Routes = [
       {path: 'o-nama', component: AboutComponent},
       {path: 'faq', component: FaqComponent},
       {path: 'odrzavanje', component: IzgradnjaBazenaComponent},
-      {path: 'betonski-bazeni', component: BetonskiBazeniComponent},
     ]
   },
   {

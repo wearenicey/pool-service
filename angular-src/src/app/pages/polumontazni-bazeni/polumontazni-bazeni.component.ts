@@ -14,7 +14,7 @@ export class PolumontazniBazeniComponent {
   public config: SwiperConfigInterface = {
     a11y: true,
     direction: 'horizontal',
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 24,
     keyboard: true,
     mousewheel: false,

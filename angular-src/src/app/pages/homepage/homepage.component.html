@@ -1,16 +1,49 @@
-<div id="hero" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./assets/img/hero.jpg" class="d-block h-100 mw-100" alt="...">
-      <div class="carousel-text">
-        <div class="container">
-          <div class="row justify-content-start">
-            <div class="col-6">
+<header class="swiper-container mb-128" [swiper]="config">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="slider-1">
+        <div class="container h-100">
+          <div class="row justify-content-start align-items-center h-100">
+            <div class="col-12 col-md-6">
               <div class="text-left">
-                <h1 class="display-3">Vaše dvorište<br>Vaš bazen<br>Vaša pravila</h1>
-                <p class="h5 mb-5">Sa nama dobijate više od bazena. Stvaramo sećanja u godinama koje dolaze, u oazi
-                                   Vašeg
-                                   dvorišta!</p>
+                <h1 class="display-4">Vaše dvorište<br> Vaš bazen<br> Vaša pravila</h1>
+                <p class="h5 mb-5 text-white">
+                  Sa nama dobijate više od bazena. Stvaramo sećanja u godinama koje dolaze,
+                  u oazi Vašeg dvorišta!</p>
+                <a class="btn btn-lg btn-secondary" role="button" [routerLink]="['/kontakt']">Zatražite ponudu</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slider-2">
+        <div class="container h-100">
+          <div class="row justify-content-start align-items-center h-100">
+            <div class="col-12 col-md-6">
+              <div class="text-left">
+                <h1 class="display-4">Vaše dvorište<br> Vaš bazen<br> Vaša pravila</h1>
+                <p class="h5 mb-5 text-white">
+                  Sa nama dobijate više od bazena. Stvaramo sećanja u godinama koje dolaze, u oazi Vašeg
+                  dvorišta!</p>
+                <a class="btn btn-lg btn-secondary" role="button" [routerLink]="['/kontakt']">Zatražite ponudu</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slider-3">
+        <div class="container h-100">
+          <div class="row justify-content-start align-items-center h-100">
+            <div class="col-12 col-md-6">
+              <div class="text-left">
+                <h1 class="display-4">Vaše dvorište<br> Vaš bazen<br> Vaša pravila</h1>
+                <p class="h5 mb-5">
+                  Sa nama dobijate više od bazena. Stvaramo sećanja u godinama koje dolaze, u oazi
+                  Vašeg dvorišta!</p>
                 <a class="btn btn-lg btn-secondary" role="button" [routerLink]="['/kontakt']">Zatražite ponudu</a>
               </div>
             </div>
@@ -19,11 +52,44 @@
       </div>
     </div>
   </div>
-</div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</header>
+
+
+<section class="bg-white py-64 d-block d-sm-none">
+  <div id="future-content" class="container">
+    <div class="row">
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <img src="assets/img/icons/kreiramo-uspomene.svg" alt="slika2" class="img-fluid mb-4" width="64">
+        <h5>Kreiramo uspomene</h5>
+        <p>Iskustvo nam obezbeđuje kompetentnost u tehnikama izrade bazena i time pružamo klijentima pouzdanu podršku
+           tokom
+           svih etapa neophodnih da bi neometano uživali na svom privatnom bazenu.</p>
+      </div>
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <img src="assets/img/icons/podrska.svg" alt="knjiga" class="img-fluid mb-4" width="64">
+        <h5>Zagarantovana podrška</h5>
+        <p>Verujemo da uspeh može da omogući životni stil koji zamišljamo da nam pripada. I ako bih ste se zapitali koji
+           je
+           najbolji način da se iskusi samoispunjenje i sreća, to bi naravno bio provod uz zabavne
+           stvari.</p>
+      </div>
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <img src="assets/img/icons/zivot.svg" alt="slika2" class="img-fluid mb-4" width="64">
+        <h5>Živite život koji želite</h5>
+        <p>Iz ljubavi se javlja odanost. Porodica i prijatelji okupiće se u Vašem dvorištu iz snova koje će ih zbližiti
+           uz
+           neizostavnu zabavu, a ne zaboravljajući sve anegdote koje će nastati u letima koje dolaze.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <!-- SECTION ACCORDION -->
-<div id="values" class="container">
+<div id="values" class="container d-none d-sm-block">
   <div class="row justify-content-between">
 
     <div class="col" [class.active]="viewMode=='uspomene'">
@@ -55,7 +121,7 @@
 
   </div>
 </div>
-<div class="container bg-white shadow-lg" [ngSwitch]="viewMode">
+<div class="container bg-white shadow-lg d-none d-sm-block" [ngSwitch]="viewMode">
   <div class="row align-items-center" *ngSwitchCase="'uspomene'">
     <div class="col-4 px-0">
       <img src="assets/img/kreiramo-uspomene.jpg" class="img-fluid" alt="">
@@ -63,8 +129,8 @@
     <div class="col-8 px-5">
       <h4>Kreiramo uspomene</h4>
       <p>
-        Iskustvo nam obezbeđuje kompetentnost u tehnikama izrade bazena i time pružamo klijentima pouzdanu podršku tokom
-        svih etapa neophodnih da bi neometano uživali na svom privatnom bazenu.
+        Iz ljubavi se javlja odanost. Porodica i prijatelji okupiće se u Vašem dvorištu iz snova koji će ih zbližiti uz
+        neizostavnu zabavu, a ne zaboravljajući sve anegdote koje će nastati u letima koje dolaze.
       </p>
     </div>
   </div>
@@ -76,8 +142,8 @@
     <div class="col-8 px-5">
       <h4>Zagarantovana podrška</h4>
       <p>
-        Verujemo da uspeh može da omogući životni stil koji zamišljamo da nam pripada. I ako bih ste se zapitali koji je
-        najbolji način da se iskusi samoispunjenje i sreća, to bi naravno bio provod uz zabavne stvari
+        Iskustvo nam obezbeđuje kompetentnost u tehnikama izrade bazena i time pružamo klijentima pouzdanu podršku tokom
+        svih etapa neophodnih da bi neometano uživali na svom privatnom bazenu.
       </p>
     </div>
   </div>
@@ -89,27 +155,24 @@
     <div class="col-8 px-5">
       <h4>Živite život koji želite</h4>
       <p>
-        Iz ljubavi se javlja odanost. Porodica i prijatelji okupiće se u Vašem dvorištu iz snova koje će ih zbližiti uz
-        neizostavnu zabavu, a ne zaboravljajući sve anegdote koje će nastati u letima koje dolaze.
+        Verujemo da uspeh može da omogući životni stil koji zamišljamo da nam pripada. I ako bih ste se zapitali koji je
+        najbolji način da se iskusi samoispunjenje i sreća, to bi naravno bio provod uz zabavne stvari.
       </p>
     </div>
   </div>
 </div>
 
-
-<div id="bazeni" class="container">
+<div id="bazeni" class="container my-128">
   <div class="row">
-    <div class="col-6 pl-0">
+    <div class="col-12 col-md-6 pl-md-0">
       <article class="future-card">
         <div class="future-card-image"
              style="background-image: url(assets/img/future-pool-bazeni.jpg);">
           <div class="article-meta">
-            <div class="row align-items-end justify-content-between">
-              <div class="col-8">
-                <h4>Future pool bazeni</h4>
-                <p class="mb-0">Savremeno i ekonomsko pristupačno rešenje</p>
-              </div>
+            <div class="row align-items-end">
               <div class="col">
+                <h4>Future pool bazeni</h4>
+                <p class="mb-4">Savremeno i ekonomsko pristupačno rešenje</p>
                 <a class="btn btn-secondary" role="button" [routerLink]="['/kontakt']">Saznaj više</a>
               </div>
             </div>
@@ -118,17 +181,15 @@
       </article>
     </div>
 
-    <div class="col-6">
+    <div class="col-12 col-md-6 mt-4 mt-md-0">
       <article class="bazeni-card">
         <div class="bazeni-card-image"
              style="background-image: url(assets/img/betonsk-bazeni.jpg);">
           <div class="article-meta">
             <div class="row align-items-end justify-content-between">
-              <div class="col-8">
-                <h4>Betonski bazeni</h4>
-                <p class="mb-0">Najkvalitetniji i najizdržljiviji tip bazena, po Vašoj meri.</p>
-              </div>
               <div class="col">
+                <h4>Betonski bazeni</h4>
+                <p class="mb-4">Najkvalitetniji i najizdržljiviji tip bazena, po Vašoj meri.</p>
                 <a class="btn btn-secondary" role="button" [routerLink]="['/kontakt']">Saznaj više</a>
               </div>
             </div>
@@ -140,11 +201,9 @@
              style="background-image: url(assets/img/bazeni-sa-folijom.jpg);">
           <div class="article-meta">
             <div class="row align-items-end justify-content-between">
-              <div class="col-8">
-                <h4>Bazeni sa folijom</h4>
-                <p class="mb-0">Postupak varenja folije po želji na licu mesta.</p>
-              </div>
               <div class="col">
+                <h4>Bazeni sa folijom</h4>
+                <p class="mb-4">Postupak varenja folije po želji na licu mesta.</p>
                 <a class="btn btn-secondary" role="button" [routerLink]="['/kontakt']">Saznaj više</a>
               </div>
             </div>
@@ -155,76 +214,89 @@
   </div>
 </div>
 
-<div id="steps" class="container mb-128">
-  <div class="row justify-content-between mb-5">
+
+<div class="container-fluid steps my-128">
+  <div class="row">
     <div class="col-12">
-      <h3 class="text-center">Do betonskog <br> bazena u 3 koraka</h3>
-    </div>
-  </div>
+      <h3 class="text-left text-md-center">3 koraka<br> do bazena iz snova</h3>
+      <div class="row justify-content-center my-64 pb-64">
+        <div class="col-12 offset-md-1 col-md-3 align-self-start" id="steps">
+          <div class="border mr-auto mr-md-0">
+            <img src="assets/img/icons/phone.svg" alt="Kontaktirajte nas još danas i zatražite besplatnu ponudu">
+            <p class=" text-center pt-5">Kontaktirajte nas još danas i zatražite besplatnu ponudu</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 align-self-center dole" id="steps2">
+          <div class="border mx-auto mx-md-0">
+            <img src="assets/img/icons/ponuda.svg" alt="Sprovešćemo Vas kroz ponudu u detaljima">
+            <p class=" text-center pt-5">Sprovešćemo Vas kroz ponudu u detaljima</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 align-self-end dole-2 mb-5 test">
+          <div class="border ml-auto ml-md-0">
+            <img src="assets/img/icons/dvoriste.svg" alt="Uzivanje">
+            <p class=" text-center pt-5">Prepustite se i gledajte transformaciju Vašeg dvorišta</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center d-block d-md-none my-64">
+        <div class="col-12 col-md-3 mb-5">
+          <div class="border mx-auto">
+            <img src="assets/img/icons/phone.svg" alt="Ugovaranje">
+          </div>
+          <p class="text-center pt-2">Kontaktirajte nas još danas i zatražite besplatnu ponudu</p>
 
-  <div class="row justify-content-center">
-    <div class="col align-self-start" id="korakJedan">
-      <div class="border">
-        <img src="assets/img/icons/phone.svg" alt="ugovaranje" width="64">
-      </div>
-      <div style="width: 20ch">
-        <p class="mt-5">Kontaktirajte nas još danas i zatražite besplatnu ponudu</p>
-      </div>
-    </div>
+        </div>
+        <div class="col-12 col-md-3 mb-5">
+          <div class="border mx-auto">
+            <img src="assets/img/icons/ponuda.svg" alt="Izgradnja">
+          </div>
+          <p class="text-center pt-2">Sprovešćemo Vas kroz ponudu u detaljima</p>
 
-    <div class="col align-self-center dole" id="korakDva">
-      <div class="border">
-        <img src="assets/img/icons/ponuda.svg" alt="Izgradnja" height="64">
-      </div>
-      <div style="width: 20ch">
-        <p class="mt-5">Sprovešćemo Vas kroz ponudu u detaljima</p>
-      </div>
-    </div>
+        </div>
+        <div class="col-12 col-md-3 mb-5">
+          <div class="border mx-auto">
+            <img src="assets/img/icons/dvoriste.svg" alt="Uzivanje">
+          </div>
+          <p class="text-center pt-2">Prepustite se i gledajte transformaciju Vašeg dvorišta</p>
 
-    <div class="col-2 align-self-end dole-2 mb-5 test" id="korakTri">
-      <div class="border">
-        <img src="assets/img/icons/dvoriste.svg" alt="Uzivanje" width="72" height="64">
-      </div>
-      <div>
-        <p class="mt-5">Prepustite se i gledajte transformaciju Vašeg dvorišta</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-
 <div class="background_section">
   <div class="container-fluid padding-top-card_one">
     <div class="container">
       <div class="row align-items-center py-5">
-        <div class="col-6">
+        <div class="col-12 col-md-6 order-2 order-md-0">
           <h3 class="mb-4">Uživajte u letu</h3>
-          <p>U onim vrućim letnjim danima ne želite da brinete da li
-             Vam filter radi ili ne. I sigurno ne želite da razmišljate o
-             pH vrednosti vode, dok Vas klinci zovu da se igrate.
+          <p>U vrelim letnjim danima ne želite da brinete da li Vam filter radi ili ne. I sigurno ne želite da
+             razmišljate o pH vrednosti vode, dok Vas klinci zovu da se igrate
           </p>
           <p>Neka Pool Service uradi sav posao za vas.</p>
           <button class="btn btn-secondary border-0 mt-5" [routerLink]="['/contact'] ">Kontaktirajte nas</button>
         </div>
-        <div class="col-6" id="slika-up">
+        <div class="col-12 col-md-6 order-1 order-md-0 mb-4 mb-md-0" id="slika-up">
           <img class="img-fluid" src="assets/img/izgradnja-bazena/slika-odrzavanje-01.jpg" alt="card-slika">
         </div>
       </div>
 
       <div class="py-5 my-5">
         <h4 class="mb-5 text-center">Ponosni na naše partnere</h4>
-        <div class="row justify-content-center justify-content-lg-between text-center align-items-center">
-          <div class="col mt-3 mb-lg-0"><img src="./assets/img/logos/logo-1.png"/></div>
-          <div class="col mt-3 mb-lg-0"><img src="./assets/img/logos/logo-2.png"/></div>
-          <div class="col mt-3 mb-lg-0"><img src="./assets/img/logos/logo-3.png"/></div>
-          <div class="col mt-3 mb-lg-0"><img src="./assets/img/logos/logo-4.png"/></div>
-          <div class="col mt-3 mb-lg-0"><img src="./assets/img/logos/logo-5.png"/></div>
+        <div
+          class="row justify-content-center justify-content-md-between text-center align-items-center">
+          <div class="col-12 col-md mx-auto mt-3 mb-lg-0"><img src="./assets/img/logos/logo-1.png"/></div>
+          <div class="col-12 col-md mx-auto mt-3 mb-lg-0"><img src="./assets/img/logos/logo-2.png"/></div>
+          <div class="col-12 col-md mx-auto mt-3 mb-lg-0"><img src="./assets/img/logos/logo-3.png"/></div>
+          <div class="col-12 col-md mx-auto mt-3 mb-lg-0"><img src="./assets/img/logos/logo-4.png"/></div>
+          <div class="col-12 col-md mx-auto mt-3 mb-lg-0"><img src="./assets/img/logos/logo-5.png"/></div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 
 <app-konsultacije></app-konsultacije>
 
@@ -292,58 +364,47 @@
   </div>
 </div>
 
-
-<div class="mb-5">
-  <div class="swiper">
-    <div class="swiper-container" id="slider-customers-3">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="row justify-content-center py-5">
-            <div class="col-6 text-center"><img class="rounded mb-4" src="./assets/img/milan.png"
-                                                width="90" height="90" alt=""/>
-              <blockquote class="blockquote weight-500">“ Imao sam mnogo nedoumica u početku, od cene do održavanja, ali
-                                                        stručniji ljudi od mene su me ubedili da treba da pratim svoje
-                                                        snove. Hvala im na tome, jer sam teško vreme za vreme korone
-                                                        imao
-                                                        gde da provedem :) Šta reći, osim... preporuka!”
-              </blockquote>
-              <p class="mb-0"><span class="weight-500">Milan,</span> IT Menadžer</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="row justify-content-center py-5">
-            <div class="col-6 text-center"><img class="rounded mb-4" src="./assets/pictures/userpic.png"
-                                                width="90" height="90"/>
-              <blockquote class="blockquote weight-500">“All base UI elements are made using Nested Symbols and shared
-                                                        styles that are logically connected. Gorgeous, high-quality
-                                                        video
-                                                        sharing on desktop, mobile, tablet. All base UI elements are
-                                                        made
-                                                        using Nested Symbols”
-              </blockquote>
-              <p class="mb-0"><span class="weight-500">Name Surname,</span> Lead marketing specialist, CNN</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="row justify-content-center py-5">
-            <div class="col-6 text-center"><img class="rounded mb-4" src="./assets/pictures/userpic.png"
-                                                width="90" height="90"/>
-              <blockquote class="blockquote weight-500">“All base UI elements are made using Nested Symbols and shared
-                                                        styles that are logically connected. Gorgeous, high-quality
-                                                        video
-                                                        sharing on desktop, mobile, tablet. All base UI elements are
-                                                        made
-                                                        using Nested Symbols”
-              </blockquote>
-              <p class="mb-0"><span class="weight-500">Name Surname,</span> Lead marketing specialist, CNN</p>
-            </div>
-          </div>
+<div class="swiper-container mb-128" [swiper]="testemonials">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="row justify-content-center py-5">
+        <div class="col-10 col-md-6 text-center">
+          <img class="rounded mb-4" src="./assets/img/milan.jpg" width="90" height="90" alt=""/>
+          <blockquote class="blockquote weight-500">“Imao sam mnogo nedoumica u početku, od cene do održavanja, ali
+                                                    stručniji ljudi od mene su me ubedili da treba da pratim svoje
+                                                    snove. Hvala im na tome, jer sam teško vreme za vreme korone
+                                                    imao
+                                                    gde da provedem :) Šta reći, osim... preporuka!”
+          </blockquote>
+          <p class="mb-0"><span class="weight-500">Milan,</span> IT Menadžer</p>
         </div>
       </div>
     </div>
+    <div class="swiper-slide">
+      <div class="row justify-content-center py-5">
+        <div class="col-10 col-md-6 text-center">
+          <img class="rounded mb-4" src="./assets/img/miodrag.jpg" width="90" height="90" alt=""/>
+          <blockquote class="blockquote weight-500">“Kada gledam klince kako uživaju, ništa mi više ne treba. ”
+          </blockquote>
+          <p class="mb-0"><span class="weight-500">Miodrag,</span> Preduzetnik</p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="row justify-content-center py-5">
+        <div class="col-10 col-md-6 text-center">
+          <img class="rounded mb-4" src="./assets/img/dejan.jpg" width="90" height="90" alt=""/>
+          <blockquote class="blockquote weight-500">“Dosta dugo sam razmišljao i raspitivao se o bazenima. Odluka je
+                                                    pala na Pool Service. Nisam zažalio. U početku sam mislio da ću
+                                                    održavati sam, ali... zašto kada ima ko to da radi :) Pozdrav za
+                                                    najbolju ekipu”
+          </blockquote>
+          <p class="mb-0"><span class="weight-500">Dejan,</span> Preduzetnik</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  </div><!-- Script-->
-
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 </div>
