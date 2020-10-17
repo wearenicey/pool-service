@@ -20,6 +20,10 @@ export class HomepageComponent implements OnInit {
     scrollbar: false,
     navigation: true,
     pagination: false,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
   };
 
   public testemonials: SwiperConfigInterface = {
@@ -31,6 +35,10 @@ export class HomepageComponent implements OnInit {
     scrollbar: false,
     navigation: true,
     pagination: false,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    }
   };
 
   private scrollbar: SwiperScrollbarInterface = {
