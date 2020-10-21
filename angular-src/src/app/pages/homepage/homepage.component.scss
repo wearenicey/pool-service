@@ -66,6 +66,12 @@
   }
 }
 
+.swiper-button-prev, .swiper-button-next {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
 .carousel-text {
   position: absolute;
   left: 0px;

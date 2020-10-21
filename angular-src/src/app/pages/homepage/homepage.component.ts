@@ -41,6 +41,21 @@ export class HomepageComponent implements OnInit {
     }
   };
 
+  public partner: SwiperConfigInterface = {
+    a11y: true,
+    direction: 'horizontal',
+    slidesPerView: 5,
+    keyboard: true,
+    mousewheel: false,
+    scrollbar: false,
+    navigation: false,
+    pagination: false,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    }
+  };
+
   private scrollbar: SwiperScrollbarInterface = {
     el: '.swiper-scrollbar',
     hide: false,
