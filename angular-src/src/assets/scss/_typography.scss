@@ -43,5 +43,5 @@ h4 {
 p {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   text-rendering: optimizeLegibility;
-  line-height: calc(30 / 17);
+  line-height: calc(30 / 17) !important;
 }

@@ -238,3 +238,9 @@
 
   }
 }
+
+#polumontazniGalerija {
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 0 !important;
+  }
+}

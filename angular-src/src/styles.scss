@@ -52,8 +52,8 @@ body {
   margin-bottom: 128px;
 
   @include media-breakpoint-down(sm) {
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin-top: 96px;
+    margin-bottom: 96px;
   }
 }
 
@@ -109,6 +109,13 @@ body {
   }
 }
 
+.py-sm-64 {
+  @include media-breakpoint-down(sm) {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+}
+
 .py-64 {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -129,11 +136,9 @@ body {
 
 .pt-64 {
   padding-top: 64px;
-  padding-bottom: 64px;
 
   @include media-breakpoint-down(sm) {
     padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 
@@ -146,11 +151,9 @@ body {
 }
 
 .pb-64 {
-  padding-top: 64px;
   padding-bottom: 64px;
 
   @include media-breakpoint-down(sm) {
-    padding-top: 32px;
     padding-bottom: 32px;
   }
 }
@@ -190,10 +193,6 @@ body {
 // Content
 .content {
 
-  @include media-breakpoint-down(sm) {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
 
   .tex-right {
 

@@ -95,7 +95,6 @@
     h3 {
       font-size: 48px;
       line-height: 48px;
-
       text-align: center;
       letter-spacing: -1px;
     }
@@ -122,16 +121,15 @@
       margin-left: auto;
       margin-right: auto;
       margin-top: 32px;
-
-
     }
-
-
   }
 
 
   #steps {
 
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 5rem;
+    }
 
     &:nth-last-child(-n+3):after {
       content: url(../../../assets/img/polumontazni-bazeni/strelica-gore.png);
@@ -140,8 +138,10 @@
       left: 12vw;
       top: 6vh;
 
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
     }
-
   }
 
 
@@ -149,6 +149,9 @@
     margin-bottom: 5rem;
     margin-left: 2rem;
 
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
 
     &:nth-last-child(-n+3):after {
       content: url(../../../assets/img/polumontazni-bazeni/slika-8.png);
@@ -157,18 +160,22 @@
       left: 12vw;
       top: 4vh;
 
-
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
     }
-
   }
+
 
   .dole-2 {
     margin-top: 12rem;
     margin-left: 2rem;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0;
+    }
   }
 }
-
-
 
 .padding-bottom__gallery {
   padding-bottom: 128px;

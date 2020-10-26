@@ -1,10 +1,14 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 @import "../../../assets/scss/colors";
 
 .navbar {
-  padding-top: 0;
-  padding-bottom: 0;
-  height: 128px;
   background-color: #fff;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: auto;
 
   .navbar-brand > img {
     width: 140px;
