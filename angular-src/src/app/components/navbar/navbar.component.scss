@@ -12,6 +12,9 @@
 
   .navbar-brand > img {
     width: 140px;
+    @include media-breakpoint-down(md) {
+      width: 96px;
+    }
   }
 
   .nav-link {
