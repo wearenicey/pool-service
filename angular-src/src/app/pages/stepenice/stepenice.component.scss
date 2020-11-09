@@ -1,42 +1,30 @@
-.naslov__pading-top {
-    padding-top: 64px;
-    padding-bottom: 80px;
-    .plava {
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 17px;
 
-        letter-spacing: 2px;
+.plava {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
 
-        color: #175CFF;
-        text-align: justify;
-        
-    }
-   
-}
+  letter-spacing: 2px;
 
-.cards__padding-bottom {
-    padding-bottom: 128px;
-    .naslov {
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 25px;
-    }
-    p {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        line-height: 25px;
-        text-align: justify;
-    }
-
-    .img{
-        height: 200px;
-    }
-
-  
+  color: #175CFF;
+  text-align: justify;
 
 }
-.btn {
-    background-color: #ff8125;
+
+.naslov {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.img {
+  height: 200px;
 }

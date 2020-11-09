@@ -11,14 +11,13 @@
   width: 100%;
   z-index: 1;
   @include media-breakpoint-down(md) {
-    position: relative;
     padding-top: 1rem;
     padding-bottom: 1rem;
     height: auto;
     color: black;
   }
 
-  
+
 
   ul li a {
     @include media-breakpoint-down(md) {
@@ -28,6 +27,9 @@
 
   .navbar-brand > img {
     width: 140px;
+    @include media-breakpoint-down(md) {
+      width: 96px;
+    }
   }
 
   .nav-link {
@@ -55,7 +57,18 @@
   }
 }
 
+.dropdown-item {
+  padding: 1rem 1.5rem;
+}
 
+.navbar-collapse {
+  @include media-breakpoint-down(md) {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 12px;
+  }
+}
 
 
 
