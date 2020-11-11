@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { fadeAnimation } from './animations/fade.animation';
-import { NavigationEnd, Router } from '@angular/router';
-import { GoogleTagManagerService } from 'angular-google-tag-manager';
-import { MailService } from './mail.service'
+import {Component, OnInit} from '@angular/core';
+import {fadeAnimation} from './animations/fade.animation';
+import {NavigationEnd, Router} from '@angular/router';
+import {GoogleTagManagerService} from 'angular-google-tag-manager';
+import {MailService} from './mail.service'
 
 
 @Component({
@@ -19,7 +19,8 @@ export class AppComponent implements OnInit {
   activeStepIndex: number;
   subscription: any;
 
-  constructor(private MailService: MailService, private router: Router, private gtmService: GoogleTagManagerService,) { }
+  constructor(private MailService: MailService, private router: Router, private gtmService: GoogleTagManagerService,) {
+  }
 
   public getRouterOutletState(outlet) {
 
@@ -50,22 +51,6 @@ export class AppComponent implements OnInit {
     alert(JSON.stringify(this.formData));
     this.MailService.sendEmail(JSON.stringify(this.formData.value));
     this.formData.reset();
-
-
-
-    // console.log(JSON.stringify(this.formData));
-    // this.subscription = this.MailService.sendEmail(JSON.stringify(this.formData)).
-    //   subscribe(data => {
-    //     let msg = data['message']
-
-    //     // console.log(data, "success");
-    //     // this.toastr.success(msg);
-
-    //   }, error => {
-    //     console.error(error, "error");
-    //   });
-    // setTimeout(() => this.formData.reset(),
-    //   5000);
 
   }
 }

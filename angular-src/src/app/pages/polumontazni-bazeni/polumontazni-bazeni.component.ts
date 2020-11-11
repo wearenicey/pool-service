@@ -14,13 +14,14 @@ export class PolumontazniBazeniComponent {
   public config: SwiperConfigInterface = {
     a11y: true,
     direction: 'horizontal',
-    slidesPerView: 4,
     spaceBetween: 24,
     keyboard: true,
     mousewheel: false,
     scrollbar: false,
     navigation: true,
     pagination: false,
+    centeredSlides: true,
+    loop: true,
     breakpoints: {
       576: {
         slidesPerView: 1,
@@ -29,7 +30,7 @@ export class PolumontazniBazeniComponent {
         slidesPerView: 2,
       },
       992: {
-        slidesPerView: 4,
+        slidesPerView: 2,
       }
     }
   };

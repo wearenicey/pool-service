@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 import * as fileSaver from 'file-saver';
-
 
 
 @Component({
@@ -10,14 +9,13 @@ import * as fileSaver from 'file-saver';
 })
 export class IzgradnjaBazenaComponent {
 
-  constructor() { }
+  public type = 'component';
 
-
-
+  public disabled = false;
 
   downloadPdf() {
-    const pdfUrl = '/assets/pdf/upustvo.pdf';
-    const pdfName = 'upustvo.pdf';
+    const pdfUrl = '/assets/pdf/uputstvo.pdf';
+    const pdfName = 'uputstvo.pdf';
     fileSaver.saveAs(pdfUrl, pdfName);
   }
 

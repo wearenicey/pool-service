@@ -14,13 +14,14 @@ export class BazeniFolijaComponent {
   public config: SwiperConfigInterface = {
     a11y: true,
     direction: 'horizontal',
-    slidesPerView: 3,
     spaceBetween: 24,
     keyboard: true,
     mousewheel: false,
     scrollbar: false,
     navigation: true,
     pagination: false,
+    centeredSlides: true,
+    loop: true,
     breakpoints: {
       576: {
         slidesPerView: 1,
@@ -29,7 +30,7 @@ export class BazeniFolijaComponent {
         slidesPerView: 2,
       },
       992: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       }
     }
   };
