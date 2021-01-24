@@ -6,8 +6,8 @@
           <div class="row justify-content-start align-items-center h-100">
             <div class="col-12 col-md-6">
               <div class="text-left">
-                <h1 class="display-4">Vaše dvorište<br> Vaš bazen<br> Vaša pravila</h1>
-                <p class="h4 font-weight-normal mb-5 text-white">
+                <h1>Vaše dvorište, Vaš bazen, Vaša pravila</h1>
+                <p class="mb-5 text-white">
                   Sa nama dobijate više od bazena. Stvaramo sećanja u godinama koje dolaze,
                   u oazi Vašeg dvorišta!</p>
                 <a class="btn btn-lg btn-secondary" role="button" [routerLink]="['/kontakt']">Besplatna konsultacija</a>
@@ -23,9 +23,9 @@
           <div class="row justify-content-start align-items-center h-100">
             <div class="col-12 col-md-6">
               <div class="text-left">
-                <h1 class="display-4">Prepustite se uživanju!</h1>
-                <p class="h4 font-weight-normal mb-5 text-white">
-                  Ako tražite efikasnu i brzu uslugu održavanja bazena, na pravom ste mestu.
+                <h1>Prepustite se uživanju!</h1>
+                <p class="mb-5 text-white">
+                  Ako tražite efikasnu i brzu uslugu održavanja bazena,<br>na pravom ste mestu.
                 </p>
                 <a class="btn btn-lg btn-secondary" role="button" [routerLink]="['/kontakt']">Besplatna konsultacija</a>
               </div>
@@ -40,8 +40,8 @@
           <div class="row justify-content-start align-items-center h-100">
             <div class="col-12 col-md-6">
               <div class="text-left">
-                <h1 class="display-4">Ulaganje u kvalitet pruža sigurnost</h1>
-                <p class="h4 font-weight-normal mb-5 text-white">
+                <h1>Ulaganje u kvalitet pruža sigurnost</h1>
+                <p class="mb-5 text-white">
                   Oprema renomiranih Evropskih partnera omogućava dugogodišnju istrajnost i funkcionalnost</p>
                 <a class="btn btn-lg btn-secondary" role="button" [routerLink]="['/kontakt']">Besplatna konsultacija</a>
               </div>
@@ -62,20 +62,20 @@
     <div class="row">
       <div class="col-12 col-md-4 mb-4 mb-md-0">
         <img src="assets/img/icons/kreiramo-uspomene.svg" alt="slika2" class="img-fluid mb-4" width="64">
-        <h5>Kreiramo uspomene</h5>
+        <h5 class="mb-3">Kreiramo uspomene</h5>
         <p>Iskustvo nam obezbeđuje kompetentnost u tehnikama izrade bazena i time pružamo klijentima pouzdanu podršku
            tokom svih etapa neophodnih da bi neometano uživali na svom privatnom bazenu.</p>
       </div>
       <div class="col-12 col-md-4 mb-4 mb-md-0">
         <img src="assets/img/icons/podrska.svg" alt="knjiga" class="img-fluid mb-4" width="64">
-        <h5>Zagarantovana podrška</h5>
+        <h5 class="mb-3">Zagarantovana podrška</h5>
         <p>Verujemo da uspeh može da omogući životni stil koji zamišljamo da nam pripada. I ako bih ste se zapitali koji
            je najbolji način da se iskusi samoispunjenje i sreća, to bi naravno bio provod uz zabavne
            stvari.</p>
       </div>
       <div class="col-12 col-md-4 mb-4 mb-md-0">
         <img src="assets/img/icons/zivot.svg" alt="slika2" class="img-fluid mb-4" width="64">
-        <h5>Živite život koji želite</h5>
+        <h5 class="mb-3">Živite život koji želite</h5>
         <p>Iz ljubavi se javlja odanost. Porodica i prijatelji okupiće se u Vašem dvorištu iz snova koje će ih zbližiti
            uz neizostavnu zabavu, a ne zaboravljajući sve anegdote koje će nastati u letima koje dolaze.</p>
       </div>
@@ -92,7 +92,7 @@
       <a (click)="viewMode='uspomene'">
         <div class="values-tab">
           <img src="assets/img/icons/kreiramo-uspomene.svg" class="d-none d-lg-inline-flex" alt="">
-          <h5>Kreiramo uspomene</h5>
+          <h5 class="font-weight-normal">Kreiramo uspomene</h5>
         </div>
       </a>
     </div>
@@ -101,7 +101,7 @@
       <a (click)="viewMode = 'podrska'">
         <div class="values-tab">
           <img src="assets/img/icons/podrska.svg" class="d-none d-lg-inline-flex" alt="">
-          <h5>Zagarantovana podrška</h5>
+          <h5 class="font-weight-normal">Zagarantovana podrška</h5>
         </div>
       </a>
     </div>
@@ -110,7 +110,7 @@
       <a (click)="viewMode = 'zivot'">
         <div class="values-tab">
           <img src="assets/img/icons/zivot.svg" class="d-none d-lg-inline-flex" alt="">
-          <h5>Živite život koji želite</h5>
+          <h5 class="font-weight-normal">Živite život koji želite</h5>
         </div>
       </a>
     </div>

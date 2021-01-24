@@ -45,6 +45,7 @@ import {BodyJetComponent} from './pages/body-jet/body-jet.component';
 import {NavbarDarkComponent} from './components/navbar-dark/navbar-dark.component';
 import {HomeLayoutComponent} from './_layout/home-layout/home-layout.component';
 import {MainLayoutComponent} from './_layout/main-layout/main-layout.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   observer: true,
@@ -97,7 +98,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     ToastContainerModule,
     CdkStepperModule,
     NgImageSliderModule,
-    SwiperModule
+    SwiperModule,
+    FontAwesomeModule
 
   ],
   providers: [

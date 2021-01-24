@@ -14,15 +14,17 @@ export class HomepageComponent implements OnInit {
   public config: SwiperConfigInterface = {
     a11y: true,
     direction: 'horizontal',
+    effect: 'fade',
     slidesPerView: 1,
     keyboard: true,
     mousewheel: false,
     scrollbar: false,
     navigation: true,
     pagination: false,
+    spaceBetween: 0,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
   };
 
@@ -53,6 +55,14 @@ export class HomepageComponent implements OnInit {
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 5,
+      }
     }
   };
 

@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar-dark',
@@ -6,6 +7,9 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./navbar-dark.component.scss']
 })
 export class NavbarDarkComponent implements OnInit {
+
+  faPhone = faPhone;
+  faEnvelope = faEnvelope;
 
   constructor() {
   }

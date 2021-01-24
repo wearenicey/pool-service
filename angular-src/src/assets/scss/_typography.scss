@@ -1,51 +1,168 @@
-h1, h2, {
-  font-family: 'Gilroy-Bold', sans-serif;
+// basic typography style - we suggest you don't modify this file
+// use the 📁custom-style/_typography.scss file to create your custom typography
+
+@if variable-exists('cody-base-partials') == false or index($cody-base-partials, 'typography') {
+  :root {
+    --heading-line-height: 1.2;
+    --body-line-height: 1.4;
+  }
+
+  body {
+    font-size: var(--text-base-size, 1em) !important;
+    font-family: var(--font-primary, sans-serif) !important;
+  }
+
+  h1, h2, h3, h4 {
+    line-height: var(--heading-line-height, 1.2);
+  }
+
+  h1 {
+    font-size: var(--text-xxl, 2.074em);
+  }
+
+  h2 {
+    font-size: var(--text-xl, 1.728em);
+  }
+
+  h3 {
+    font-size: var(--text-lg, 1.44em);
+  }
+
+  h4 {
+    font-size: var(--text-md, 1.2em);
+  }
+
+  small {
+    font-size: var(--text-sm, 0.833em);
+  }
+
+  // --------------------------------
+
+  // Inline Text
+
+  // --------------------------------
+
+  strong {
+    font-weight: bold;
+  }
+
+  s {
+    text-decoration: line-through;
+  }
+
+  u {
+    text-decoration: underline;
+  }
+
 }
 
-h3, h4, h5 {
-  font-family: 'Gilroy-Bold', sans-serif;
+:root {
+  // font family
+  --font-primary: 'DM Sans', sans-serif;
+
+  // font size
+  --text-base-size: 1em; // body font-size
+  --text-scale-ratio: 1.2; // multiplier used to generate the type scale values 👇
+
+  // line-height
+  --body-line-height: 1.5;
+  --heading-line-height: 1.2;
+
+  // capital letters - used in combo with the lhCrop mixin
+  --font-primary-capital-letter: 1;
+
+  // unit - don't modify unless you want to change the typography unit (e.g., from Em to Rem units)
+  --text-unit: 1em; // if not Em units → --text-unit: var(--text-base-size);
 }
 
-h1 {
-  font-size: 3.75rem;
+:root, * {
+  // type scale
+  --text-xs: calc((var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
+  --text-xxxxl: calc(var(--text-xxxl) * var(--text-scale-ratio));
+}
 
-  @include media-breakpoint-down(sm) {
-    font-size: 2.5rem;
-    line-height: calc(40 / 30);
+@supports(--css: variables) {
+  @include media-breakpoint-up(md) {
+    :root {
+      --text-base-size: 1.125em;
+      --text-scale-ratio: 1.2;
+      --body-line-height: 1.5;
+      --heading-line-height: 1.2;
+    }
   }
 }
 
-h2 {
-  font-size: 3rem;
+body {
+  font-family: var(--font-primary);
+  font-weight: 400;
 
-  @include media-breakpoint-down(sm) {
-    font-size: 2rem;
-    line-height: calc(40 / 30);
+  @include media-breakpoint-up(md) {
+    font-family: var(--font-primary);
+    font-weight: 400;
   }
 }
 
-h3 {
-  font-size: 2.5rem;
+h1, h2, h3, h4 {
+  font-family: var(--font-primary);
+  font-weight: 700;
 
-  @include media-breakpoint-down(sm) {
-    font-size: 1.75rem;
+  @include media-breakpoint-up(md) {
+    font-family: var(--font-primary);
+    font-weight: 700;
   }
 }
 
-h4 {
-  font-size: 2rem;
+// font family
+.font-primary { font-family: var(--font-primary); }
 
-  @include media-breakpoint-down(sm) {
-    font-size: 1.5rem;
-  }
-}
 
-p {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  text-rendering: optimizeLegibility;
-  line-height: calc(30 / 17) !important;
-}
-
-.h4 {
-  line-height: calc(30 / 22) !important;
-}
+//h1, h2, h3, h4, h5{
+//  font-family: 'Montserrat', sans-serif;
+//  font-weight: 600;
+//}
+//
+//h1 {
+//
+//  @include media-breakpoint-down(sm) {
+//    font-size: 2.5rem;
+//    line-height: calc(40 / 30);
+//  }
+//}
+//
+//h2 {
+//
+//  @include media-breakpoint-down(sm) {
+//    font-size: 2rem;
+//    line-height: calc(40 / 30);
+//  }
+//}
+//
+//h3 {
+//
+//  @include media-breakpoint-down(sm) {
+//    font-size: 1.75rem;
+//  }
+//}
+//
+//h4 {
+//
+//  @include media-breakpoint-down(sm) {
+//    font-size: 1.5rem;
+//  }
+//}
+//
+//p {
+//  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+//  text-rendering: optimizeLegibility;
+//  line-height: 1.5 !important;
+//}
+//
+//.h4 {
+//  line-height: calc(30 / 22) !important;
+//}
