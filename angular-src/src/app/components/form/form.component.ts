@@ -46,31 +46,31 @@ export class FormComponent {
   websiteList: any = [
     {
       usluga: 'Izgradnja',
-      imageUrl: '../assets/img/kontakt/checkbox-izgradnja.jpg',
+      imageUrl: 'assets/img/kontakt/checkbox-izgradnja.jpg',
       id: 'Izgradnja',
       isChecked: false
     },
     {
       usluga: 'Projektovanje',
-      imageUrl: '../assets/img/kontakt/checkbox-projektovanje.jpg',
+      imageUrl: 'assets/img/kontakt/checkbox-projektovanje.jpg',
       id: 'Projektovanje',
       isChecked: false
     },
     {
       usluga: 'Renoviranje',
-      imageUrl: '../assets/img/kontakt/checkbox-renoviranje.jpg',
+      imageUrl: 'assets/img/kontakt/checkbox-renoviranje.jpg',
       id: 'Renoviranje',
       isChecked: false
     },
     {
       usluga: 'Odrzavanje',
-      imageUrl: '../assets/img/kontakt/checkbox-odrzavanje.jpg',
+      imageUrl: 'assets/img/kontakt/checkbox-odrzavanje.jpg',
       id: 'Odrzavanje',
       isChecked: false
     },
     {
       usluga: 'Dodatna Oprema',
-      imageUrl: '../assets/img/kontakt/checkbox-dodatna-oprema.jpg',
+      imageUrl: 'assets/img/kontakt/checkbox-dodatna-oprema.jpg',
       id: 'Dodatna Oprema',
       isChecked: false
     },
