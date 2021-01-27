@@ -15,24 +15,24 @@
           <div class="dropdown-menu text-center text-md-left" aria-labelledby="headers-1-dropdown">
             <a class="dropdown-item text-center text-md-left" [routerLink]="['/polumontazni-bazeni'] ">Future pool bazeni</a>
             <a class="dropdown-item text-center text-md-left" [routerLink]="['/betonski-bazeni'] ">Betonski bazeni</a>
-            <a class="dropdown-item text-center text-md-left" [routerLink]="['/bazeni-sa-folijom']">Bazeni sa folijom</a>
+            <a class="dropdown-item text-center text-md-left" [routerLink]="['/bazeni-sa-folijom'] ">Bazeni sa folijom</a>
           </div>
         </li>
 
-        <li class="nav-item mr-2 text-center text-md-left">
-          <a class="nav-link" [routerLink]="['/odrzavanje'] ">ODRŽAVANJE</a>
+        <li class="nav-item mr-2">
+          <a class="nav-link text-center" [routerLink]="['/odrzavanje'] ">ODRŽAVANJE</a>
         </li>
 
-        <li class="nav-item text-center text-md-left">
-          <a class="nav-link" [routerLink]="['/dodatna-oprema'] ">DODATNA OPREMA</a>
+        <li class="nav-item">
+          <a class="nav-link text-center" [routerLink]="['/dodatna-oprema'] ">DODATNA OPREMA</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item mr-md-2 mt-4 mt-md-0 mb-2 mb-md-0 text-center text-md-right">
-          <a class="btn btn-primary-light" href="tel:+381216621200">📞 021/6621 200</a>
+          <a class="btn btn-primary-light" href="tel:+381216621200"><fa-icon [icon]="faPhone" class="mr-2"></fa-icon> 021/6621 200</a>
         </li>
         <li class="nav-item text-center text-md-right">
-          <a class="btn btn-primary-light" [routerLink]="['/kontakt'] ">📨 PIŠITE NAM</a>
+          <a class="btn btn-primary-light" [routerLink]="['/kontakt'] "><fa-icon [icon]="faEnvelope" class="mr-2"></fa-icon> PIŠITE NAM</a>
         </li>
 
       </ul>

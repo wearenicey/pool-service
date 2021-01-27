@@ -21,7 +21,7 @@
       <div class="slider-2">
         <div class="container h-100">
           <div class="row justify-content-start align-items-center h-100">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-8">
               <div class="text-left">
                 <h1>Prepustite se uživanju!</h1>
                 <p class="mb-5 text-white">
@@ -62,20 +62,20 @@
     <div class="row">
       <div class="col-12 col-md-4 mb-4 mb-md-0">
         <img src="assets/img/icons/kreiramo-uspomene.svg" alt="slika2" class="img-fluid mb-4" width="64">
-        <h5 class="mb-3">Kreiramo uspomene</h5>
+        <h2 class="mb-3">Kreiramo uspomene</h2>
         <p>Iskustvo nam obezbeđuje kompetentnost u tehnikama izrade bazena i time pružamo klijentima pouzdanu podršku
            tokom svih etapa neophodnih da bi neometano uživali na svom privatnom bazenu.</p>
       </div>
       <div class="col-12 col-md-4 mb-4 mb-md-0">
         <img src="assets/img/icons/podrska.svg" alt="knjiga" class="img-fluid mb-4" width="64">
-        <h5 class="mb-3">Zagarantovana podrška</h5>
+        <h2 class="mb-3">Zagarantovana podrška</h2>
         <p>Verujemo da uspeh može da omogući životni stil koji zamišljamo da nam pripada. I ako bih ste se zapitali koji
            je najbolji način da se iskusi samoispunjenje i sreća, to bi naravno bio provod uz zabavne
            stvari.</p>
       </div>
       <div class="col-12 col-md-4 mb-4 mb-md-0">
         <img src="assets/img/icons/zivot.svg" alt="slika2" class="img-fluid mb-4" width="64">
-        <h5 class="mb-3">Živite život koji želite</h5>
+        <h2 class="mb-3">Živite život koji želite</h2>
         <p>Iz ljubavi se javlja odanost. Porodica i prijatelji okupiće se u Vašem dvorištu iz snova koje će ih zbližiti
            uz neizostavnu zabavu, a ne zaboravljajući sve anegdote koje će nastati u letima koje dolaze.</p>
       </div>
@@ -92,7 +92,7 @@
       <a (click)="viewMode='uspomene'">
         <div class="values-tab">
           <img src="assets/img/icons/kreiramo-uspomene.svg" class="d-none d-lg-inline-flex" alt="">
-          <h5 class="font-weight-normal">Kreiramo uspomene</h5>
+          <p class="font-weight-normal mb-0">Kreiramo uspomene</p>
         </div>
       </a>
     </div>
@@ -101,7 +101,7 @@
       <a (click)="viewMode = 'podrska'">
         <div class="values-tab">
           <img src="assets/img/icons/podrska.svg" class="d-none d-lg-inline-flex" alt="">
-          <h5 class="font-weight-normal">Zagarantovana podrška</h5>
+          <p class="font-weight-normal mb-0">Zagarantovana podrška</p>
         </div>
       </a>
     </div>
@@ -110,7 +110,7 @@
       <a (click)="viewMode = 'zivot'">
         <div class="values-tab">
           <img src="assets/img/icons/zivot.svg" class="d-none d-lg-inline-flex" alt="">
-          <h5 class="font-weight-normal">Živite život koji želite</h5>
+          <p class="font-weight-normal mb-0">Živite život koji želite</p>
         </div>
       </a>
     </div>
@@ -124,7 +124,7 @@
       <img src="assets/img/kreiramo-uspomene.jpg" class="img-fluid" alt="">
     </div>
     <div class="col-8 px-5">
-      <h4>Kreiramo uspomene</h4>
+      <h2>Kreiramo uspomene</h2>
       <p>
         Iz ljubavi se javlja odanost. Porodica i prijatelji okupiće se u Vašem dvorištu iz snova koji će ih zbližiti uz
         neizostavnu zabavu, a ne zaboravljajući sve anegdote koje će nastati u letima koje dolaze.
@@ -137,7 +137,7 @@
       <img src="assets/img/zagarantovana-podrska.jpg" class="img-fluid" alt="">
     </div>
     <div class="col-8 px-5">
-      <h4>Zagarantovana podrška</h4>
+      <h2>Zagarantovana podrška</h2>
       <p>
         Iskustvo nam obezbeđuje kompetentnost u tehnikama izrade bazena i time pružamo klijentima pouzdanu podršku tokom
         svih etapa neophodnih da bi neometano uživali na svom privatnom bazenu.
@@ -150,7 +150,7 @@
       <img src="assets/img/zivite-zivot-koji%20zelite.jpg" class="img-fluid" alt="">
     </div>
     <div class="col-8 px-5">
-      <h4>Živite život koji želite</h4>
+      <h2>Živite život koji želite</h2>
       <p>
         Verujemo da uspeh može da omogući životni stil koji zamišljamo da nam pripada. I ako bih ste se zapitali koji je
         najbolji način da se iskusi samoispunjenje i sreća, to bi naravno bio provod uz zabavne stvari.
@@ -168,7 +168,7 @@
           <div class="article-meta">
             <div class="row align-items-end">
               <div class="col">
-                <h4>Future pool bazeni</h4>
+                <h3 class="text-white">Future pool bazeni</h3>
                 <p class="mb-4">Savremeno i ekonomsko pristupačno rešenje</p>
                 <a class="btn btn-secondary" role="button" [routerLink]="['/polumontazni-bazeni']">Saznaj više</a>
               </div>
@@ -178,14 +178,14 @@
       </article>
     </div>
 
-    <div class="col-12 col-md-6 mt-4 mt-md-0">
+    <div class="col-12 col-md-6 mt-4 mt-md-0 pr-md-0">
       <article class="bazeni-card">
         <div class="bazeni-card-image"
              style="background-image: url(assets/img/betonsk-bazeni.jpg);">
           <div class="article-meta">
             <div class="row align-items-end justify-content-between">
               <div class="col">
-                <h4>Betonski bazeni</h4>
+                <h3 class="text-white">Betonski bazeni</h3>
                 <p class="mb-4">Najkvalitetniji i najizdržljiviji tip bazena, po Vašoj meri.</p>
                 <a class="btn btn-secondary" role="button" [routerLink]="['/betonski-bazeni']">Saznaj više</a>
               </div>
@@ -199,7 +199,7 @@
           <div class="article-meta">
             <div class="row align-items-end justify-content-between">
               <div class="col">
-                <h4>Bazeni sa folijom</h4>
+                <h3 class="text-white">Bazeni sa folijom</h3>
                 <p class="mb-4">Postupak varenja folije po želji na licu mesta.</p>
                 <a class="btn btn-secondary" role="button" [routerLink]="['/bazeni-sa-folijom']">Saznaj više</a>
               </div>
@@ -214,7 +214,7 @@
 <div class="container-fluid steps my-128">
   <div class="row">
     <div class="col-12">
-      <h3 class="text-center">3 koraka<br> do bazena iz snova</h3>
+      <h2 class="text-center">3 koraka<br> do bazena iz snova</h2>
       <div class="row justify-content-center d-none d-md-flex my-64 pb-64">
         <div class="col-12 offset-md-1 col-md-3 align-self-start" id="steps">
           <div class="border mr-auto mr-md-0">
@@ -267,7 +267,7 @@
     <div class="container">
       <div class="row align-items-center py-5">
         <div class="col-12 col-md-6 order-2 order-md-0">
-          <h3 class="mb-4">Uživajte u letu</h3>
+          <h2 class="mb-4">Uživajte u letu</h2>
           <p>U vrelim letnjim danima ne želite da brinete da li Vam filter radi ili ne. I sigurno ne želite da
              razmišljate o pH vrednosti vode, dok Vas klinci zovu da se igrate
           </p>

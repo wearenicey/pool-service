@@ -17,33 +17,44 @@
     }
   }
 
-  .nav-link {
-    color: #1D293F;
-
-    &:hover {
-      color: #175CFF;
+  ul li a {
+    @include media-breakpoint-down(md) {
+      color: black;
     }
   }
 
-  h4 {
-    font-family: 'Gilroy-bold', sans-serif;
-    font-size: 26px;
+  .navbar-brand > img {
+    width: 140px;
+    @include media-breakpoint-down(md) {
+      width: 96px;
+    }
+  }
+
+  .nav-link {
+    color: #17154B;
+    font-weight: bold;
+
+    &:hover {
+      color: #FF8125;
+    }
   }
 
   ul {
     list-style-type: none;
-
-    li {
-      a {
-        font-family: 'Gilroy-bold', sans-serif;
-        font-weight: bold;
-      }
-    }
   }
 }
 
 .dropdown-item {
   padding: 1rem 1.5rem;
+}
+
+.navbar-collapse {
+  @include media-breakpoint-down(md) {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 12px;
+  }
 }
 
 

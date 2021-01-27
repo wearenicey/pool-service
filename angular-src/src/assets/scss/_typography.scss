@@ -16,6 +16,14 @@
     line-height: var(--heading-line-height, 1.2);
   }
 
+  .display-2 {
+    font-size: var(--text-xxxl, 2.488em) !important;
+  }
+
+  .display-1 {
+    font-size: var(--text-xxxxl, 2.986em) !important;
+  }
+
   h1 {
     font-size: var(--text-xxl, 2.074em);
   }
@@ -62,10 +70,10 @@
 
   // font size
   --text-base-size: 1em; // body font-size
-  --text-scale-ratio: 1.2; // multiplier used to generate the type scale values 👇
+  --text-scale-ratio: 1.25; // multiplier used to generate the type scale values 👇
 
   // line-height
-  --body-line-height: 1.5;
+  --body-line-height: 1.6;
   --heading-line-height: 1.2;
 
   // capital letters - used in combo with the lhCrop mixin
@@ -91,8 +99,8 @@
   @include media-breakpoint-up(md) {
     :root {
       --text-base-size: 1.125em;
-      --text-scale-ratio: 1.2;
-      --body-line-height: 1.5;
+      --text-scale-ratio: 1.25;
+      --body-line-height: 1.6;
       --heading-line-height: 1.2;
     }
   }
