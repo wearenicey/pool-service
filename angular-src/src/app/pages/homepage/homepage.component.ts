@@ -48,6 +48,7 @@ export class HomepageComponent implements OnInit {
     direction: 'horizontal',
     slidesPerView: 5,
     keyboard: true,
+    loop: true,
     mousewheel: false,
     scrollbar: false,
     navigation: false,
