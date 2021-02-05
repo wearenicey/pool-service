@@ -1,9 +1,9 @@
 <div id="hero" class="betonski-cover-background">
   <div class="container h-100">
     <div class="row h-100 align-items-center">
-      <div class="col-12 col-lg-10 col-xl-8">
+      <div class="col-12 text-center">
 
-        <h1 class="display-2">Betonski bazeni</h1>
+        <h1 class="display-2 font-weight-bold">Betonski bazeni</h1>
         <h4 class="mb-5 text-white font-weight-normal">Kvalitet i istrajnost</h4>
         <a class="btn btn-secondary" role="button" [routerLink]="['/kontakt']">Zatražite ponudu</a>
 
@@ -19,19 +19,20 @@
       <div class="col-12 col-md-4 mb-5 mb-md-0 text-center">
         <img src="assets/img/betonski-bazeni/unikatno-resenje.svg" alt="Unikatno rešenje" class="img-fluid mb-4 mx-auto"
              width="64">
-        <h5>Unikatno rešenje</h5>
-        <p class="small">Oblik i dubina bazena po Vašoj želji</p>
+        <h4>Unikatno rešenje</h4>
+        <p class="text-black-50">Oblik i dubina bazena po Vašoj želji</p>
       </div>
       <div class="col-12 col-md-4 mb-5 mb-md-0 text-center">
         <img src="assets/img/betonski-bazeni/raznovrsnost%20dizajna.svg" alt="Raznovrsnost dizajna"
              class="img-fluid mb-4 mx-auto" width="64">
-        <h5>Raznovrsnost dizajna</h5>
-        <p class="small">Veliki izbor ukrasne podloge</p>
+        <h4>Raznovrsnost dizajna</h4>
+        <p class="text-black-50">Veliki izbor ukrasne podloge</p>
       </div>
       <div class="col-12 col-md-4 mb-5 mb-md-0 text-center">
-        <img src="assets/img/betonski-bazeni/dugotrajnost.svg" alt="Dugotrajnost" class="img-fluid mb-4 mx-auto" width="64">
-        <h5>Dugotrajnost</h5>
-        <p class="small">Besprekoran kvalitet i sigurna dugovečnost</p>
+        <img src="assets/img/betonski-bazeni/dugotrajnost.svg" alt="Dugotrajnost" class="img-fluid mb-4 mx-auto"
+             width="64">
+        <h4>Dugotrajnost</h4>
+        <p class="text-black-50">Besprekoran kvalitet i sigurna dugovečnost</p>
       </div>
     </div>
   </div>
@@ -53,34 +54,7 @@
 </div>
 
 
-<div class="container-fluid steps mt-128 mb-64">
-  <div class="row">
-    <div class="col-12">
-      <h3 class="text-left text-md-center">Brzo i lako do<br>Fututre Pool bazena</h3>
-      <div class="row justify-content-center my-64">
-        <div class="col-12 offset-md-1 col-md-3 align-self-start" id="steps">
-          <div class="border mr-auto mr-md-0">
-            <img src="assets/img/korak-01.svg" alt="Ugovaranje">
-            <p class=" text-center pt-5">Izrada projekata</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 align-self-center dole" id="steps2">
-          <div class="border mx-auto mx-md-0">
-            <img src="assets/img/korak-02.svg" alt="Izgradnja">
-            <p class=" text-center pt-5">Radovi</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 align-self-end dole-2 mb-5 test">
-          <div class="border ml-auto ml-md-0">
-            <img src="assets/img/korak-03.svg" alt="Uzivanje">
-            <p class=" text-center pt-5">Uživanje</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+<app-tri-koraka></app-tri-koraka>
 
 <div class="container pb-128">
   <div class="row">

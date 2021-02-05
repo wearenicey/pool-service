@@ -45,7 +45,9 @@ import {BodyJetComponent} from './pages/body-jet/body-jet.component';
 import {NavbarDarkComponent} from './components/navbar-dark/navbar-dark.component';
 import {HomeLayoutComponent} from './_layout/home-layout/home-layout.component';
 import {MainLayoutComponent} from './_layout/main-layout/main-layout.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {PonudaComponent} from './components/ponuda/ponuda.component';
+import {TriKorakaComponent} from './components/tri-koraka/tri-koraka.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   observer: true,
@@ -86,6 +88,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     NavbarDarkComponent,
     HomeLayoutComponent,
     MainLayoutComponent,
+    PonudaComponent,
+    TriKorakaComponent,
   ],
   imports: [
     BrowserModule,

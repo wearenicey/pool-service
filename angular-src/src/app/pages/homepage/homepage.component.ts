@@ -58,8 +58,8 @@ export class HomepageComponent implements OnInit {
       disableOnInteraction: false,
     },
     breakpoints: {
-      576: {
-        slidesPerView: 1,
+      320: {
+        slidesPerView: 2,
       },
       768: {
         slidesPerView: 5,

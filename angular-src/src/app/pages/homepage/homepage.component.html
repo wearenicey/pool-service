@@ -211,56 +211,7 @@
   </div>
 </div>
 
-<div class="container-fluid steps my-128">
-  <div class="row">
-    <div class="col-12">
-      <h2 class="text-center">3 koraka<br> do bazena iz snova</h2>
-      <div class="row justify-content-center d-none d-md-flex my-64 pb-64">
-        <div class="col-12 offset-md-1 col-md-3 align-self-start" id="steps">
-          <div class="border mr-auto mr-md-0">
-            <img src="assets/img/icons/phone.svg" alt="Kontaktirajte nas još danas i zatražite besplatnu ponudu">
-            <p class="text-left pt-5" style="width: 220px">Kontaktirajte nas i zatražite ponudu</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 align-self-center dole" id="steps2">
-          <div class="border mx-auto mx-md-0">
-            <img src="assets/img/icons/ponuda.svg" alt="Sprovešćemo Vas kroz ponudu u detaljima">
-            <p class="text-left pt-5" style="width: 220px">Izaberite model bazena koji ste oduvek želeli</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 align-self-end dole-2 mb-5 test">
-          <div class="border ml-auto ml-md-0">
-            <img src="assets/img/icons/dvoriste.svg" alt="Uzivanje">
-            <p class="text-left pt-5" style="width: 220px">Opustite se dok Pool Service uradi sve ostalo</p>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center d-block d-md-none my-64">
-        <div class="col-12 col-md-3 mb-5">
-          <div class="border mx-auto">
-            <img src="assets/img/icons/phone.svg" alt="Ugovaranje">
-          </div>
-          <p class="text-center pt-2">Kontaktirajte nas još danas i zatražite besplatnu ponudu</p>
-
-        </div>
-        <div class="col-12 col-md-3 mb-5">
-          <div class="border mx-auto">
-            <img src="assets/img/icons/ponuda.svg" alt="Izgradnja">
-          </div>
-          <p class="text-center pt-2">Sprovešćemo Vas kroz ponudu u detaljima</p>
-
-        </div>
-        <div class="col-12 col-md-3 mb-5">
-          <div class="border mx-auto">
-            <img src="assets/img/icons/dvoriste.svg" alt="Uzivanje">
-          </div>
-          <p class="text-center pt-2">Prepustite se i gledajte transformaciju Vašeg dvorišta</p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<app-tri-koraka></app-tri-koraka>
 
 <div class="background_section">
   <div class="container-fluid padding-top-card_one">
@@ -311,69 +262,7 @@
 
 <app-konsultacije></app-konsultacije>
 
-<div class="container my-128">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-8 text-center">
-      <h2>Naša ponuda</h2>
-      <p>POOL SERVICE se uspešno bavi prodajom bazena i bazenske opreme po sistemu ključ u ruke,
-         održavanje postojećih bazena, isporuka i montažom sauna i ostale rekreacione opreme.
-      </p>
-    </div>
-  </div>
-
-  <div class="row justify-content-center mt-5">
-    <div class="col-md-3 pb-3">
-      <div class="card h-100 text-center">
-        <div class="card-body">
-          <div class=" mb-3 pt-3">
-            <img src="assets/img/icons/projektovanje.svg" alt="Projektovanje bazena">
-          </div>
-          <h5 class="card-title">Projektovanje</h5>
-          <p class="small">Vama na raspolaganju, od ideje do realizacije.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 pb-3">
-      <div class="card h-100 text-center ">
-        <div class="card-body">
-          <div class=" mb-3 pt-3">
-            <img src="assets/img/icons/izgradnja.svg" alt="Izgradnja bazena">
-          </div>
-          <h5 class="card-title">Izgradnja</h5>
-          <p class="small">Dugogodišnje iskustvo, ugradnja samo najkvalitetnije opreme.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 pb-3">
-      <div class="card h-100 text-center">
-        <div class="card-body">
-          <div class=" mb-3 pt-3">
-            <img src="assets/img/icons/odrzavanje.svg" alt="Odrzavanje bazena">
-          </div>
-          <h5 class="card-title">Održavanje</h5>
-          <p class="small">Jedina firma sa uslugom održavanja bazena na nedeljnom nivou.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 pb-3 ">
-      <div class="card h-100 text-center">
-        <div class="card-body">
-          <div class=" mb-3 pt-3">
-            <img src="assets/img/icons/oprema.svg" alt="Oprema za bazene">
-          </div>
-          <h5 class="card-title">Oprema</h5>
-          <p class="small">Posedujemo rezervne delove za svu našu opremu.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row justify-content-center mt-5">
-    <button class="btn btn-secondary border-0"
-            [routerLink]="['/kontakt'] ">Kontaktiraj nas za više informacija
-    </button>
-  </div>
-</div>
+<app-ponuda></app-ponuda>
 
 <div class="container">
   <div class="swiper-container mb-128" [swiper]="testemonials">

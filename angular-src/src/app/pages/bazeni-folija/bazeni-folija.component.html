@@ -3,11 +3,11 @@
 <div id="hero" class="folija-cover-background">
   <div class="container h-100">
     <div class="row h-100 align-items-center">
-      <div class="col-12 col-lg-10 col-xl-8">
+      <div class="col-12 text-center">
 
-        <h1 class="display-2">Bazeni sa folijom po želji</h1>
+        <h1 class="display-2 font-weight-bold">Bazeni sa folijom po želji</h1>
         <p class="mb-5">Za bilo koji oblik i dimenzije moguće je oblaganje bazena folijom, postupkom varenja folije
-                        na licu mesta</p>
+          na licu mesta</p>
         <a class="btn btn-secondary" role="button" [routerLink]="['/kontakt']">Zatražite ponudu</a>
 
       </div>
@@ -21,18 +21,18 @@
     <div class="row">
       <div class="col-12 col-md-4 mb-5 mb-md-0 text-center">
         <img src="assets/img/polumontazni-bazeni/future-01.svg" alt="slika2" class="img-fluid mb-4" width="64">
-        <h5>Raznovrsnoste</h5>
-        <p class="small">Veliki izbor dimenzija i dezena</p>
+        <h4>Raznovrsnoste</h4>
+        <p class="text-black-50">Veliki izbor dimenzija i dezena</p>
       </div>
       <div class="col-12 col-md-4 mb-5 mb-md-0 text-center">
         <img src="assets/img/polumontazni-bazeni/future-02.svg" alt="knjiga" class="img-fluid mb-4" width="64">
-        <h5>Raznovrsnost dizajna</h5>
-        <p class="small">Otpornost na razvoj bakterija i algi</p>
+        <h4>Raznovrsnost dizajna</h4>
+        <p class="text-black-50">Otpornost na razvoj bakterija i algi</p>
       </div>
       <div class="col-12 col-md-4 mb-5 mb-md-0 text-center">
         <img src="assets/img/polumontazni-bazeni/future-03.svg" alt="slika2" class="img-fluid mb-4" width="64">
-        <h5>Dugotrajnost</h5>
-        <p class="small">Fleksibilan, izdržljiv i vododbojan</p>
+        <h4>Dugotrajnost</h4>
+        <p class="text-black-50">Fleksibilan, izdržljiv i vododbojan</p>
       </div>
     </div>
   </div>
@@ -55,34 +55,7 @@
   </div>
 </div>
 
-
-<div class="container-fluid steps my-64">
-  <div class="row">
-    <div class="col-12">
-      <h3 class="text-left text-md-center">Brzo i lako do<br>bazena sa folijom</h3>
-      <div class="row justify-content-center my-64">
-        <div class="col-12 offset-md-1 col-md-3 align-self-start" id="steps">
-          <div class="border mr-auto mr-md-0">
-            <img src="assets/img/korak-01.svg" alt="Ugovaranje">
-            <p class=" text-center pt-5">Izrada projekata</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 align-self-center dole" id="steps2">
-          <div class="border mx-auto mx-md-0">
-            <img src="assets/img/korak-02.svg" alt="Izgradnja">
-            <p class=" text-center pt-5">Radovi</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 align-self-end dole-2 mb-5 test">
-          <div class="border ml-auto ml-md-0">
-            <img src="assets/img/korak-03.svg" alt="Uzivanje">
-            <p class=" text-center pt-5">Uživanje</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<app-tri-koraka></app-tri-koraka>
 
 <div class="container pb-128">
   <div class="row">

@@ -172,12 +172,6 @@ export class FormComponent {
   }
 
 
-  // TODO: add interfaces and enums wherever appropriate
-
-  // this.formContent = LISTA_KORAKA;
-  // this.formData = {};
-
-
   sendMail() {
     console.log(this.form.value);
     this.subscription = this.MailService.sendEmail(this.form.value).subscribe(data => {
