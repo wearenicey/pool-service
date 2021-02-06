@@ -1,18 +1,26 @@
 <!-- SECTION ACCORDION -->
-<div class="container-fluid align-items-center padding-top_faq">
-  <div class="row justify-content-center">
-    <div class="col container-first_bg">
-      <div class="container cards-zIndex_container">
-        <div class="row justify-content-center">
 
-          <div class="col-12 col-md-3" [class.active]="viewMode=='get'">
-            <a (click)="viewMode='get'">
+<div class="container mt-128 mb-64">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>Najčešća postavljana pitanja</h1>
+    </div>
+  </div>
+</div>
+
+<div style="background-color: #17154B;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 py-64">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-3" [class.active]="viewMode=='bazeni'">
+            <a (click)="viewMode='bazeni'">
               <div class="card mt-2 mt-md-0">
                 <div class="card-body text-center">
                   <div class="mt-2 mb-3 text-center d-none d-sm-inline-block">
                     <img src="assets/img/FAQ/bazeni.svg" alt="kapljica-vode">
                   </div>
-                  <h5 class="card-title">Bazeni</h5>
+                  <h5 class="font-weight-bold">Bazeni</h5>
                 </div>
               </div>
             </a>
@@ -24,7 +32,7 @@
                   <div class="mt-2 mb-3 text-center d-none d-sm-inline-block">
                     <img src="assets/img/FAQ/dodatna-oprema.svg" alt="dodatna oprema">
                   </div>
-                  <h5 class="card-title">Dodatna oprema</h5>
+                  <h5 class="font-weight-bold">Dodatna oprema</h5>
                 </div>
               </div>
             </a>
@@ -36,284 +44,269 @@
                   <div class="mt-2 mb-3 text-center d-none d-sm-inline-block">
                     <img src="assets/img/FAQ/odrzavanje.svg" alt="odrzavanje">
                   </div>
-                  <h5 class="card-title">Održavanje</h5>
+                  <h5 class="font-weight-bold">Održavanje</h5>
                 </div>
               </div>
             </a>
           </div>
         </div>
       </div>
-      <div class="container-header-text_center  py-5">
-        <h1 class="mt-5">Najčešća postavljana pitanja</h1>
-      </div>
 
+      <div class="col-12">
 
-      <div [ngSwitch]="viewMode">
-        <!-- GET started -->
-        <div class="container inside-background_container" *ngSwitchCase="'get'">
-          <div class="accordion" id="accordionExample">
-            <div class="card my-3">
-              <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
-                   aria-expanded="true" aria-controls="collapseOne">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Šta su bazeni sa lajnerom?
-                </h5>
-              </div>
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  To su bazeni koji su obloženi PVC lajnerom koji drži vodonepropusnost. Dele se na
-                  Future pool
-                  polumontažne bazene koji su određenih dimenzija za brzu gradnju i bazene gde se
-                  lajner vari po želji u
-                  različitim oblicima i dimenzijama.
+        <div [ngSwitch]="viewMode">
+          <!-- GET started -->
+          <div class="container inside-background_container" *ngSwitchCase="'bazeni'">
+            <div class="accordion" id="accordionExample">
+              <div class="card my-3">
+                <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+                     aria-expanded="true" aria-controls="collapseOne">
+                  <h5 class="mb-0 pt-3 pb-3 font-weight-bold">
+                    Šta su bazeni sa lajnerom?
+                  </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                     data-parent="#accordionExample">
+                  <div class="card-body">
+                    To su bazeni koji su obloženi PVC lajnerom koji drži vodonepropusnost. Dele se na
+                    Future pool polumontažne bazene koji su određenih dimenzija za brzu gradnju i bazene gde se
+                    lajner vari po želji u različitim oblicima i dimenzijama.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card my-3">
-              <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
-                   aria-expanded="false" aria-controls="collapseTwo">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Koje dubine mogu biti Future Pool bazeni?
-                </h5>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  Future Pool bazeni mogu biti dubine 1,5m i 1,2m.
+              <div class="card my-3">
+                <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
+                     aria-expanded="false" aria-controls="collapseTwo">
+                  <h5 class="mb-0 pt-3 pb-3 font-weight-bold">
+                    Koje dubine mogu biti Future Pool bazeni?
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Future Pool bazeni mogu biti dubine 1,5m i 1,2m.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card my-3">
-              <div class="card-header" id="headingThree" data-toggle="collapse"
-                   data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Čime sve mogu betonski bazeni da se oblože?
-                </h5>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  Betonski bazeni su uglavnom obloženi keramičkim pločicama. U novije vreme je sve
-                  više zastupljeno
-                  oblaganje staklenim mozaik pločicama raznih dezena, bordura i slika.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour"
-                   aria-expanded="false" aria-controls="collapseFour">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Koji su uslovi najpogodniji za izradu bazena?
-                </h5>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
-                  Vremenska temperatura u rasponu od 20 do 25 stepeni. Takođe, bitno je da vreme nije
-                  kišovito, da nema
-                  mraza, snega i jakih vetrova.
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-
-
-        <!-- end get started -->
-
-
-        <!-- izgradnja -->
-
-
-        <div class="container inside-background_container" *ngSwitchCase="'dodatna'">
-          <div class="accordion" id="accordionExample">
-            <div class="card my-3">
-              <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
-                   aria-expanded="true" aria-controls="collapseOne">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Koliko treba da mi je jaka pumpa? </h5>
-              </div>
-
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  Jačina pumpe se određuje spram kubikaže vode i namene bazena (privatna ili javna
-                  upotreba).
-
-                </div>
-              </div>
-            </div>
-            <div class="card my-3">
-              <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
-                   aria-expanded="false" aria-controls="collapseTwo">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Koliko dugo treba da radi pumpa? </h5>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  Preporučuje se minmalno vreme rada od 8 do 12 sati dnevno, a tokom letnjeg perioda i
-                  do 24 sata
-
-                </div>
-              </div>
-            </div>
-            <div class="card my-3">
-              <div class="card-header" id="headingThree" data-toggle="collapse"
-                   data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Šta mi je sve potrebno od hemije za bazen?
-                </h5>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  Najčešće korišćen tretman je dezinfecija hlorom. I to sa hlornim spororastopljivim
-                  tabletama i hlornim
-                  granulatom.Pored toga pH vrednost vode treba da bude između 7.2 i 7.4 što uz pomoć
-                  testera merimo i
-                  regulišemo sredstvima za smanjenje ili povećanje iste. Algicid je sredstvo protiv
-                  algi koje se dozira
-                  periodično. Sva sredstva se doziraju prema kubikaži vode ubazena.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- end izgradnja -->
-
-        <!-- odrzavanje -->
-
-        <div class="container inside-background_container" *ngSwitchCase="'odrzavanje'">
-          <div class="accordion" id="accordionExample">
-            <div class="card my-3">
-              <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
-                   aria-expanded="true" aria-controls="collapseOne">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Zašto je pH vrednost važna? </h5>
-              </div>
-
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  Da bi hlor odradio svoju puno dezinfeciju, neophodna je pH vrednost između 7.2 i
-                  7.4.
-
-                </div>
-              </div>
-            </div>
-            <div class="card my-3">
-              <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
-                   aria-expanded="false" aria-controls="collapseTwo">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Da li mogu hlornu tabletu da bacim u bazen?
-                </h5>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  Hlor je agresivan za bazena obložene lajnerom i moze lajner da izbeli ili nagrize.
-                  Hlor u tabletama se
-                  drži u plutajućim dozerima.
-
-                </div>
-              </div>
-            </div>
-            <div class="card my-3">
-              <div class="card-header" id="headingThree" data-toggle="collapse"
-                   data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <h5 class="mb-0 pt-3 pb-3">
-                  Šta je "Šok hlor"?
-                </h5>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  To je hlor koji ima trenutačno dejstvo i služi za lečenje vode.
-                  Hlorni granulat se pre doziranja rastvori u kanti sa vodom i najbolje ga je dozirati
-                  uveče kada nema
-                  sunca i kupača.
-                </div>
-              </div>
-            </div>
-
-            <div class="card my-3">
-              <div class="card">
+              <div class="card my-3">
                 <div class="card-header" id="headingThree" data-toggle="collapse"
-                     data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  <h5 class="mb-0 pb-3 pt-3">
-                    Koje vrste dezinfekcije vode postoje?
+                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h5 class="mb-0 pt-3 pb-3 font-weight-bold">
+                    Čime sve mogu betonski bazeni da se oblože?
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Betonski bazeni su uglavnom obloženi keramičkim pločicama. U novije vreme je sve
+                    više zastupljeno
+                    oblaganje staklenim mozaik pločicama raznih dezena, bordura i slika.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour"
+                     aria-expanded="false" aria-controls="collapseFour">
+                  <h5 class="mb-0 pt-3 pb-3 font-weight-bold">
+                    Koji su uslovi najpogodniji za izradu bazena?
                   </h5>
                 </div>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                   <div class="card-body">
-                    Postoje razne vrste: klasičnim Hlorom, tečnim Hlorom, Elektrolizom i
-                    Vodonikperoksidom. Uz te metode
-                    dezinfekcije potpomaže i UV lampa.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card my-3">
-              <div class="card">
-                <div class="card-header" id="headingFour" data-toggle="collapse"
-                     data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  <h5 class="mb-0 pb-3 pt-3">
-                    Da li izosolarni pokrivač štiti bazen od prljavštine?
-                  </h5>
-                </div>
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                  <div class="card-body">
-                    Ne štite, njihova primarna funkcija je da zadrži toplotu, spreči isparavanje
-                    vode i pomaže u
-                    zagrevanju vode.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card my-3">
-              <div class="card">
-                <div class="card-header" id="headingFive" data-toggle="collapse"
-                     data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                  <h5 class="mb-0 pb-3 pt-3">
-                    Da li postoji usluga održavanja bazena na nedeljnom nivou?
-                  </h5>
-                </div>
-                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                  <div class="card-body">
-                    Da. Pool Service jedini nudi uslugu održavanja bazena na nedeljnom nivou.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card my-3">
-              <div class="card">
-                <div class="card-header" id="headingSix" data-toggle="collapse"
-                     data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                  <h5 class="mb-0 pb-3 pt-3">
-                    Šta sve održavanje bazena obuhvata?
-                  </h5>
-                </div>
-                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-                  <div class="card-body">
-                    Da. Pool Service jedini nudi uslugu održavanja bazena na nedeljnom nivou.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card my-3">
-              <div class="card">
-                <div class="card-header" id="headingSeven" data-toggle="collapse"
-                     data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                  <h5 class="mb-0 pb-3 pt-3">
-                    Šta održavanje bazena ne uključuje?
-                  </h5>
-                </div>
-                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
-                  <div class="card-body">
-                    Čišćenje plaže, odnosno okoline bazena.
+                    Vremenska temperatura u rasponu od 20 do 25 stepeni. Takođe, bitno je da vreme nije
+                    kišovito, da nema mraza, snega i jakih vetrova.
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- end get started -->
+
+          <!-- izgradnja -->
+          <div class="container inside-background_container" *ngSwitchCase="'dodatna'">
+            <div class="accordion" id="accordionExample">
+              <div class="card my-3">
+                <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+                     aria-expanded="true" aria-controls="collapseOne">
+                  <h5 class="mb-0 pt-3 pb-3 font-weight-bold">
+                    Koliko treba da mi je jaka pumpa?</h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                     data-parent="#accordionExample">
+                  <div class="card-body">
+                    Jačina pumpe se određuje spram kubikaže vode i namene bazena (privatna ili javna
+                    upotreba).
+
+                  </div>
+                </div>
+              </div>
+              <div class="card my-3">
+                <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
+                     aria-expanded="false" aria-controls="collapseTwo">
+                  <h5 class="mb-0 pt-3 pb-3 font-weight-bold">
+                    Koliko dugo treba da radi pumpa? </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Preporučuje se minmalno vreme rada od 8 do 12 sati dnevno, a tokom letnjeg perioda i
+                    do 24 sata
+
+                  </div>
+                </div>
+              </div>
+              <div class="card my-3">
+                <div class="card-header" id="headingThree" data-toggle="collapse"
+                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h5 class="mb-0 pt-3 pb-3 font-weight-bold">
+                    Šta mi je sve potrebno od hemije za bazen?
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Najčešće korišćen tretman je dezinfecija hlorom. I to sa hlornim spororastopljivim
+                    tabletama i hlornim granulatom.Pored toga pH vrednost vode treba da bude između 7.2 i 7.4 što uz
+                    pomoć
+                    testera merimo i regulišemo sredstvima za smanjenje ili povećanje iste. Algicid je sredstvo protiv
+                    algi koje se dozira periodično. Sva sredstva se doziraju prema kubikaži vode ubazena.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end izgradnja -->
+
+          <!-- odrzavanje -->
+          <div class="container inside-background_container" *ngSwitchCase="'odrzavanje'">
+            <div class="accordion" id="accordionExample">
+              <div class="card my-3">
+                <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+                     aria-expanded="true" aria-controls="collapseOne">
+                  <h5 class="mb-0 pt-3 pb-3 font-weight-bold">
+                    Zašto je pH vrednost važna? </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                     data-parent="#accordionExample">
+                  <div class="card-body">
+                    Da bi hlor odradio svoju puno dezinfeciju, neophodna je pH vrednost između 7.2 i 7.4.
+                  </div>
+                </div>
+              </div>
+              <div class="card my-3">
+                <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
+                     aria-expanded="false" aria-controls="collapseTwo">
+                  <h5 class="mb-0 pt-3 pb-3 font-weight-bold">
+                    Da li mogu hlornu tabletu da bacim u bazen?
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Hlor je agresivan za bazena obložene lajnerom i moze lajner da izbeli ili nagrize.
+                    Hlor u tabletama se drži u plutajućim dozerima.
+                  </div>
+                </div>
+              </div>
+              <div class="card my-3">
+                <div class="card-header" id="headingThree" data-toggle="collapse"
+                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h5 class="mb-0 pt-3 pb-3 font-weight-bold">
+                    Šta je "Šok hlor"?
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    To je hlor koji ima trenutačno dejstvo i služi za lečenje vode.
+                    Hlorni granulat se pre doziranja rastvori u kanti sa vodom i najbolje ga je dozirati
+                    uveče kada nema sunca i kupača.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card my-3">
+                <div class="card">
+                  <div class="card-header" id="headingThree" data-toggle="collapse"
+                       data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <h5 class="mb-0 pb-3 pt-3 font-weight-bold">
+                      Koje vrste dezinfekcije vode postoje?
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Postoje razne vrste: klasičnim Hlorom, tečnim Hlorom, Elektrolizom i
+                      Vodonikperoksidom. Uz te metode
+                      dezinfekcije potpomaže i UV lampa.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card my-3">
+                <div class="card">
+                  <div class="card-header" id="headingFour" data-toggle="collapse"
+                       data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <h5 class="mb-0 pb-3 pt-3 font-weight-bold">
+                      Da li izosolarni pokrivač štiti bazen od prljavštine?
+                    </h5>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Ne štite, njihova primarna funkcija je da zadrži toplotu, spreči isparavanje
+                      vode i pomaže u
+                      zagrevanju vode.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card my-3">
+                <div class="card">
+                  <div class="card-header" id="headingFive" data-toggle="collapse"
+                       data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <h5 class="mb-0 pb-3 pt-3 font-weight-bold">
+                      Da li postoji usluga održavanja bazena na nedeljnom nivou?
+                    </h5>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Da. Pool Service jedini nudi uslugu održavanja bazena na nedeljnom nivou.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card my-3">
+                <div class="card">
+                  <div class="card-header" id="headingSix" data-toggle="collapse"
+                       data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <h5 class="mb-0 pb-3 pt-3 font-weight-bold">
+                      Šta sve održavanje bazena obuhvata?
+                    </h5>
+                  </div>
+                  <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                       data-parent="#accordionExample">
+                    <div class="card-body">
+                      Da. Pool Service jedini nudi uslugu održavanja bazena na nedeljnom nivou.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card my-3">
+                <div class="card">
+                  <div class="card-header" id="headingSeven" data-toggle="collapse"
+                       data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <h5 class="mb-0 pb-3 pt-3 font-weight-bold">
+                      Šta održavanje bazena ne uključuje?
+                    </h5>
+                  </div>
+                  <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                       data-parent="#accordionExample">
+                    <div class="card-body">
+                      Čišćenje plaže, odnosno okoline bazena.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end odrzavanje -->
         </div>
-        <!-- end odrzavanje -->
+
       </div>
     </div>
   </div>
@@ -324,66 +317,5 @@
 
 <!-- SECTION CARDS -->
 
-
-<div class="container my-128">
-  <div class="row align-items-center justify-content-center">
-    <div class="col-8 text-center">
-      <h2>Šta možemo da uradimo za vas</h2>
-      <p>POOL SERVICE se uspešno bavi prodajom bazena i bazenske opreme po sistemu ključ u ruke,
-        održavanje postojećih bazena, isporuka i montažom sauna i ostale rekreacione opreme.
-      </p>
-    </div>
-  </div>
-
-  <div class="row justify-content-center mt-5">
-    <div class="col-md-3 pb-3">
-      <div class="card h-100 text-center">
-        <div class="card-body">
-          <div class=" mb-3 pt-3">
-            <img src="assets/img/icons/projektovanje.svg" alt="Projektovanje bazena">
-          </div>
-          <h5 class="card-title">Projektovanje</h5>
-          <p class="small">Vama na raspolaganju, od ideje do realizacije.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 pb-3">
-      <div class="card h-100 text-center ">
-        <div class="card-body">
-          <div class=" mb-3 pt-3">
-            <img src="assets/img/icons/izgradnja.svg" alt="Izgradnja bazena">
-          </div>
-          <h5 class="card-title">Izgradnja</h5>
-          <p class="small">Dugogodišnje iskustvo, ugradnja samo najkvalitetnije opreme.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 pb-3">
-      <div class="card h-100 text-center">
-        <div class="card-body">
-          <div class=" mb-3 pt-3">
-            <img src="assets/img/icons/odrzavanje.svg" alt="Odrzavanje bazena">
-          </div>
-          <h5 class="card-title">Održavanje</h5>
-          <p class="small">Jedina firma sa uslugom održavanja bazena na nedeljnom nivou.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 pb-3 ">
-      <div class="card h-100 text-center">
-        <div class="card-body">
-          <div class=" mb-3 pt-3">
-            <img src="assets/img/icons/oprema.svg" alt="Oprema za bazene">
-          </div>
-          <h5 class="card-title">Oprema</h5>
-          <p class="small">Posedujemo rezervne delove za svu našu opremu.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- END SECTION CARD -->
-
+<app-ponuda></app-ponuda>
 <app-konsultacije></app-konsultacije>

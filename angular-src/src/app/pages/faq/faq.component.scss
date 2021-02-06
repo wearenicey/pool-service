@@ -16,70 +16,41 @@
   padding-top: 128px;
 }
 
-
-// ACCORDION
-.padding-top_faq {
-  padding-top: 256px;
-
-  @include media-breakpoint-down(sm) {
-    padding-top: 128px;
+.active {
+  .card {
+    background-color: #e9f7fe;
   }
+}
 
-  .container-first_bg {
-    background-color: $secondary;
-  }
+.inside-background_container {
+  padding-bottom: 100px;
 
-  .container-header-text_center {
-    h1 {
-      text-align: center;
-      color: #fff;
+  .accordion {
+    .card {
+      box-shadow: 0px 20px 40px rgba(3, 0, 77, 0.04);
+      border-radius: 8px;
+      color: #FFFFFF;
+      background-color: transparent !important;
 
-      @include media-breakpoint-down(md) {
-        font-size: 2rem;
+      .card-header {
+        .btn {
+          color: #FFFFFF;
+        }
       }
-    }
-  }
 
-  a:hover {
-    background-color: #E9F7FE;
-  }
+      .card-header {
+        background-color: rgba(0, 0, 0, 0.4) !important;
 
-  .btn-fix {
-    padding: 0;
-    border: none;
+        h5 {
+          font-size: 20px;
+          line-height: 24px;
 
-    white-space: normal;
-  }
-
-  .inside-background_container {
-    padding-bottom: 100px;
-
-    .accordion {
-      .card {
-        background: rgba(255, 255, 255, 0.06);
-        box-shadow: 0px 20px 40px rgba(3, 0, 77, 0.04);
-        border-radius: 8px;
-        color: #FFFFFF;
-
-        .card-header {
-          .btn {
-            color: #FFFFFF;
-          }
+          letter-spacing: 0.2px;
         }
 
-        .card-header {
-
-          h5 {
-            font-size: 20px;
-            line-height: 24px;
-
-            letter-spacing: 0.2px;
-          }
-
-          img {
-            width: 32px;
-            height: 32px;
-          }
+        img {
+          width: 32px;
+          height: 32px;
         }
       }
     }
@@ -87,12 +58,11 @@
 }
 
 .cards-zIndex_container {
-  margin-top: -128px;
 
   .active {
 
     .card {
-      background-color: #E9F7FE;
+      background-color: #e9f7fe;
     }
   }
 
