@@ -64,19 +64,20 @@ app.post("/contact", (req, res) => {
   `;
 
     let transporter = nodemailer.createTransport({
-        service: 'gmail',
+        host: 'mail.wearenicey.com',
+        port: 465,
+        secure: true,
         auth: {
-            user: 'ttestiranje1@gmail.com',
-            pass: 'proba12345' // naturally, replace both with your real credentials or an application-specific password
+            user: 'zarko@wearenicey.com',
+            pass: 'zarkonicey123',
         },
         tls: {
             rejectUnauthorized: false
-
         }
     })
 
     let mailOptions = {
-        from: '<ttestiranje1@gmail.com>',
+        from: '<zarko@wearenicey.com>',
         to: "zarko.stevanovic092@gmail.com",
 
         subject: "KONTAKT",

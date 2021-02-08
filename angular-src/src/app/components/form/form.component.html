@@ -7,7 +7,7 @@
       <div *ngSwitchCase="'0'">
         <div class="card-header">
           <p class="form-heading">
-            Korak 1 od 3
+            Korak 1 od 2
           <p>
           <p class="h4">Za koju ste uslugu zaintresovani?</p>
         </div>
@@ -19,95 +19,24 @@
               <label formArrayName="website" class="inputGroup">
                 <p class="d-inline-flex pl-4 m-0 pt-1 pb-2 pb-md-0">{{web.usluga}}</p>
                 <img [src]="web.imageUrl" alt="" srcset="" class="rounded-left float-left mr-2 d-none d-md-inline-flex"
-                     style="width: 88px; height:43px ;">
+                  style="width: 88px; height:43px ;">
                 <input [value]="web.id" class="float-right mt-3 " type="checkbox" [checked]="web.isChecked" (change)="
 									onCheckboxChange($event); web.isChecked = !web.isCheked">
               </label>
             </ng-container>
 
-            <button class="btn btn-primary w-100"
-                    [disabled]="!form.controls.website.valid"
-                    (click)="nextStep()">Sledeći korak
+            <button class="btn btn-primary w-100" [disabled]="!form.controls.website.valid" (click)="nextStep()">Sledeći
+              korak
             </button>
 
           </div>
         </div>
       </div>
 
-      <div *ngSwitchCase="'1'" class="radio-button">
-        <div class="card-header">
-          <p class="form-heading">Korak 2 od 3
-          <p>
-          <p class="h4">U koje vreme bi Vam odgovaralo da vas kontaktiramo</p>
-        </div>
-        <div class="card-body">
-          <div class="form-group radio">
-
-            <div class="row justify-content-between align-items-start mb-5">
-              <div class="col-12 col-md">
-
-                <input id="prepodne" type="radio" value="prepodne" name="gender" formControlName="gender"
-                       (change)="changeGender($event)">
-                <label for="prepodne" class="text-center m-0">
-                  <div class="row align-items-center">
-                    <div class="col icon">
-                      <img src="assets/img/kontakt/prepodne.svg" alt="">
-                      <p class="text-center mt-4">Prepodne</p>
-                    </div>
-                  </div>
-                </label>
-
-              </div>
-              <div class="col-12 col-md">
-                <input id="poslepodne" type="radio" value="poslepodne" name="gender" formControlName="gender"
-                       (change)="changeGender($event)">
-                <label for="poslepodne" class="text-center m-0">
-                  <div class="row align-items-center">
-                    <div class="col icon">
-                      <img src="assets/img/kontakt/poslepodne.svg" alt="">
-                      <p class="text-center mt-4">Poslepodne</p>
-                    </div>
-                  </div>
-                </label>
-              </div>
-              <div class="col-12 col-md">
-                <input id="predvece" type="radio" value="predvece" name="gender" formControlName="gender"
-                       (change)="changeGender($event)">
-                <label for="predvece" class="text-center m-0">
-                  <div class="row align-items-center">
-                    <div class="col icon">
-                      <img src="assets/img/kontakt/predvece.svg" alt="">
-                      <p class="text-center mt-4">Predveče</p>
-                    </div>
-                  </div>
-                </label>
-              </div>
-            </div>
-
-            <div class="invalid-feedback" *ngIf=" f.errors?.required">
-              <p>Izaberite jednu od opcija</p>
-            </div>
-          </div>
-
-
-          <div class="row">
-            <div class="col-12 col-md">
-              <button class="btn btn-primary-light mr-md-2 w-100" style="background-color: white !important;" (click)="backStep()">Korak unazad</button>
-            </div>
-            <div class="col-12 col-md">
-              <button class="btn btn-primary w-100 mt-3 mt-md-0" (click)="nextStep()" [disabled]="!form.controls.gender.valid">Sledeci korak</button>
-            </div>
-          </div>
-
-        </div>
-
-
-      </div>
-
-      <div *ngSwitchCase="'2'">
+      <div *ngSwitchCase="'1'">
         <div class="card-header">
           <p class="form-heading">
-            Korak 3 od 3
+            Korak 2 od 2
           <p>
           <p class="h4">Vasi podaci i poruka</p>
         </div>
@@ -115,7 +44,7 @@
         <div class="form-group px-5">
           <label for="nameInp"></label>
           <input type="text" id="nameInp" class="form-control border-info" formControlName="name" required
-                 placeholder="Ime i Prezime">
+            placeholder="Ime i Prezime">
 
           <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger p-1">
             <p *ngIf="name.errors.required" class="mb-0">
@@ -129,7 +58,8 @@
 
         <div class="form-row px-5">
           <div class="col-md-6 mb-2">
-            <input class="form-control mb-2 mb-md-0" type="tel" value="" id="example-tel-input" formControlName="telefon" placeholder="Telefon">
+            <input class="form-control mb-2 mb-md-0" type="tel" value="" id="example-tel-input"
+              formControlName="telefon" placeholder="Telefon">
             <div *ngIf="telefon.invalid && (telefon.dirty || telefon.touched)" class="alert alert-danger p-1">
               <p *ngIf="telefon.errors.required" class="mb-0">
                 Unesite broj telefona.
@@ -143,7 +73,7 @@
           <div class="col-md-6 mb-2">
 
             <input type="text" id="mailInp" class="form-control border-info" formControlName="email" required
-                   placeholder="Email">
+              placeholder="Email">
             <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger p-1">
               <p *ngIf="email.errors.required" class="mb-0">
                 Obavezana email adresa.
@@ -158,7 +88,8 @@
         <div class="form-row px-5 pt-2">
           <div class="col-md-6 mb-2">
 
-            <input type="text" class="form-control border-info mb-2 mb-md-0" formControlName="city" required placeholder="Grad">
+            <input type="text" class="form-control border-info mb-2 mb-md-0" formControlName="city" required
+              placeholder="Grad">
             <div *ngIf="city.invalid && (city.dirty || city.touched)" class="alert alert-danger p-1">
               <p *ngIf="city.errors.required" class="mb-0">
                 Grad je obavezan.
@@ -169,7 +100,7 @@
 
           <div class="col-md-6 mb-2">
             <select class="form-control" (change)="selectChangeHandler($event) " formControlName="select"
-                    placeholder="Izaberite zemlju">
+              placeholder="Izaberite zemlju">
               <option value="" disabled selected>Izaberite zemlju</option>
               <option value="Srbija">Srbija</option>
               <option value="Bosna i Hercegovina">Bosna i Hercegovinva</option>
@@ -187,10 +118,11 @@
 
           <div class="row">
             <div class="col-12 col-md">
-              <button class="btn btn-primary-light mr-md-2 w-100" style="background-color: white !important;" (click)="backStep()">Korak unazad</button>
+              <button class="btn btn-primary-light mr-md-2 w-100" style="background-color: white !important;"
+                (click)="backStep()">Korak unazad</button>
             </div>
             <div class="col-12 col-md">
-              <button class="btn btn-primary w-100 mt-3 mt-md-0" [disabled]="!form.valid" type="submit">Posalji</button>
+              <button class="btn btn-primary w-100 mt-3 mt-md-0" type="submit">Posalji</button>
             </div>
           </div>
 

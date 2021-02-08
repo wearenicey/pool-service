@@ -1,9 +1,9 @@
-import {Component, OnInit, ViewChild, Input, EventEmitter, Output, OnDestroy} from '@angular/core';
-import {Subscription} from 'rxjs';
-import {FormGroup, FormControl, FormBuilder, Validators, FormArray, ValidatorFn} from '@angular/forms';
-import {MailService} from '../../mail.service';
-import {ToastrService} from 'ngx-toastr';
-import {Router} from '@angular/router';
+import { Component, OnInit, ViewChild, Input, EventEmitter, Output, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { FormGroup, FormControl, FormBuilder, Validators, FormArray, ValidatorFn } from '@angular/forms';
+import { MailService } from '../../mail.service';
+import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -45,7 +45,7 @@ export class FormComponent {
 
   websiteList: any = [
     {
-      usluga: 'Izgradnja',
+      usluga: 'Konsultacije',
       imageUrl: 'assets/img/kontakt/checkbox-izgradnja.jpg',
       id: 'Izgradnja',
       isChecked: false
@@ -110,7 +110,7 @@ export class FormComponent {
 
 
   nextStep() {
-    if (this.variable < 3) {
+    if (this.variable < 2) {
       this.variable = this.variable + 1;
     }
     console.log(this.variable);
