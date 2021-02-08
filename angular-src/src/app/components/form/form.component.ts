@@ -31,11 +31,7 @@ export class FormComponent {
 
   }
 
-  get f() {
 
-    return this.form.get('gender');
-
-  }
 
   selection = {};
 
@@ -92,7 +88,6 @@ export class FormComponent {
     {
       website: this.formBuilder.array([], [Validators.required]),
 
-      gender: ['', [Validators.required]],
       name: ['', [
         Validators.minLength(3)
       ]

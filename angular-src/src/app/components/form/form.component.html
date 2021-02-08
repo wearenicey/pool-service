@@ -122,7 +122,7 @@
                 (click)="backStep()">Korak unazad</button>
             </div>
             <div class="col-12 col-md">
-              <button class="btn btn-primary w-100 mt-3 mt-md-0" type="submit">Posalji</button>
+              <button class="btn btn-primary w-100 mt-3 mt-md-0" [disabled]="!form.valid" type="submit">Posalji</button>
             </div>
           </div>
 
