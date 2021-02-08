@@ -195,5 +195,99 @@
 }
 
 
+.steps {
+  .background_working {
+    background-color: #E9F7FE;
+    height: 800px;
+
+    h3 {
+      font-size: 48px;
+      line-height: 48px;
+      text-align: center;
+      letter-spacing: -1px;
+    }
+  }
+
+
+  .border {
+    background: #2E79CA;
+    box-shadow: 0px 32px 54px rgba(37, 138, 255, 0.224553);
+    border-radius: 10px;
+    width: 128px;
+    height: 128px;
+
+    @include media-breakpoint-down(md) {
+      width: 96px;
+      height: 96px;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 32px;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 24px;
+        width: 48px;
+        height: auto;
+      }
+    }
+  }
+
+
+  #steps {
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 5rem;
+    }
+
+    &:nth-last-child(-n+3):after {
+      content: url(../../../assets/img/polumontazni-bazeni/strelica-gore.png);
+      display: block;
+      position: absolute;
+      left: 12vw;
+      top: 6vh;
+      z-index: -1;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+
+
+  #steps2 {
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
+
+    &:nth-last-child(-n+3):after {
+      content: url(../../../assets/img/polumontazni-bazeni/strelica-dole.png);
+      display: block;
+      position: absolute;
+      left: 12vw;
+      top: 4vh;
+      z-index: -1;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+
+
+  .dole-2 {
+    margin-top: 16rem;
+    margin-left: 2rem;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0;
+    }
+  }
+}
 
 

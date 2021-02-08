@@ -26,7 +26,11 @@ $secondary: #FF8125 !default;
 
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #f5f8fe;
+}
+
+.bg-light {
+  background-color: #daeeff !important;
 }
 
 .shadow {
