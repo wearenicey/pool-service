@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -14,6 +14,9 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+  refreshPage() {
+    window.location.href = '/dodatna-oprema';
   }
 
 }

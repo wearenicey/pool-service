@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit } from '@angular/core';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar-dark',
@@ -16,5 +16,9 @@ export class NavbarDarkComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  refreshPage() {
+    window.location.href = '/dodatna-oprema';
+  }
+
 
 }
