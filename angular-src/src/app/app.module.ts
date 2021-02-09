@@ -14,7 +14,6 @@ import {CdkStepperModule} from '@angular/cdk/stepper';
 import {SwiperModule} from 'ngx-swiper-wrapper';
 import {SWIPER_CONFIG} from 'ngx-swiper-wrapper';
 import {SwiperConfigInterface} from 'ngx-swiper-wrapper';
-import {NgImageSliderModule} from 'ng-image-slider';
 
 import {NavbarComponent} from './components/navbar/navbar.component';
 import {FormComponent} from './components/form/form.component';
@@ -101,7 +100,6 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     ToastrModule.forRoot(),
     ToastContainerModule,
     CdkStepperModule,
-    NgImageSliderModule,
     SwiperModule,
     FontAwesomeModule
 
