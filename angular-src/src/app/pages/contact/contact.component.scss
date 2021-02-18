@@ -1,3 +1,6 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 @import "../../../assets/scss/colors";
 
 
@@ -69,12 +72,16 @@
 
 .padding-top_maps {
   iframe {
-  height: 430px;
+    height: 430px;
     width: 100%;
-    -webkit-box-shadow: 40px 40px 0px 0px rgba(23,21,75,1);
-    -moz-box-shadow: 40px 40px 0px 0px rgba(23,21,75,1);
-    box-shadow: 40px 40px 0px 0px rgba(23,21,75,1);
+    -webkit-box-shadow: 40px 40px 0px 0px rgba(23, 21, 75, 1);
+    -moz-box-shadow: 40px 40px 0px 0px rgba(23, 21, 75, 1);
+    box-shadow: 40px 40px 0px 0px rgba(23, 21, 75, 1);
     margin-bottom: 161px;
+
+    @include media-breakpoint-down(md) {
+      box-shadow: none !important;
+    }
   }
 
 

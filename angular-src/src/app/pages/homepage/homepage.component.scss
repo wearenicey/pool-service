@@ -175,7 +175,7 @@
       height: 100%;
       bottom: 0;
       left: 0;
-      background: linear-gradient(#0062cc00, #0062cc);
+      background: linear-gradient(#0062cc00, #003770);
       opacity: 1;
       transition: all 1s;
       -webkit-transition: all 1s;
@@ -183,7 +183,7 @@
 
       @include media-breakpoint-down(md) {
         height: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+        background: linear-gradient(#0062cc00, #003770);
       }
     }
   }
@@ -261,7 +261,7 @@
       height: 100%;
       bottom: 0;
       left: 0;
-      background: linear-gradient(#0062cc00, #0062cc);
+      background: linear-gradient(#0062cc00, #003770);
       opacity: 1;
       transition: all 1s;
       -webkit-transition: all 1s;
@@ -269,7 +269,7 @@
 
       @include media-breakpoint-down(sm) {
         height: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+        background: linear-gradient(#0062cc00, #003770);
       }
     }
   }

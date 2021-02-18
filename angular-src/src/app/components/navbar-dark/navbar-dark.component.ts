@@ -16,9 +16,4 @@ export class NavbarDarkComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  refreshPage() {
-    window.location.href = '/projects/pool-service/dodatna-oprema';
-  }
-
-
 }
