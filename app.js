@@ -30,11 +30,20 @@ app.use(function (req, res, next) {
 app.set('views', __dirname + '/public');
 app.set('view engine', 'html');
 
-// app.get("/contact", function (request, response) {
-//     response.sendFile(__dirname + "/public/index.html");
-// });
+app.get("/kontakt", function (request, response) {
+    response.sendFile(__dirname + "/public/index.html");
+});
+
+app.get("/o-nama", function (request, response) {
+    response.sendFile(__dirname + "/public/index.html");
+});
+
 
 app.get("/polumontazni-bazeni", function (request, response) {
+    response.sendFile(__dirname + "/public/index.html");
+});
+
+app.get("/ucestala-pitanja", function (request, response) {
     response.sendFile(__dirname + "/public/index.html");
 });
 
