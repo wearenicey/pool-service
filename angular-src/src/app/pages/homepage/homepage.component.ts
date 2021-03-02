@@ -86,11 +86,11 @@ export class HomepageComponent implements OnInit {
 
   ngOnInit() {
     this.metaTagService.addTags([
-      {name: 'keywords', content: 'Angular SEO Integration, Music CRUD, Angular Universal'},
+      {name: 'keywords', content: 'Sa nama dobijate više od bazena. Stvaramo sećanja u godinama koje dolaze, u oazi Vašeg dvorišta!'},
       {name: 'robots', content: 'index, follow'},
-      {name: 'author', content: 'Digamber Singh'},
+      {name: 'author', content: 'Pool Service'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {name: 'date', content: '2019-10-31', scheme: 'YYYY-MM-DD'},
+      {name: 'date', content: '2021-02-01', scheme: 'YYYY-MM-DD'},
       {charset: 'UTF-8'}
     ]);
   }
