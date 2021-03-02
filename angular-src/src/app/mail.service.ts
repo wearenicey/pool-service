@@ -11,10 +11,10 @@ import { Observable } from 'rxjs';
 })
 export class MailService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private https: HttpClient) { }
 
   sendEmail(data: any): Observable<any> {
-    return this.http.post<any>('http://localhost:5000/contact', data)
+    return this.https.post<any>('https://poolservice.rs/contact', data)
   }
 
   // sendEmail(data) {

@@ -38,7 +38,7 @@
           <p class="form-heading">
             Korak 2 od 2
           <p>
-          <p class="h4">Vasi podaci i poruka</p>
+          <p class="h4">Vaši podaci i poruka</p>
         </div>
 
         <div class="form-group px-5">
@@ -65,7 +65,7 @@
                 Unesite broj telefona.
               </p>
               <p *ngIf="telefon.errors.email" class="mb-0">
-                Pogresan broj telefona.
+                Pogrešan broj telefona.
               </p>
             </div>
           </div>
@@ -104,6 +104,8 @@
               <option value="" disabled selected>Izaberite zemlju</option>
               <option value="Srbija">Srbija</option>
               <option value="Bosna i Hercegovina">Bosna i Hercegovinva</option>
+              <option value="Crna Gora">Crna Gora</option>
+
             </select>
           </div>
         </div>
@@ -122,7 +124,7 @@
                 (click)="backStep()">Korak unazad</button>
             </div>
             <div class="col-12 col-md">
-              <button class="btn btn-primary w-100 mt-3 mt-md-0" [disabled]="!form.valid" type="submit">Posalji</button>
+              <button class="btn btn-primary w-100 mt-3 mt-md-0" [disabled]="!form.valid" type="submit">Pošalji</button>
             </div>
           </div>
 

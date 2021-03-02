@@ -173,7 +173,7 @@ export class FormComponent {
       const msg = data.message;
       this.toastr.success(msg);
       // console.log(data, "success");
-      setTimeout(() => this.router.navigate(['']),
+      setTimeout(() => window.location.reload(),
         2000);
     }, error => {
       console.error(error, 'error');

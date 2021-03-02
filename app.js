@@ -11,24 +11,44 @@ const nodemailer = require("nodemailer");
 //moduo za postavke aplikacije
 const cors = require("cors");
 
-dotenv.config({ path: './config/config.env' });
+// dotenv.config({ path: './config/config.env' });
 
 
 
 const app = express();
 
-app.use(cors());
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET, PUT, POST");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 
 
 //govorimo serveru da prikazuje angular aplikaciju ng build
 app.set('views', __dirname + '/public');
 app.set('view engine', 'html');
 
-app.get("/contact", function (request, response) {
+// app.get("/contact", function (request, response) {
+//     response.sendFile(__dirname + "/public/index.html");
+// });
+
+app.get("/polumontazni-bazeni", function (request, response) {
     response.sendFile(__dirname + "/public/index.html");
 });
 
-app.get("/polumontazni-bazeni", function (request, response) {
+app.get("/betonski-bazeni", function (request, response) {
+    response.sendFile(__dirname + "/public/index.html");
+});
+
+
+
+app.get("/bazeni-sa-folijom", function (request, response) {
+    response.sendFile(__dirname + "/public/index.html");
+});
+
+app.get("/dodatna-oprema", function (request, response) {
     response.sendFile(__dirname + "/public/index.html");
 });
 //staticki direktorijum bice ./public
@@ -48,7 +68,6 @@ app.post("/contact", (req, res) => {
       <li>Email: ${req.body.email}</li>
       <li>Broj telefona: ${req.body.telefon}</li>
       <li>Usluga: ${req.body.website}</li>
-      <li>Vreme: ${req.body.gender}</li>
       <li>Drzava: ${req.body.select}</li>
       <li>Grad: ${req.body.city}</li>
       </ul>
@@ -64,12 +83,12 @@ app.post("/contact", (req, res) => {
   `;
 
     let transporter = nodemailer.createTransport({
-        host: 'mail.wearenicey.com',
+        host: 'mail.poolservice.rs',
         port: 465,
         secure: true,
         auth: {
-            user: 'zarko@wearenicey.com',
-            pass: 'zarkonicey123',
+            user: 'mail@poolservice.rs',
+            pass: 'mail@mail12',
         },
         tls: {
             rejectUnauthorized: false
@@ -77,7 +96,7 @@ app.post("/contact", (req, res) => {
     })
 
     let mailOptions = {
-        from: '<zarko@wearenicey.com>',
+        from: '<zarko@nicey.rs>',
         to: "zarko.stevanovic092@gmail.com",
 
         subject: "KONTAKT",
@@ -99,11 +118,12 @@ app.post("/contact", (req, res) => {
 
 
 
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
 
-const server = app.listen(
-    PORT,
-    console.log(
-        `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`
-    )
-);
+// const server = app.listen(
+//     PORT,
+//     console.log(
+//         `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`
+//     )
+// );
+app.listen(3000, () => console.log("Server started on port ${PORT}"));
