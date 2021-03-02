@@ -10,15 +10,5 @@ export class DodatnaOpremaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
-
-
   }
-
-  refreshPage() {
-    window.location.href = window.location.href;
-  }
-
-
-
 }

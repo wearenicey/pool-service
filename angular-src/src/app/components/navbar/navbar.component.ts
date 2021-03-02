@@ -15,8 +15,11 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+<<<<<<< HEAD
   // refreshPage() {
   //   window.location.href = './projects/pool-service/dodatna-oprema';
   // }
+=======
+>>>>>>> 3f83889a2cf5e6ed11664f264619d1d0fb4dcb2b
 
 }

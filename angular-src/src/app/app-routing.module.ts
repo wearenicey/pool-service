@@ -72,15 +72,29 @@ const routes: Routes = [
     path: 'odrzavanje',
     component: MainLayoutComponent,
     children: [
-      { path: '', component: IzgradnjaBazenaComponent }
+      {path: '', component: IzgradnjaBazenaComponent}
+    ]
+  },
+  {
+    path: 'o-nama',
+    component: MainLayoutComponent,
+    children: [
+      {path: '', component: AboutComponent}
+    ]
+  },
+  {
+    path: 'ucestala-pitanja',
+    component: MainLayoutComponent,
+    children: [
+      {path: '', component: FaqComponent}
     ]
   },
   {
     path: 'blog',
     component: MainLayoutComponent,
     children: [
-      { path: '', component: BlogComponent },
-      { path: 'post-1', component: PageBlogComponent },
+      {path: '', component: BlogComponent},
+      {path: 'post-1', component: PageBlogComponent},
     ]
   },
   {

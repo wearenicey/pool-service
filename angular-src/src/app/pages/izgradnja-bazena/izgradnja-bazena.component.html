@@ -1,3 +1,5 @@
+<app-navbar></app-navbar>
+
 <div class="container pt-128">
   <div class="row">
     <div class="col-12 text-center">
@@ -5,7 +7,7 @@
       <div class="row justify-content-center">
         <div class="col-12 col-lg-7">
           <p>Pool Service u ponudi nudi održavanje bazena na nedeljnom nivou. Na vama je samo da se
-             prepustite i uživate.
+            prepustite i uživate.
           </p>
         </div>
       </div>
@@ -15,7 +17,10 @@
 
 
 <div class="hero-img_padding">
-  <img class="img-fluid w-100" src="assets/img/izgradnja-bazena/odrzavanje-bazena.jpg" alt="Održavanje bazena">
+  <img class="img-fluid w-100 d-none d-md-block" src="assets/img/izgradnja-bazena/odrzavanje-bazena.jpg"
+       alt="Održavanje bazena">
+  <img class="img-fluid w-100 d-block d-md-none" src="assets/img/izgradnja-bazena/odrzavanje-bazena-manja.jpg"
+       alt="Održavanje bazena">
 </div>
 
 
@@ -27,7 +32,7 @@
     </div>
     <div class="col-md-6">
       <p class="pt-md-5">Pool Service je firma na koju se možete osloniti kada je u pitanju održavanje bazena u Novom
-                         Sadu i okolini.</p>
+        Sadu i okolini.</p>
       <p>Naše stručno osoblje uvek teži da ispuni i nadmaši očekivanja naših klijenata.</p>
 
       <div class="row list-item">
@@ -43,7 +48,7 @@
           <div class="d-inline-flex">
             <i class="fas fa-check"></i>
             <p>Uštedećete novac ukoliko ranije uočimo probleme i sprečimo potrebu za velikim
-               popravkama</p>
+              popravkama</p>
           </div>
         </div>
         <div class="col-6 mt-4">
@@ -74,8 +79,8 @@
             <div class="test">
               <h3 class="mb-4">Pouzdan partner</h3>
               <p>Sa proverom opreme, testiranjem vode i uslugom
-                 čišćenja bazena od strane Pool Service, možete biti
-                 sigurni da je vaš bazen uvek spreman za zabavu.</p>
+                čišćenja bazena od strane Pool Service, možete biti
+                sigurni da je vaš bazen uvek spreman za zabavu.</p>
               <button class="btn btn-secondary border-0 mt-3" [routerLink]="['/kontakt']">Kontaktirajte nas</button>
             </div>
           </div>
@@ -94,8 +99,8 @@
           <div class="col-12 col-md-6 order-2 order-md-1">
             <h3 class="mb-4">Uživajte u letu</h3>
             <p>U onim vrućim letnjim danima ne želite da brinete da li
-               Vam filter radi ili ne. I sigurno ne želite da razmišljate o
-               pH vrednosti vode, dok Vas klinci zovu da se igrate.
+              Vam filter radi ili ne. I sigurno ne želite da razmišljate o
+              pH vrednosti vode, dok Vas klinci zovu da se igrate.
             </p>
             <p>Neka Pool Service uradi sav posao za vas.</p>
             <button class="btn btn-secondary border-0 mt-3" [routerLink]="['/kontakt'] ">Kontaktirajte nas</button>
@@ -111,15 +116,15 @@
 </section>
 
 
-<section class="bg-primary">
+<section style="background: linear-gradient(91.15deg, #488AD1 0.3%, #2E79CA 99.61%);">
   <div class="container content py-128">
     <div class="row align-items-center justify-content-between">
 
       <div class="col-12 col-md-6">
-        <h3 class="text-white">Kako Pool Service može <br> da vam pomogne?</h3>
+        <h3 class="text-white">Kako Pool Service može da vam pomogne?</h3>
         <p class="text-white">U slučaju da se odlučite da sami održavate svoj bazen, ne brinite,
-                              Pool Service je mislio i na Vas. Napravili smo Vam sažeto uputstvo o održavanju vode u
-                              bazenu.</p>
+          Pool Service je mislio i na Vas. Napravili smo Vam sažeto uputstvo o održavanju vode u
+          bazenu.</p>
       </div>
       <div id="lines" class="col-md-4">
         <button class="btn btn-secondary border-0" (click)="downloadPdf()">Preuzmi uputstvo</button>
