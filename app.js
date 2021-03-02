@@ -26,7 +26,7 @@ app.use(function (req, res, next) {
 
 
 
-//govorimo serveru da prikazuje angular aplikaciju ng build
+//govorimo serveru da prikazuje angular aplikaciju ng build sas
 app.set('views', __dirname + '/public');
 app.set('view engine', 'html');
 
