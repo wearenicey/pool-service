@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {Meta} from '@angular/platform-browser';
-import {SwiperConfigInterface, SwiperPaginationInterface, SwiperScrollbarInterface} from 'ngx-swiper-wrapper';
+import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
+import { SwiperConfigInterface, SwiperPaginationInterface, SwiperScrollbarInterface } from 'ngx-swiper-wrapper';
 
 @Component({
   selector: 'app-homepage',
@@ -8,6 +8,7 @@ import {SwiperConfigInterface, SwiperPaginationInterface, SwiperScrollbarInterfa
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
+
   viewMode = 'uspomene';
   public type = 'component';
   public disabled = false;
@@ -80,19 +81,20 @@ export class HomepageComponent implements OnInit {
   };
 
   constructor(
-    private metaTagService: Meta
-  ) {
+    private metaTagService: Meta, private title: Title) {
   }
 
   ngOnInit() {
     this.metaTagService.addTags([
-      {name: 'keywords', content: 'Sa nama dobijate više od bazena. Stvaramo sećanja u godinama koje dolaze, u oazi Vašeg dvorišta!'},
-      {name: 'robots', content: 'index, follow'},
-      {name: 'author', content: 'Pool Service'},
-      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {name: 'date', content: '2021-02-01', scheme: 'YYYY-MM-DD'},
-      {charset: 'UTF-8'}
+      { name: 'keywords', content: 'Sa nama dobijate više od bazena. Stvaramo sećanja u godinama koje dolaze, u oazi Vašeg dvorišta!' },
+      { name: 'robots', content: 'index, follow' },
+      { name: 'author', content: 'Pool Service' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'date', content: '2021-02-01', scheme: 'YYYY-MM-DD' },
+      { charset: 'UTF-8' }
     ]);
+    this.title.setTitle("Pool Service");
+
   }
 
 }

@@ -38,6 +38,9 @@ app.get("/o-nama", function (request, response) {
     response.sendFile(__dirname + "/public/index.html");
 });
 
+app.get("/odrzavanje", function (request, response) {
+    response.sendFile(__dirname + "/public/index.html");
+});
 
 app.get("/polumontazni-bazeni", function (request, response) {
     response.sendFile(__dirname + "/public/index.html");
@@ -105,8 +108,8 @@ app.post("/contact", (req, res) => {
     })
 
     let mailOptions = {
-        from: '<zarko@nicey.rs>',
-        to: "zarko.stevanovic092@gmail.com",
+        from: '<mail@poolservice.rs>',
+        to: "info@poolservice.rs",
 
         subject: "KONTAKT",
         html: contactOutput,

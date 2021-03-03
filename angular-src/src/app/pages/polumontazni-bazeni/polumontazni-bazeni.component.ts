@@ -1,5 +1,6 @@
-import {Component} from '@angular/core';
-import {SwiperConfigInterface, SwiperPaginationInterface, SwiperScrollbarInterface} from 'ngx-swiper-wrapper';
+import { Component } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
+import { SwiperConfigInterface, SwiperPaginationInterface, SwiperScrollbarInterface } from 'ngx-swiper-wrapper';
 
 @Component({
   selector: 'app-polumontazni-bazeni',
@@ -7,6 +8,20 @@ import {SwiperConfigInterface, SwiperPaginationInterface, SwiperScrollbarInterfa
   styleUrls: ['./polumontazni-bazeni.component.scss']
 })
 export class PolumontazniBazeniComponent {
+  constructor(private metaTagService: Meta, private title: Title) {
+
+  }
+  ngOnInit() {
+    this.metaTagService.addTags([
+      { name: 'keywords', content: 'Iz programa firme Future Pool iz Nemačke nudimo polumontažne bazene sa PVC lajnerom za brzu gradnju.' },
+      { name: 'robots', content: 'index, follow' },
+      { name: 'author', content: 'Pool Service' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'date', content: '2021-02-01', scheme: 'YYYY-MM-DD' },
+      { charset: 'UTF-8' }
+    ]);
+    this.title.setTitle("Future pool bazeni");
+  }
   public type = 'component';
 
   public disabled = false;
