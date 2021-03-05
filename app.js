@@ -17,6 +17,13 @@ const cors = require("cors");
 
 const app = express();
 
+var appp = require('./public/server/main').app;
+var baseServer = app;
+var distFolder = path.join(process.cwd(), '/public');
+appp(baseServer, distFolder).listen(4040, function () {
+    console.log("Node Express server listening on http://localhost:4040");
+});
+
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET, PUT, POST");
@@ -138,4 +145,4 @@ app.post("/contact", (req, res) => {
 //         `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`
 //     )
 // );
-app.listen(3000, () => console.log("Server started on port ${PORT}"));
+// app.listen(3000, () => console.log("Server started on port ${PORT}"));
