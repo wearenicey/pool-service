@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormatTitlePipe } from './constants/format-title.pipe';
-
+import { LazyImgDirective } from './lazy-img-directive.directive';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -90,6 +90,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     MainLayoutComponent,
     PonudaComponent,
     TriKorakaComponent,
+    LazyImgDirective
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

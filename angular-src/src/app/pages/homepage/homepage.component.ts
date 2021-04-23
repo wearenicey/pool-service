@@ -93,7 +93,7 @@ export class HomepageComponent implements OnInit {
       { name: 'date', content: '2021-02-01', scheme: 'YYYY-MM-DD' },
       { charset: 'UTF-8' }
     ]);
-    this.title.setTitle("Pool Service");
+    this.title.setTitle('Pool Service');
 
   }
 
