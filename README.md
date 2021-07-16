@@ -29,3 +29,7 @@ http://poolservice.rs/
 4. components folder za rad sa  stranicama
 5. mailservice.service servis za pristup HTTP
 6. folder model (model Objekat za trenutno cuvanje podataka)
+
+## Run
+dev:ssr: ng run angular-src:serve-ssr
+build:ssr: ng build --prod && ng run angular-src:server:production
