@@ -4,25 +4,7 @@ $primary: #2E79CA !default;
 $light: #E9F7FE !default;
 $secondary: #FF8125 !default;
 
-//@font-face {
-//  font-family: 'Gilroy-Regular';
-//  src: url('../src/assets/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff2') format('woff2'),
-//  url('../src/assets/fonts/Gilroy/Gilroy-Regular/Gilroy-Regular.woff') format('woff');
-//}
-//
-//@font-face {
-//  font-family: 'Gilroy-Bold';
-//  src: url('../src/assets/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff2') format('woff2'),
-//  url('../src/assets/fonts/Gilroy/Gilroy-Bold/Gilroy-Bold.woff') format('woff');
-//}
-//
-//@font-face {
-//  font-family: 'Gilroy-ExtraBold';
-//  src: url('../src/assets/fonts/Gilroy/Gilroy-ExtraBold/Gilroy-ExtraBold.woff2') format('woff2'),
-//  url('../src/assets/fonts/Gilroy/Gilroy-ExtraBold/Gilroy-ExtraBold.woff') format('woff');
-//}
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -233,6 +215,10 @@ body {
 .swiper-slide {
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+}
+
+img {
+  border-radius: 1em;
 }
 
 @import 'assets/scss/typography';

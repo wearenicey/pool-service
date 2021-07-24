@@ -7,7 +7,7 @@
             <div class="col-12 col-md-6">
               <div class="text-left">
                 <h1 class="display-2">Vaše dvorište, Vaš bazen, Vaša pravila</h1>
-                <p class="mb-5 text-white">
+                <p class="mb-5">
                   Sa nama dobijate više od bazena. Stvaramo sećanja u godinama koje dolaze,
                   u oazi Vašeg dvorišta!</p>
                 <a class="btn btn-lg btn-secondary" role="button" [routerLink]="['/kontakt']">Besplatna konsultacija</a>
@@ -24,7 +24,7 @@
             <div class="col-12 col-md-8">
               <div class="text-left">
                 <h1 class="display-2">Prepustite se uživanju!</h1>
-                <p class="mb-5 text-white">
+                <p class="mb-5">
                   Ako tražite efikasnu i brzu uslugu održavanja bazena,<br>na pravom ste mestu.
                 </p>
                 <a class="btn btn-lg btn-secondary" role="button" [routerLink]="['/kontakt']">Besplatna konsultacija</a>
@@ -41,7 +41,7 @@
             <div class="col-12 col-md-6">
               <div class="text-left">
                 <h1 class="display-2">Ulaganje u kvalitet pruža sigurnost</h1>
-                <p class="mb-5 text-white">
+                <p class="mb-5">
                   Oprema renomiranih Evropskih partnera omogućava dugogodišnju istrajnost i funkcionalnost</p>
                 <a class="btn btn-lg btn-secondary" role="button" [routerLink]="['/kontakt']">Besplatna konsultacija</a>
               </div>
@@ -88,7 +88,7 @@
 <div id="values" class="container d-none d-md-block">
   <div class="row justify-content-between">
 
-    <div class="col" [class.active]="viewMode=='uspomene'">
+    <div class="col" [class.active]="viewMode=='uspomene'" style="border-top-left-radius: 1rem;">
       <a (click)="viewMode='uspomene'">
         <div class="values-tab">
           <img src="assets/img/icons/kreiramo-uspomene.svg" class="d-none d-lg-inline-flex" alt="">
@@ -106,7 +106,7 @@
       </a>
     </div>
 
-    <div class="col" [class.active]="viewMode=='zivot'">
+    <div class="col" [class.active]="viewMode=='zivot'" style="border-top-right-radius: 1rem;">
       <a (click)="viewMode = 'zivot'">
         <div class="values-tab">
           <img src="assets/img/icons/zivot.svg" class="d-none d-lg-inline-flex" alt="">
@@ -118,10 +118,10 @@
   </div>
 </div>
 
-<div class="container bg-white shadow-lg d-none d-md-block" [ngSwitch]="viewMode">
-  <div class="row align-items-center" *ngSwitchCase="'uspomene'">
+<div class="container bg-white shadow-lg d-none d-md-block" [ngSwitch]="viewMode" style="border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem">
+  <div class="row align-items-center" *ngSwitchCase="'uspomene'" style="border-bottom-left-radius: 1rem">
     <div class="col-4 px-0">
-      <img src="assets/img/kreiramo-uspomene.jpg" loading="lazy" class="img-fluid" alt="">
+      <img src="assets/img/kreiramo-uspomene.jpg" loading="lazy" class="img-fluid" alt="Kreiramo uspomene u vasem dvoristu" style="border-bottom-left-radius: 1rem;">
     </div>
     <div class="col-8 px-5">
       <h2>Kreiramo uspomene</h2>
@@ -134,7 +134,7 @@
 
   <div class="row align-items-center" *ngSwitchCase="'podrska'">
     <div class="col-4 px-0">
-      <img src="assets/img/zagarantovana-podrska.jpg" loading="lazy" class="img-fluid" alt="">
+      <img src="assets/img/zagarantovana-podrska.jpg" loading="lazy" class="img-fluid" alt="Neometano uzivajte na svom privatno bazenu" style="border-bottom-left-radius: 1rem;">
     </div>
     <div class="col-8 px-5">
       <h2>Zagarantovana podrška</h2>
@@ -147,7 +147,7 @@
 
   <div class="row align-items-center" *ngSwitchCase="'zivot'">
     <div class="col-4 px-0">
-      <img src="assets/img/zivite-zivot-koji%20zelite.jpg" loading="lazy" class="img-fluid" alt="">
+      <img src="assets/img/zivite-zivot-koji%20zelite.jpg" loading="lazy" class="img-fluid" alt="Zivite zivot koji zelite" style="border-bottom-left-radius: 1rem;">
     </div>
     <div class="col-8 px-5">
       <h2>Živite život koji želite</h2>

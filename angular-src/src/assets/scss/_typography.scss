@@ -66,8 +66,8 @@
 
 :root {
   // font family
-  --font-primary: 'Lato', sans-serif;
-  --font-secondary: 'Lato', sans-serif;
+  --font-primary: 'Manrope', sans-serif;
+  --font-secondary: 'Manrope', sans-serif;
 
   // font size
   --text-base-size: 1em; // body font-size
@@ -109,17 +109,16 @@
 
 body {
   font-family: var(--font-secondary);
-  font-weight: 400;
-
-  @include media-breakpoint-up(md) {
-    font-family: var(--font-secondary);
-    font-weight: 400;
-  }
+  font-weight: 500;
+  color: #376490;
+  letter-spacing: 0.025em;
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-primary);
   font-weight: 700;
+  color: #092035;
+  margin-bottom: 0.5em;
 
   @include media-breakpoint-up(md) {
     font-family: var(--font-primary);
@@ -127,51 +126,13 @@ h1, h2, h3, h4 {
   }
 }
 
+h5, h6 {
+  color: #092035;
+}
+
 // font family
 .font-primary { font-family: var(--font-primary); }
 
-
-//h1, h2, h3, h4, h5{
-//  font-family: 'Montserrat', sans-serif;
-//  font-weight: 600;
-//}
-//
-//h1 {
-//
-//  @include media-breakpoint-down(sm) {
-//    font-size: 2.5rem;
-//    line-height: calc(40 / 30);
-//  }
-//}
-//
-//h2 {
-//
-//  @include media-breakpoint-down(sm) {
-//    font-size: 2rem;
-//    line-height: calc(40 / 30);
-//  }
-//}
-//
-//h3 {
-//
-//  @include media-breakpoint-down(sm) {
-//    font-size: 1.75rem;
-//  }
-//}
-//
-//h4 {
-//
-//  @include media-breakpoint-down(sm) {
-//    font-size: 1.5rem;
-//  }
-//}
-//
-//p {
-//  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-//  text-rendering: optimizeLegibility;
-//  line-height: 1.5 !important;
-//}
-//
-//.h4 {
-//  line-height: calc(30 / 22) !important;
-//}
+.l-spacing {
+  letter-spacing: 0.05em;
+}
