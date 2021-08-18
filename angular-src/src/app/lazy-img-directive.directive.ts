@@ -12,3 +12,6 @@ export class LazyImgDirective {
     }
   }
 }
+
+export class LazyImgDirectiveDirective {
+}

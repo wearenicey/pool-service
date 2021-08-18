@@ -19,9 +19,11 @@ export class BazeniFolijaComponent {
       { name: 'author', content: 'Pool Service' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'date', content: '2021-02-01', scheme: 'YYYY-MM-DD' },
-      { charset: 'UTF-8' }
+      { charset: 'UTF-8' },
+      { property: 'og:image', content: 'assets/img/bazeni-sa-folijom.jpg'},
+      { property: 'twitter:image:src', content: 'assets/img/bazeni-sa-folijom.jpg'}
     ]);
-    this.title.setTitle("Bazeni sa folijom");
+    this.title.setTitle('Bazeni sa folijom 💦 Pool Service');
   }
   public type = 'component';
 
