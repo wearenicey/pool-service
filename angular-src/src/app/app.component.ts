@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {fadeAnimation} from './animations/fade.animation';
 import {NavigationEnd, Router} from '@angular/router';
 import {GoogleTagManagerService} from 'angular-google-tag-manager';
-import {MailService} from './mail.service'
+import {MailService} from './mail.service';
 
 
 @Component({

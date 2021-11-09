@@ -20,9 +20,11 @@ export class BetonskiBazeniComponent {
       { name: 'author', content: 'Pool Service' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'date', content: '2021-02-01', scheme: 'YYYY-MM-DD' },
-      { charset: 'UTF-8' }
+      { charset: 'UTF-8' },
+      { property: 'og:image', content: 'assets/img/betonsk-bazeni.jpg'},
+      { property: 'twitter:image:src', content: 'assets/img/betonsk-bazeni.jpg'}
     ]);
-    this.title.setTitle("Betonski bazeni");
+    this.title.setTitle('Betonski bazeni 💦 Pool Service');
   }
   public type = 'component';
 
