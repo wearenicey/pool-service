@@ -1,0 +1,138 @@
+// basic typography style - we suggest you don't modify this file
+// use the 📁custom-style/_typography.scss file to create your custom typography
+
+@if variable-exists('cody-base-partials') == false or index($cody-base-partials, 'typography') {
+  :root {
+    --heading-line-height: 1.3;
+    --body-line-height: 1.6;
+  }
+
+  body {
+    font-size: var(--text-base-size, 1em) !important;
+    font-family: var(--font-secondary, sans-serif) !important;
+  }
+
+  h1, h2, h3, h4 {
+    line-height: var(--heading-line-height, 1.3);
+  }
+
+  .display-2 {
+    font-size: var(--text-xxxl, 2.488em) !important;
+  }
+
+  .display-1 {
+    font-size: var(--text-xxxxl, 2.986em) !important;
+  }
+
+  h1 {
+    font-size: var(--text-xxl, 2.074em);
+  }
+
+  h2 {
+    font-size: var(--text-xl, 1.728em);
+  }
+
+  h3 {
+    font-size: var(--text-lg, 1.44em);
+  }
+
+  h4 {
+    font-size: var(--text-md, 1.2em);
+  }
+
+  small {
+    font-size: var(--text-sm, 0.833em);
+  }
+
+  // --------------------------------
+
+  // Inline Text
+
+  // --------------------------------
+
+  strong {
+    font-weight: bold;
+  }
+
+  s {
+    text-decoration: line-through;
+  }
+
+  u {
+    text-decoration: underline;
+  }
+
+}
+
+:root {
+  // font family
+  --font-primary: 'Manrope', sans-serif;
+  --font-secondary: 'Manrope', sans-serif;
+
+  // font size
+  --text-base-size: 1em; // body font-size
+  --text-scale-ratio: 1.25; // multiplier used to generate the type scale values 👇
+
+  // line-height
+  --body-line-height: 1.6;
+  --heading-line-height: 1.3;
+
+  // capital letters - used in combo with the lhCrop mixin
+  --font-primary-capital-letter: 1;
+
+  // unit - don't modify unless you want to change the typography unit (e.g., from Em to Rem units)
+  --text-unit: 1em; // if not Em units → --text-unit: var(--text-base-size);
+}
+
+:root, * {
+  // type scale
+  --text-xs: calc((var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
+  --text-xxxxl: calc(var(--text-xxxl) * var(--text-scale-ratio));
+}
+
+@supports(--css: variables) {
+  @include media-breakpoint-up(md) {
+    :root {
+      --text-base-size: 1.125em;
+      --text-scale-ratio: 1.25;
+      --body-line-height: 1.6;
+      --heading-line-height: 1.3;
+    }
+  }
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  color: #376490;
+  letter-spacing: 0.025em;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: #092035;
+  margin-bottom: 0.5em;
+
+  @include media-breakpoint-up(md) {
+    font-family: var(--font-primary);
+    font-weight: 700;
+  }
+}
+
+h5, h6 {
+  color: #092035;
+}
+
+// font family
+.font-primary { font-family: var(--font-primary); }
+
+.l-spacing {
+  letter-spacing: 0.05em;
+}
