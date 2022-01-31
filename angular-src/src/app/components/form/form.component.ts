@@ -13,14 +13,9 @@ import { Router } from '@angular/router';
 })
 export class FormComponent {
 
-  // activeStepIndex: number;
-  // currentFormContent: Array<any>;
+//varijabla forme
   formData: any;
-  // formFields: Array<Array<string>>;
-  // masterFormFields: Array<string>;
-  // stepItems: Array<any>;
-  // masterForm: Array<FormGroup>;
-
+ 
   public subscription: Subscription;
   public dataProcessDetail;
 
@@ -32,13 +27,12 @@ export class FormComponent {
   }
 
 
-
+// objekat gdje smjestaju selektovane vrijednosti
   selection = {};
 
 
-  //   form: FormGroup;
 
-
+// niz objekata untar forme chekbox-ovi
   websiteList: any = [
     {
       usluga: 'Konsultacije',
@@ -83,7 +77,7 @@ export class FormComponent {
   // @ViewChild(ToastContainerDirective, { static: true })
   // toastContainer: ToastContainerDirective;
 
-
+// validator forme
   form = this.formBuilder.group(
     {
       website: this.formBuilder.array([], [Validators.required]),
@@ -103,7 +97,7 @@ export class FormComponent {
     }
   );
 
-
+// sledeci korak untar forme
   nextStep() {
     if (this.variable < 2) {
       this.variable = this.variable + 1;
@@ -111,7 +105,7 @@ export class FormComponent {
     console.log(this.variable);
   }
 
-
+// korak unazad untar forme
   backStep() {
     if (this.variable > 0) {
       this.variable = this.variable - 1;
@@ -119,7 +113,7 @@ export class FormComponent {
     console.log(this.variable);
   }
 
-
+// ispitivanje da li target radi
   changeGender(e) {
     console.log(e.target.value);
   }
@@ -139,7 +133,7 @@ export class FormComponent {
   }
 
 
-  // event handler for the select element's change event
+  // event za promejnenju  vrijednost
   selectChangeHandler(event: any) {
     // update the ui
     console.log(event.target.value);
@@ -166,20 +160,21 @@ export class FormComponent {
     return this.form.get('text');
   }
 
-
+// funkcija za slanje mejla sa podacima iz forme
   sendMail() {
     console.log(this.form.value);
     this.subscription = this.MailService.sendEmail(this.form.value).subscribe(data => {
       const msg = data.message;
       this.toastr.success(msg);
-      // console.log(data, "success");
+      // odgovor sa servera sa zakasnjenem od 2s radi boljeg ux
       setTimeout(() => window.location.reload(),
         2000);
+      //greska sa servera
     }, error => {
       console.error(error, 'error');
     });
 
-
+// formatiranje mejla u json i slanje na modemailer
     this.MailService.sendEmail(JSON.stringify(this.form.value));
     // this.router.navigate(['/contact'])
   }
