@@ -12,7 +12,8 @@ import { Observable } from 'rxjs';
 export class MailService {
 
   constructor(private https: HttpClient) { }
-
+  
+// servis za komunkikaciju sa serverom
   sendEmail(data: any): Observable<any> {
     return this.https.post<any>('https://poolservice.rs/contact', data)
   }
